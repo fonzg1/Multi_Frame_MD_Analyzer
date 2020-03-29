@@ -1,0 +1,25 @@
+\hypertarget{group__atomsel}{}\section{Atom selection}
+\label{group__atomsel}\index{Atom selection@{Atom selection}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structESBTL_1_1Select__by__resname}{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+resname}
+\item 
+struct \hyperlink{structESBTL_1_1Select__by__atmname}{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}
+\item 
+struct \hyperlink{structESBTL_1_1Select__by__element}{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+element}
+\item 
+class \hyperlink{classESBTL_1_1Select__by__chainids}{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module gathers function objects to make a selection using an atoms. Such a function object must be a class of the following type\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{class }Atom\_selection\_concept\{
+  \textcolor{keyword}{template} <\textcolor{keyword}{class} Atom>
+  \textcolor{keywordtype}{bool} operator() (\textcolor{keyword}{const} Atom& atom)\textcolor{keyword}{ const}
+\textcolor{keyword}{  }\{ ... \}  
+\}
+\end{DoxyCode}
+ Within such function objects, it is advised to use global function (prefixed by {\ttfamily get\+\_\+}) so as to be used with an atom class or a molecular file line. 

@@ -1,0 +1,78 @@
+\hypertarget{classESBTL_1_1Selected__atom__iterator}{}\section{E\+S\+B\+TL\+:\+:Selected\+\_\+atom\+\_\+iterator$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$ Class Template Reference}
+\label{classESBTL_1_1Selected__atom__iterator}\index{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$}}
+
+
+{\ttfamily \#include $<$selected\+\_\+atom\+\_\+iterator.\+h$>$}
+
+Inheritance diagram for E\+S\+B\+TL\+:\+:Selected\+\_\+atom\+\_\+iterator$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.084221cm]{classESBTL_1_1Selected__atom__iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1Selected__atom__iterator_a90cd448bdf3d57cd774c0bbcfbe402df}{Selected\+\_\+atom\+\_\+iterator} (Base\+\_\+iterator it, const Subset\+\_\+functor \&functor)
+\item 
+\hyperlink{classESBTL_1_1Selected__atom__iterator_aeabc4e8a95fca2d11566f7ad8caf31ed}{Selected\+\_\+atom\+\_\+iterator} (Base\+\_\+iterator it)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1Selected__atom__iterator_ac09f73e325921cc50ebcd96bed0f8096}{boost\+::iterator\+\_\+core\+\_\+access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Model, class Subset\+\_\+functor, bool is\+\_\+const$>$\newline
+class E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$}
+
+Class defining an iterator over atoms of a model, restricted to a certain type defined by a function object. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Model} & is the type of the model used. \\
+\hline
+{\em Subset\+\_\+functor} & is a function following the concept of \hyperlink{group__atomsel}{Atom selection}. \\
+\hline
+{\em is\+\_\+const} & indicates the constness of the iterator.\\
+\hline
+\end{DoxyTemplParams}
+If you do not need to pass a state to your functor, you might want to use boost\+::filter\+\_\+iterator instead. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Selected__atom__iterator_a90cd448bdf3d57cd774c0bbcfbe402df}\label{classESBTL_1_1Selected__atom__iterator_a90cd448bdf3d57cd774c0bbcfbe402df}} 
+\index{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}!Selected\+\_\+atom\+\_\+iterator@{Selected\+\_\+atom\+\_\+iterator}}
+\index{Selected\+\_\+atom\+\_\+iterator@{Selected\+\_\+atom\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}}
+\subsubsection{\texorpdfstring{Selected\+\_\+atom\+\_\+iterator()}{Selected\_atom\_iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Model, class Subset\+\_\+functor, bool is\+\_\+const$>$ \\
+\hyperlink{classESBTL_1_1Selected__atom__iterator}{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$\+::\hyperlink{classESBTL_1_1Selected__atom__iterator}{Selected\+\_\+atom\+\_\+iterator} (\begin{DoxyParamCaption}\item[{Base\+\_\+iterator}]{it,  }\item[{const Subset\+\_\+functor \&}]{functor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em it} & is the iterator indicating the starting point for the iterator. \\
+\hline
+{\em functor} & is the functor used to select atoms. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1Selected__atom__iterator_aeabc4e8a95fca2d11566f7ad8caf31ed}\label{classESBTL_1_1Selected__atom__iterator_aeabc4e8a95fca2d11566f7ad8caf31ed}} 
+\index{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}!Selected\+\_\+atom\+\_\+iterator@{Selected\+\_\+atom\+\_\+iterator}}
+\index{Selected\+\_\+atom\+\_\+iterator@{Selected\+\_\+atom\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}}
+\subsubsection{\texorpdfstring{Selected\+\_\+atom\+\_\+iterator()}{Selected\_atom\_iterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Model, class Subset\+\_\+functor, bool is\+\_\+const$>$ \\
+\hyperlink{classESBTL_1_1Selected__atom__iterator}{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}$<$ Model, Subset\+\_\+functor, is\+\_\+const $>$\+::\hyperlink{classESBTL_1_1Selected__atom__iterator}{Selected\+\_\+atom\+\_\+iterator} (\begin{DoxyParamCaption}\item[{Base\+\_\+iterator}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Selected__atom__iterator_ac09f73e325921cc50ebcd96bed0f8096}\label{classESBTL_1_1Selected__atom__iterator_ac09f73e325921cc50ebcd96bed0f8096}} 
+\index{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}!boost\+::iterator\+\_\+core\+\_\+access@{boost\+::iterator\+\_\+core\+\_\+access}}
+\index{boost\+::iterator\+\_\+core\+\_\+access@{boost\+::iterator\+\_\+core\+\_\+access}!E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator}}
+\subsubsection{\texorpdfstring{boost\+::iterator\+\_\+core\+\_\+access}{boost::iterator\_core\_access}}
+{\footnotesize\ttfamily template$<$class Model, class Subset\+\_\+functor, bool is\+\_\+const$>$ \\
+friend class boost\+::iterator\+\_\+core\+\_\+access\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{selected__atom__iterator_8h}{selected\+\_\+atom\+\_\+iterator.\+h}\end{DoxyCompactItemize}

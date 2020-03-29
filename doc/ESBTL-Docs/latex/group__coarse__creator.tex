@@ -1,0 +1,27 @@
+\hypertarget{group__coarse__creator}{}\section{Coarse grain creator}
+\label{group__coarse__creator}\index{Coarse grain creator@{Coarse grain creator}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1Coarse__creator__two__barycenters}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+creator\+\_\+two\+\_\+barycenters$<$ Residue $>$}
+\item 
+class \hyperlink{classESBTL_1_1Coarse__creator__closest__to__barycenter}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+creator\+\_\+closest\+\_\+to\+\_\+barycenter$<$ Residue, F\+T\+\_\+ $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module gathers all objects provided to create coarse grain atoms from a residue. Such an object must be a class of the following type\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{class} Res\textcolor{keywordtype}{id}ue>
+\textcolor{keyword}{struct }Coarse\_creator\_concept\{
+  \textcolor{comment}{//a string indicating how the coarse grained model is defined.}
+  \textcolor{keyword}{static} \textcolor{keyword}{const} std::string info()\{ ... \}
+
+  \textcolor{comment}{// Creates coarse grain atoms from a residue.}
+  \textcolor{comment}{// Output\_iterator is an output iterator of coarse grain atoms.}
+  \textcolor{comment}{// the integer returned is the number of coarse grain atoms created.}
+  \textcolor{keyword}{template} <\textcolor{keyword}{class} Output\_iterator>
+  \textcolor{keywordtype}{int} operator()(\textcolor{keyword}{const} Residue& res,Output\_iterator out)\textcolor{keyword}{ const}\{ ... \}
+\};
+\end{DoxyCode}
+ 

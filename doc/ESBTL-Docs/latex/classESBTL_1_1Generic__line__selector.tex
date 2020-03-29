@@ -1,0 +1,77 @@
+\hypertarget{classESBTL_1_1Generic__line__selector}{}\section{E\+S\+B\+TL\+:\+:Generic\+\_\+line\+\_\+selector$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$ Class Template Reference}
+\label{classESBTL_1_1Generic__line__selector}\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$}}
+
+
+{\ttfamily \#include $<$line\+\_\+selectors.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1Generic__line__selector_a7323ec53a256a6b6d96d47381f13bc96}{Generic\+\_\+line\+\_\+selector} ()
+\item 
+\hyperlink{classESBTL_1_1Generic__line__selector_aa044db1d64646e582a990d87ead787a1}{Generic\+\_\+line\+\_\+selector} (const T1 \&t1, const T2 \&t2, const T3 \&t3, const T4 \&t4, const T5 \&t5, const T6 \&t6, const T7 \&t7, const T8 \&t8, const T9 \&t9, const T10 \&t10)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Line\+\_\+format $>$ }\\int \hyperlink{classESBTL_1_1Generic__line__selector_aae6575ee43ada5b43d845bbc3a095f9d}{operator()} (const std\+::pair$<$ Line\+\_\+format, std\+::string $>$ \&p) const
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const unsigned \hyperlink{classESBTL_1_1Generic__line__selector_a1dd59942b4571825b8d969813975e573}{nb\+\_\+system} =\hyperlink{classESBTL_1_1Generic__line__selector}{Generic\+\_\+line\+\_\+selector}$<$T2,T3,T4,T5,T6,T7,T8,T9,T10$>$\+::nb\+\_\+system + 1
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10$>$\newline
+class E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$}
+
+This class is a line selector using atom selectors to defines the systems. Each template parameter is a function object following the concept of \hyperlink{group__atomsel}{Atom selection} and define one system per template parameter. This class can be provided one to ten template parameters. If the code is compiled using the c++0x standard, the number of template parameters is not limited (use -\/std=c++0x with gcc). 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Ti} & is a function object following the concept \hyperlink{group__atomsel}{Atom selection}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Generic__line__selector_a7323ec53a256a6b6d96d47381f13bc96}\label{classESBTL_1_1Generic__line__selector_a7323ec53a256a6b6d96d47381f13bc96}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}!Generic\+\_\+line\+\_\+selector@{Generic\+\_\+line\+\_\+selector}}
+\index{Generic\+\_\+line\+\_\+selector@{Generic\+\_\+line\+\_\+selector}!E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}}
+\subsubsection{\texorpdfstring{Generic\+\_\+line\+\_\+selector()}{Generic\_line\_selector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10$>$ \\
+\hyperlink{classESBTL_1_1Generic__line__selector}{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$\+::\hyperlink{classESBTL_1_1Generic__line__selector}{Generic\+\_\+line\+\_\+selector} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Generic__line__selector_aa044db1d64646e582a990d87ead787a1}\label{classESBTL_1_1Generic__line__selector_aa044db1d64646e582a990d87ead787a1}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}!Generic\+\_\+line\+\_\+selector@{Generic\+\_\+line\+\_\+selector}}
+\index{Generic\+\_\+line\+\_\+selector@{Generic\+\_\+line\+\_\+selector}!E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}}
+\subsubsection{\texorpdfstring{Generic\+\_\+line\+\_\+selector()}{Generic\_line\_selector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10$>$ \\
+\hyperlink{classESBTL_1_1Generic__line__selector}{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$\+::\hyperlink{classESBTL_1_1Generic__line__selector}{Generic\+\_\+line\+\_\+selector} (\begin{DoxyParamCaption}\item[{const T1 \&}]{t1,  }\item[{const T2 \&}]{t2,  }\item[{const T3 \&}]{t3,  }\item[{const T4 \&}]{t4,  }\item[{const T5 \&}]{t5,  }\item[{const T6 \&}]{t6,  }\item[{const T7 \&}]{t7,  }\item[{const T8 \&}]{t8,  }\item[{const T9 \&}]{t9,  }\item[{const T10 \&}]{t10 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Generic__line__selector_aae6575ee43ada5b43d845bbc3a095f9d}\label{classESBTL_1_1Generic__line__selector_aae6575ee43ada5b43d845bbc3a095f9d}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}!operator()@{operator()}}
+\index{operator()@{operator()}!E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10$>$ \\
+template$<$class Line\+\_\+format $>$ \\
+int \hyperlink{classESBTL_1_1Generic__line__selector}{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$\+::operator() (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ Line\+\_\+format, std\+::string $>$ \&}]{p }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Generic__line__selector_a1dd59942b4571825b8d969813975e573}\label{classESBTL_1_1Generic__line__selector_a1dd59942b4571825b8d969813975e573}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}!nb\+\_\+system@{nb\+\_\+system}}
+\index{nb\+\_\+system@{nb\+\_\+system}!E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector@{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}}
+\subsubsection{\texorpdfstring{nb\+\_\+system}{nb\_system}}
+{\footnotesize\ttfamily template$<$class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10$>$ \\
+const unsigned \hyperlink{classESBTL_1_1Generic__line__selector}{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector}$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$\+::nb\+\_\+system =\hyperlink{classESBTL_1_1Generic__line__selector}{Generic\+\_\+line\+\_\+selector}$<$T2,T3,T4,T5,T6,T7,T8,T9,T10$>$\+::nb\+\_\+system + 1\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{line__selectors_8h}{line\+\_\+selectors.\+h}\end{DoxyCompactItemize}

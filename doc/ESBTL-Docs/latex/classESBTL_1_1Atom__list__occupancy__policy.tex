@@ -1,0 +1,72 @@
+\hypertarget{classESBTL_1_1Atom__list__occupancy__policy}{}\section{E\+S\+B\+TL\+:\+:Atom\+\_\+list\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$ Class Template Reference}
+\label{classESBTL_1_1Atom__list__occupancy__policy}\index{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}}
+
+
+{\ttfamily \#include $<$occupancy\+\_\+handlers.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Iterator $>$ }\\\hyperlink{classESBTL_1_1Atom__list__occupancy__policy_a8f593573fdb7dc861a33c1a2cc42a39f}{Atom\+\_\+list\+\_\+occupancy\+\_\+policy} (Iterator begin, Iterator end)
+\item 
+int \hyperlink{classESBTL_1_1Atom__list__occupancy__policy_a65617fb0659dcd05e6185f02ab6c8734}{add\+\_\+or\+\_\+postpone} (const Line\+\_\+format \&line\+\_\+format, const std\+::string \&line, int system\+\_\+index) const
+\item 
+{\footnotesize template$<$class Builder $>$ }\\int \hyperlink{classESBTL_1_1Atom__list__occupancy__policy_a6e79bcfed595d2fd2dae424873f9236e}{finalize} (Builder \&) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Line\+\_\+format$>$\newline
+class E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+
+Keep only a set of atoms given by their atom serial number\+This object provides an occupancy policy to keep atoms with an occupancy != 1 and with no alternate location using their atom serial number. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Line\+\_\+format} & is a helper class to read molecular data files such as \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Atom__list__occupancy__policy_a8f593573fdb7dc861a33c1a2cc42a39f}\label{classESBTL_1_1Atom__list__occupancy__policy_a8f593573fdb7dc861a33c1a2cc42a39f}} 
+\index{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}!Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{Atom\+\_\+list\+\_\+occupancy\+\_\+policy}}
+\index{Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{Atom\+\_\+list\+\_\+occupancy\+\_\+policy}!E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}}
+\subsubsection{\texorpdfstring{Atom\+\_\+list\+\_\+occupancy\+\_\+policy()}{Atom\_list\_occupancy\_policy()}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format $>$ \\
+template$<$class Iterator $>$ \\
+\hyperlink{classESBTL_1_1Atom__list__occupancy__policy}{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}$<$ Line\+\_\+format $>$\+::\hyperlink{classESBTL_1_1Atom__list__occupancy__policy}{Atom\+\_\+list\+\_\+occupancy\+\_\+policy} (\begin{DoxyParamCaption}\item[{Iterator}]{begin,  }\item[{Iterator}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. The serial numbers of atoms to be kept are given by an iterator range. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iterator} & is an iterator over unsigned integers. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & is the first iterator over the range of atom serial numbers. \\
+\hline
+{\em end} & is the past-\/end iterator over the range of atom serial numbers. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Atom__list__occupancy__policy_a65617fb0659dcd05e6185f02ab6c8734}\label{classESBTL_1_1Atom__list__occupancy__policy_a65617fb0659dcd05e6185f02ab6c8734}} 
+\index{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}!add\+\_\+or\+\_\+postpone@{add\+\_\+or\+\_\+postpone}}
+\index{add\+\_\+or\+\_\+postpone@{add\+\_\+or\+\_\+postpone}!E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}}
+\subsubsection{\texorpdfstring{add\+\_\+or\+\_\+postpone()}{add\_or\_postpone()}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format $>$ \\
+int \hyperlink{classESBTL_1_1Atom__list__occupancy__policy}{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}$<$ Line\+\_\+format $>$\+::add\+\_\+or\+\_\+postpone (\begin{DoxyParamCaption}\item[{const Line\+\_\+format \&}]{line\+\_\+format,  }\item[{const std\+::string \&}]{line,  }\item[{int}]{system\+\_\+index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Atom__list__occupancy__policy_a6e79bcfed595d2fd2dae424873f9236e}\label{classESBTL_1_1Atom__list__occupancy__policy_a6e79bcfed595d2fd2dae424873f9236e}} 
+\index{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}!finalize@{finalize}}
+\index{finalize@{finalize}!E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy@{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}}
+\subsubsection{\texorpdfstring{finalize()}{finalize()}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format $>$ \\
+template$<$class Builder $>$ \\
+int \hyperlink{classESBTL_1_1Atom__list__occupancy__policy}{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy}$<$ Line\+\_\+format $>$\+::finalize (\begin{DoxyParamCaption}\item[{Builder \&}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{occupancy__handlers_8h}{occupancy\+\_\+handlers.\+h}\end{DoxyCompactItemize}

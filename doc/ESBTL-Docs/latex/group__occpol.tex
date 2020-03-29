@@ -1,0 +1,38 @@
+\hypertarget{group__occpol}{}\section{Occupancy policies}
+\label{group__occpol}\index{Occupancy policies@{Occupancy policies}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structESBTL_1_1No__occupancy__policy}{E\+S\+B\+T\+L\+::\+No\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Accept__all__occupancy__policy}{E\+S\+B\+T\+L\+::\+Accept\+\_\+all\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Accept__none__occupancy__policy}{E\+S\+B\+T\+L\+::\+Accept\+\_\+none\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+\item 
+class \hyperlink{classESBTL_1_1Max__occupancy__policy}{E\+S\+B\+T\+L\+::\+Max\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+\item 
+class \hyperlink{classESBTL_1_1Min__occupancy__policy}{E\+S\+B\+T\+L\+::\+Min\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+\item 
+class \hyperlink{classESBTL_1_1Atom__list__occupancy__policy}{E\+S\+B\+T\+L\+::\+Atom\+\_\+list\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module gathers all methods provided to handle atoms with no alternate location identification and occupancy factor different from 1. An occupancy policy must be a class of the following type\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{template} <\textcolor{keyword}{class} Line\_format>
+\textcolor{keyword}{struct }Occupancy\_policy\_concept\{
+  \textcolor{comment}{//check whether an atom can directly be added to a system. }
+  \textcolor{comment}{//It returns -1 if not, and the number of the system otherwise.}
+  \textcolor{comment}{//Line\_format must provide  similar functionalities to ESBTL::PDB::Line\_format.}
+  \textcolor{comment}{//line is a line of a molecular data file representing an atom.}
+  \textcolor{comment}{//system\_index is the index of the system the line should be added (provided by the selector).}
+  \textcolor{keywordtype}{int} add\_or\_postpone(\textcolor{keyword}{const} Line\_format& line\_format,\textcolor{keyword}{const} std::string& line,\textcolor{keywordtype}{int} system\_index)\textcolor{keyword}{ const}\{ ... \}
+  
+  \textcolor{comment}{//This function is called by the builder when the whole file have been read.}
+  \textcolor{comment}{//Potential atom that have not already been inserted can be. The integer returned is}
+  \textcolor{comment}{//the number of atoms added.}
+  \textcolor{keyword}{template} <\textcolor{keyword}{class} Builder> \textcolor{keywordtype}{int} finalize(Builder&)\textcolor{keyword}{ const }\{ ... \}
+\};
+\end{DoxyCode}
+ 

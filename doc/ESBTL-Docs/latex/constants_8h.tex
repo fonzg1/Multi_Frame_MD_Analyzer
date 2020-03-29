@@ -1,0 +1,60 @@
+\hypertarget{constants_8h}{}\section{constants.\+h File Reference}
+\label{constants_8h}\index{constants.\+h@{constants.\+h}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{constants_8h_a244889d464c6ffbec552d21749e84ccc}{D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS}(N\+A\+ME,  T\+Y\+PE)
+\item 
+\#define \hyperlink{constants_8h_a3f514e56c5d81d04d8ceac1b16c41ffc}{N\+O\+\_\+\+C\+H\+A\+R\+GE}~66
+\item 
+\#define \hyperlink{constants_8h_a8ff4ea46a9c8d9fbc31f595e5c431aa3}{N\+O\+\_\+\+F\+L\+O\+AT}~std\+::numeric\+\_\+limits$<$double$>$\+::max()
+\item 
+\#define \hyperlink{constants_8h_afad07e02e29428701c1a9c745085c769}{R\+MK}~0
+\item 
+\#define \hyperlink{constants_8h_adbaca35440ef5d1abf8a0084bf382b8b}{D\+I\+S\+C\+A\+RD}~-\/1
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{constants_8h_a244889d464c6ffbec552d21749e84ccc}\label{constants_8h_a244889d464c6ffbec552d21749e84ccc}} 
+\index{constants.\+h@{constants.\+h}!D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS@{D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS}}
+\index{D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS@{D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS}!constants.\+h@{constants.\+h}}
+\subsubsection{\texorpdfstring{D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS}{DECLARE\_AND\_ACCESS}}
+{\footnotesize\ttfamily \#define D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+N\+D\+\_\+\+A\+C\+C\+E\+SS(\begin{DoxyParamCaption}\item[{}]{N\+A\+ME,  }\item[{}]{T\+Y\+PE }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keyword}{private}: \(\backslash\)
+  TYPE NAME##\_;\(\backslash\)
+public: \(\backslash\)
+  const TYPE& NAME()\textcolor{keyword}{ const}\{ \(\backslash\)
+    return NAME##\_; \(\backslash\)
+  \} \(\backslash\)
+  TYPE& NAME()\{ \(\backslash\)
+    return NAME##\_; \(\backslash\)
+  \}
+\end{DoxyCode}
+\mbox{\Hypertarget{constants_8h_adbaca35440ef5d1abf8a0084bf382b8b}\label{constants_8h_adbaca35440ef5d1abf8a0084bf382b8b}} 
+\index{constants.\+h@{constants.\+h}!D\+I\+S\+C\+A\+RD@{D\+I\+S\+C\+A\+RD}}
+\index{D\+I\+S\+C\+A\+RD@{D\+I\+S\+C\+A\+RD}!constants.\+h@{constants.\+h}}
+\subsubsection{\texorpdfstring{D\+I\+S\+C\+A\+RD}{DISCARD}}
+{\footnotesize\ttfamily \#define D\+I\+S\+C\+A\+RD~-\/1}
+
+\mbox{\Hypertarget{constants_8h_a3f514e56c5d81d04d8ceac1b16c41ffc}\label{constants_8h_a3f514e56c5d81d04d8ceac1b16c41ffc}} 
+\index{constants.\+h@{constants.\+h}!N\+O\+\_\+\+C\+H\+A\+R\+GE@{N\+O\+\_\+\+C\+H\+A\+R\+GE}}
+\index{N\+O\+\_\+\+C\+H\+A\+R\+GE@{N\+O\+\_\+\+C\+H\+A\+R\+GE}!constants.\+h@{constants.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+\_\+\+C\+H\+A\+R\+GE}{NO\_CHARGE}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+C\+H\+A\+R\+GE~66}
+
+\mbox{\Hypertarget{constants_8h_a8ff4ea46a9c8d9fbc31f595e5c431aa3}\label{constants_8h_a8ff4ea46a9c8d9fbc31f595e5c431aa3}} 
+\index{constants.\+h@{constants.\+h}!N\+O\+\_\+\+F\+L\+O\+AT@{N\+O\+\_\+\+F\+L\+O\+AT}}
+\index{N\+O\+\_\+\+F\+L\+O\+AT@{N\+O\+\_\+\+F\+L\+O\+AT}!constants.\+h@{constants.\+h}}
+\subsubsection{\texorpdfstring{N\+O\+\_\+\+F\+L\+O\+AT}{NO\_FLOAT}}
+{\footnotesize\ttfamily \#define N\+O\+\_\+\+F\+L\+O\+AT~std\+::numeric\+\_\+limits$<$double$>$\+::max()}
+
+\mbox{\Hypertarget{constants_8h_afad07e02e29428701c1a9c745085c769}\label{constants_8h_afad07e02e29428701c1a9c745085c769}} 
+\index{constants.\+h@{constants.\+h}!R\+MK@{R\+MK}}
+\index{R\+MK@{R\+MK}!constants.\+h@{constants.\+h}}
+\subsubsection{\texorpdfstring{R\+MK}{RMK}}
+{\footnotesize\ttfamily \#define R\+MK~0}
+

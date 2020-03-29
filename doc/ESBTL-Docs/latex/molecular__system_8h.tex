@@ -1,0 +1,80 @@
+\hypertarget{molecular__system_8h}{}\section{molecular\+\_\+system.\+h File Reference}
+\label{molecular__system_8h}\index{molecular\+\_\+system.\+h@{molecular\+\_\+system.\+h}}
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$boost/tuple/tuple.\+hpp$>$}\newline
+{\ttfamily \#include $<$E\+S\+B\+T\+L/iterators.\+h$>$}\newline
+{\ttfamily \#include $<$E\+S\+B\+T\+L/constants.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$}
+\item 
+class \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$}
+\item 
+class \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$}
+\item 
+class \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$}
+\item 
+class \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom$<$ System\+\_\+, Point $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Default__system__items}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+\_\+items}
+\item 
+struct \hyperlink{structESBTL_1_1Default__system__items_1_1Model__wrapper}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+\_\+items\+::\+Model\+\_\+wrapper$<$ System, Point $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Default__system__items_1_1Chain__wrapper}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+\_\+items\+::\+Chain\+\_\+wrapper$<$ System, Point $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Default__system__items_1_1Residue__wrapper}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+\_\+items\+::\+Residue\+\_\+wrapper$<$ System, Point $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Default__system__items_1_1Atom__wrapper}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+\_\+items\+::\+Atom\+\_\+wrapper$<$ System, Point $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceESBTL}{E\+S\+B\+TL}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class System $>$ }\\char \hyperlink{namespaceESBTL_a77317a847ab3d5ed38cf42b4b7508539}{E\+S\+B\+T\+L\+::get\+\_\+chain\+\_\+identifier} (const Molecular\+\_\+chain$<$ System $>$ \&c)
+\item 
+{\footnotesize template$<$class System $>$ }\\const std\+::string \& \hyperlink{namespaceESBTL_ac67e09aee9aee533dd3953a094a52516}{E\+S\+B\+T\+L\+::get\+\_\+residue\+\_\+name} (const Molecular\+\_\+residue$<$ System $>$ \&r)
+\item 
+{\footnotesize template$<$class System $>$ }\\int \hyperlink{namespaceESBTL_a2531b710e918b38251babbd95179816a}{E\+S\+B\+T\+L\+::get\+\_\+residue\+\_\+sequence\+\_\+number} (const Molecular\+\_\+residue$<$ System $>$ \&r)
+\item 
+{\footnotesize template$<$class System $>$ }\\char \hyperlink{namespaceESBTL_a0cb3d5a589b11f0a75373bbaaf19b45a}{E\+S\+B\+T\+L\+::get\+\_\+insertion\+\_\+code} (const Molecular\+\_\+residue$<$ System $>$ \&r)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\bool \hyperlink{namespaceESBTL_a5127b779bbb76916a99d85f2ae7d5ff8}{E\+S\+B\+T\+L\+::get\+\_\+is\+\_\+hetatm} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\int \hyperlink{namespaceESBTL_ac59c723bd1e61d82a0ddbc5a08d63b50}{E\+S\+B\+T\+L\+::get\+\_\+atom\+\_\+serial\+\_\+number} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\const std\+::string \& \hyperlink{namespaceESBTL_a2a0153bcc07ae7f992d0087ea0574b2a}{E\+S\+B\+T\+L\+::get\+\_\+atom\+\_\+name} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\char \hyperlink{namespaceESBTL_ae96d53b482c5a83d11451e086eb43b05}{E\+S\+B\+T\+L\+::get\+\_\+alternate\+\_\+location} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\double \hyperlink{namespaceESBTL_a59a88d4640b9663d02d367912c3a615b}{E\+S\+B\+T\+L\+::get\+\_\+occupancy} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\double \hyperlink{namespaceESBTL_a15befe7b8e509d6f2926c5992b6276bd}{E\+S\+B\+T\+L\+::get\+\_\+temperature\+\_\+factor} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\const std\+::string \& \hyperlink{namespaceESBTL_a0c43740d66a09673579487dc0dfe1634}{E\+S\+B\+T\+L\+::get\+\_\+element} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\int \hyperlink{namespaceESBTL_a15896b78ff140d54ae7ae9ebfb733cf1}{E\+S\+B\+T\+L\+::get\+\_\+charge} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\char \hyperlink{namespaceESBTL_a97f1af966ab319b95bdfaef28848e83a}{E\+S\+B\+T\+L\+::get\+\_\+chain\+\_\+identifier} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\const std\+::string \& \hyperlink{namespaceESBTL_ac0f35ea15ba339265b557626c2c73390}{E\+S\+B\+T\+L\+::get\+\_\+residue\+\_\+name} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\int \hyperlink{namespaceESBTL_a34d31bc534d9ba45fc66f40da2b96ec4}{E\+S\+B\+T\+L\+::get\+\_\+residue\+\_\+sequence\+\_\+number} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\char \hyperlink{namespaceESBTL_ad3cb445ac7085437cfcf2a66f0b8da48}{E\+S\+B\+T\+L\+::get\+\_\+insertion\+\_\+code} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\char \hyperlink{namespaceESBTL_a1ca669e0cc6fbb8d85b50dddc8915d7c}{E\+S\+B\+T\+L\+::get\+\_\+x} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\char \hyperlink{namespaceESBTL_afa283833be2a4931ed35558b5606de6a}{E\+S\+B\+T\+L\+::get\+\_\+y} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\item 
+{\footnotesize template$<$class System , class Point $>$ }\\char \hyperlink{namespaceESBTL_aac89141951a093b3b419268729c9d1c1}{E\+S\+B\+T\+L\+::get\+\_\+z} (const Molecular\+\_\+atom$<$ System, Point $>$ \&a)
+\end{DoxyCompactItemize}

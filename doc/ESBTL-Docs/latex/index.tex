@@ -1,0 +1,32 @@
+{\bfseries Authors\+:} Julie Bernauer, Frédéric Cazals and Sébastien Loriot
+
+This is the reference documentation for \hyperlink{namespaceESBTL}{E\+S\+B\+TL}. This page describes quickly the overall architecture of the library. For other information (installation, F\+AQ,...) please have a look at the \hyperlink{namespaceESBTL}{E\+S\+B\+TL} website\+: \href{http://esbtl.sf.net}{\tt http\+://esbtl.\+sf.\+net}.\hypertarget{index_sec_system}{}\section{System}\label{index_sec_system}
+A system provides access to the hierarchical data structure. ~\newline
+It may contain one or several models. Each model is made of chains. Chains are then made of residues, and residues are made of atoms. ~\newline
+\hyperlink{namespaceESBTL}{E\+S\+B\+TL} provides a default instantiation for this data model when including the header $<$\hyperlink{default_8h}{E\+S\+B\+T\+L/default.\+h}$>$. The types \hyperlink{namespaceESBTL_a80ccb2de0f963d73a45f0bce33397cd2}{E\+S\+B\+T\+L\+::\+Default\+\_\+system}, \hyperlink{classESBTL_1_1Molecular__system_ac99c9f22457fd0498324fb5cfc276227}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+::\+Model}, \hyperlink{classESBTL_1_1Molecular__system_a7d3b3623db6fbe82b1f4a73138894617}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+::\+Chain}, \hyperlink{classESBTL_1_1Molecular__system_a87f7fdfbb412bff03287ed8d1416b392}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+::\+Residue} and \hyperlink{classESBTL_1_1Molecular__system_aae37491a328fde3bc58171d68c998c7c}{E\+S\+B\+T\+L\+::\+Default\+\_\+system\+::\+Atom} provide access to all hierarchy levels.\hypertarget{index_sec_readfile}{}\section{Reading a file}\label{index_sec_readfile}
+Reading a P\+DB file is performed in four stages\+:
+\begin{DoxyItemize}
+\item A system type and a container for the systems have to be defined.
+\item A line selector (see \hyperlink{group__linesel}{Line selectors}) is used to define what will the systems be made of.
+\item A builder is used to fill the system container (see \hyperlink{classESBTL_1_1All__atom__system__builder}{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder} for example).
+\item An occupancy policy has to be chosen (see \hyperlink{group__occpol}{Occupancy policies}).
+\end{DoxyItemize}
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{preprocessor}{#include <\hyperlink{default_8h}{ESBTL/default.h}>}
+\textcolor{comment}{//Create one system with all atoms.}
+\hyperlink{classESBTL_1_1PDB__line__selector}{ESBTL::PDB\_line\_selector} sel;
+std::vector systems;
+\textcolor{comment}{//Build the system from the PDB file.}
+\hyperlink{classESBTL_1_1All__atom__system__builder}{ESBTL::All\_atom\_system\_builder} builder(systems,sel.
+      \hyperlink{classESBTL_1_1PDB__line__selector_acce91d190ab3c2f9361374aa42c7ffca}{max\_nb\_systems}());
+\hyperlink{namespaceESBTL_a850d3496f54d82687ff0109404cabd35}{ESBTL::read\_a\_pdb\_file}(filename,sel,builder,Accept\_none\_occupancy\_policy()); 
+\end{DoxyCode}
+\hypertarget{index_iters}{}\section{Iterators}\label{index_iters}
+Once a system has been built, iterators are provided to access the hierarchy information from any higher level. For \textquotesingle{}father\textquotesingle{} standing for either system, model, chain or residue, and \textquotesingle{}son\textquotesingle{} standing for either model, chain, residue or atom, the following iterators Father\+::\+Sons\+\_\+const\+\_\+iterator and Father\+::\+Sons\+\_\+iterator, and the following functions Father\+::sons\+\_\+begin, Father\+::sons\+\_\+end are provided. Note that if \textquotesingle{}father\textquotesingle{} is system, \textquotesingle{}son\textquotesingle{} can only be model as the hierarchy must be respected. ~\newline
+See \hyperlink{group__grp__iters}{Iterators} for a list of a list of iteration facilities provided by \hyperlink{namespaceESBTL}{E\+S\+B\+TL}.\hypertarget{index_assos_prop}{}\section{Associating properties to an object}\label{index_assos_prop}
+The class \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier} provides the association of a property to an object (for example a radius to an atom). See \hyperlink{group__atomsel}{Atom selection} for the property concept and properties provided by \hyperlink{namespaceESBTL}{E\+S\+B\+TL}.\hypertarget{index_sec_atom_sel}{}\section{Making a selection of atoms.}\label{index_sec_atom_sel}
+Selections can be done at two different stages. Either while reading a file thanks to a line selector (each selection will be stored within a different system), or after having built the systems. ~\newline
+A selection at the parsing stage is made using a line selector\+: see \hyperlink{group__linesel}{Line selectors} for details on the object concept and line selectors provided by \hyperlink{namespaceESBTL}{E\+S\+B\+TL}. ~\newline
+The class \hyperlink{classESBTL_1_1Selected__atom__iterator}{E\+S\+B\+T\+L\+::\+Selected\+\_\+atom\+\_\+iterator} defines an iterator type over a subset of atoms of a model. The subset is defined using a function object. See \hyperlink{group__atomsel}{Atom selection} for details on the object concept and atom selection function objects provided by \hyperlink{namespaceESBTL}{E\+S\+B\+TL}. 

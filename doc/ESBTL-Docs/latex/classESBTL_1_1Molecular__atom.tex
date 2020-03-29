@@ -1,0 +1,154 @@
+\hypertarget{classESBTL_1_1Molecular__atom}{}\section{E\+S\+B\+TL\+:\+:Molecular\+\_\+atom$<$ System\+\_\+, Point $>$ Class Template Reference}
+\label{classESBTL_1_1Molecular__atom}\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom$<$ System\+\_\+, Point $>$@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom$<$ System\+\_\+, Point $>$}}
+
+
+{\ttfamily \#include $<$molecular\+\_\+system.\+h$>$}
+
+Inheritance diagram for E\+S\+B\+TL\+:\+:Molecular\+\_\+atom$<$ System\+\_\+, Point $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classESBTL_1_1Molecular__atom}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef System\+\_\+ \hyperlink{classESBTL_1_1Molecular__atom_a58dc16da7581815290469a77906ff8f2}{System}
+\item 
+typedef Point \hyperlink{classESBTL_1_1Molecular__atom_a7803bad1194caa2c54a055a1e8f0c3fb}{Point\+\_\+3}
+\item 
+typedef System\+::\+Residue \hyperlink{classESBTL_1_1Molecular__atom_a24e68b497c2f43b77ca43be36af7bcd1}{Residue}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Line\+\_\+format , class Residue\+\_\+type $>$ }\\\hyperlink{classESBTL_1_1Molecular__atom_ac32221d9e98536591fae017386cd4d82}{Molecular\+\_\+atom} (const Line\+\_\+format \&line\+\_\+format, const std\+::string \&line, const Residue\+\_\+type \&res)
+\item 
+\hyperlink{classESBTL_1_1Molecular__atom_a628dcff0a6307d4e49bb8a295ad2bd9f}{Molecular\+\_\+atom} ()
+\item 
+\hyperlink{classESBTL_1_1Molecular__atom_a5ce88fe393e6b78ac28de314a458461b}{Molecular\+\_\+atom} (double x, double y, double z)
+\item 
+int \hyperlink{classESBTL_1_1Molecular__atom_aa82969b5f5bb9bd0f59f4ad6548ea756}{system\+\_\+index} () const
+\item 
+char \hyperlink{classESBTL_1_1Molecular__atom_a2a3e6ea3f4491a81b4b4f77ae28e8f09}{chain\+\_\+identifier} () const
+\item 
+const \hyperlink{classESBTL_1_1Molecular__atom_a24e68b497c2f43b77ca43be36af7bcd1}{Residue} \& \hyperlink{classESBTL_1_1Molecular__atom_a96a14b402625e528a38410c5b483b8ac}{residue} () const
+\item 
+const std\+::string \& \hyperlink{classESBTL_1_1Molecular__atom_a61d6ee7dda9e312112eb433cf96ffa2e}{residue\+\_\+name} () const
+\item 
+int \hyperlink{classESBTL_1_1Molecular__atom_a0ac28cedb09615d293a6b3ed026f52d7}{residue\+\_\+sequence\+\_\+number} () const
+\item 
+char \hyperlink{classESBTL_1_1Molecular__atom_ab3624555c42198359e9f0e8e5914ba3e}{insertion\+\_\+code} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class System\+\_\+, class Point$>$\newline
+class E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom$<$ System\+\_\+, Point $>$}
+
+A class representing an atom. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em System\+\_\+} & is a system (like \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system} for example). \\
+\hline
+{\em Point} & is a point type with coordinates const access methods x(), y() and z(). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a7803bad1194caa2c54a055a1e8f0c3fb}\label{classESBTL_1_1Molecular__atom_a7803bad1194caa2c54a055a1e8f0c3fb}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!Point\+\_\+3@{Point\+\_\+3}}
+\index{Point\+\_\+3@{Point\+\_\+3}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{Point\+\_\+3}{Point\_3}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+typedef Point \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::\hyperlink{classESBTL_1_1Molecular__atom_a7803bad1194caa2c54a055a1e8f0c3fb}{Point\+\_\+3}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a24e68b497c2f43b77ca43be36af7bcd1}\label{classESBTL_1_1Molecular__atom_a24e68b497c2f43b77ca43be36af7bcd1}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!Residue@{Residue}}
+\index{Residue@{Residue}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{Residue}{Residue}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+typedef System\+::\+Residue \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::\hyperlink{classESBTL_1_1Molecular__atom_a24e68b497c2f43b77ca43be36af7bcd1}{Residue}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a58dc16da7581815290469a77906ff8f2}\label{classESBTL_1_1Molecular__atom_a58dc16da7581815290469a77906ff8f2}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!System@{System}}
+\index{System@{System}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{System}{System}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+typedef System\+\_\+ \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::\hyperlink{classESBTL_1_1Molecular__atom_a58dc16da7581815290469a77906ff8f2}{System}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_ac32221d9e98536591fae017386cd4d82}\label{classESBTL_1_1Molecular__atom_ac32221d9e98536591fae017386cd4d82}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!Molecular\+\_\+atom@{Molecular\+\_\+atom}}
+\index{Molecular\+\_\+atom@{Molecular\+\_\+atom}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{Molecular\+\_\+atom()}{Molecular\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+template$<$class Line\+\_\+format , class Residue\+\_\+type $>$ \\
+\hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::\hyperlink{classESBTL_1_1Molecular__atom}{Molecular\+\_\+atom} (\begin{DoxyParamCaption}\item[{const Line\+\_\+format \&}]{line\+\_\+format,  }\item[{const std\+::string \&}]{line,  }\item[{const Residue\+\_\+type \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a628dcff0a6307d4e49bb8a295ad2bd9f}\label{classESBTL_1_1Molecular__atom_a628dcff0a6307d4e49bb8a295ad2bd9f}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!Molecular\+\_\+atom@{Molecular\+\_\+atom}}
+\index{Molecular\+\_\+atom@{Molecular\+\_\+atom}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{Molecular\+\_\+atom()}{Molecular\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+\hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::\hyperlink{classESBTL_1_1Molecular__atom}{Molecular\+\_\+atom} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a5ce88fe393e6b78ac28de314a458461b}\label{classESBTL_1_1Molecular__atom_a5ce88fe393e6b78ac28de314a458461b}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!Molecular\+\_\+atom@{Molecular\+\_\+atom}}
+\index{Molecular\+\_\+atom@{Molecular\+\_\+atom}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{Molecular\+\_\+atom()}{Molecular\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+\hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::\hyperlink{classESBTL_1_1Molecular__atom}{Molecular\+\_\+atom} (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y,  }\item[{double}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a2a3e6ea3f4491a81b4b4f77ae28e8f09}\label{classESBTL_1_1Molecular__atom_a2a3e6ea3f4491a81b4b4f77ae28e8f09}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!chain\+\_\+identifier@{chain\+\_\+identifier}}
+\index{chain\+\_\+identifier@{chain\+\_\+identifier}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{chain\+\_\+identifier()}{chain\_identifier()}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+char \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::chain\+\_\+identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_ab3624555c42198359e9f0e8e5914ba3e}\label{classESBTL_1_1Molecular__atom_ab3624555c42198359e9f0e8e5914ba3e}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!insertion\+\_\+code@{insertion\+\_\+code}}
+\index{insertion\+\_\+code@{insertion\+\_\+code}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{insertion\+\_\+code()}{insertion\_code()}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+char \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::insertion\+\_\+code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a96a14b402625e528a38410c5b483b8ac}\label{classESBTL_1_1Molecular__atom_a96a14b402625e528a38410c5b483b8ac}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!residue@{residue}}
+\index{residue@{residue}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{residue()}{residue()}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+const \hyperlink{classESBTL_1_1Molecular__atom_a24e68b497c2f43b77ca43be36af7bcd1}{Residue}\& \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::residue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a61d6ee7dda9e312112eb433cf96ffa2e}\label{classESBTL_1_1Molecular__atom_a61d6ee7dda9e312112eb433cf96ffa2e}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!residue\+\_\+name@{residue\+\_\+name}}
+\index{residue\+\_\+name@{residue\+\_\+name}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{residue\+\_\+name()}{residue\_name()}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+const std\+::string\& \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::residue\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_a0ac28cedb09615d293a6b3ed026f52d7}\label{classESBTL_1_1Molecular__atom_a0ac28cedb09615d293a6b3ed026f52d7}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!residue\+\_\+sequence\+\_\+number@{residue\+\_\+sequence\+\_\+number}}
+\index{residue\+\_\+sequence\+\_\+number@{residue\+\_\+sequence\+\_\+number}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{residue\+\_\+sequence\+\_\+number()}{residue\_sequence\_number()}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+int \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::residue\+\_\+sequence\+\_\+number (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Molecular__atom_aa82969b5f5bb9bd0f59f4ad6548ea756}\label{classESBTL_1_1Molecular__atom_aa82969b5f5bb9bd0f59f4ad6548ea756}} 
+\index{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}!system\+\_\+index@{system\+\_\+index}}
+\index{system\+\_\+index@{system\+\_\+index}!E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom@{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}}
+\subsubsection{\texorpdfstring{system\+\_\+index()}{system\_index()}}
+{\footnotesize\ttfamily template$<$class System\+\_\+, class Point$>$ \\
+int \hyperlink{classESBTL_1_1Molecular__atom}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+atom}$<$ System\+\_\+, Point $>$\+::system\+\_\+index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{molecular__system_8h}{molecular\+\_\+system.\+h}\end{DoxyCompactItemize}

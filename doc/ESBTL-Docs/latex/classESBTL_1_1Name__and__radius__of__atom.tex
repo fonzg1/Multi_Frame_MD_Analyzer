@@ -1,0 +1,132 @@
+\hypertarget{classESBTL_1_1Name__and__radius__of__atom}{}\section{E\+S\+B\+TL\+:\+:Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom$<$ NT, Atom $>$ Class Template Reference}
+\label{classESBTL_1_1Name__and__radius__of__atom}\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$}}
+
+
+{\ttfamily \#include $<$atom\+\_\+classifier.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Atom \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a25cd0647ee4c593a1736b2abce11762d}{Query\+\_\+type}
+\item 
+typedef std\+::string \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a29a9469912e1722a7da9d7f7f8201c55}{Key\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1Name__and__radius__of__atom_a871dcf4baf9db1bbb3f1bf50788a74b2}{Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom} (const std\+::string \&name\+\_\+, const NT \&radius\+\_\+, const unsigned \&index\+\_\+)
+\item 
+bool \hyperlink{classESBTL_1_1Name__and__radius__of__atom_adf9be1a445c1b149126a57b13aa3794d}{is\+\_\+water} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Dictionary , class Vector\+\_\+properties $>$ }\\static unsigned \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a91c9389ada2c1018646bb7fdf4a092fa}{default\+\_\+loader} (Dictionary \&\hyperlink{Tsai__jmb__99__radii_8h_a3175002a2df717ae9e433cd2210fea97}{dict}, Vector\+\_\+properties \&vect)
+\item 
+static std\+::string \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a94255fa43c0ac992c29af1cee49233c9}{make\+\_\+key} (const Atom \&atom)
+\item 
+static int \& \hyperlink{classESBTL_1_1Name__and__radius__of__atom_aab55cd6cc605b2dbb917043ec7d46fab}{index\+\_\+of\+\_\+default} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a6bde09ef55b51b54d3d60a09f27a2845}{name}
+\item 
+unsigned \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a243abe15f6d0a616a05b23850d692646}{index}
+\item 
+NT \hyperlink{classESBTL_1_1Name__and__radius__of__atom_a504373b559691e3ea0bfd507d9ed4ec8}{radius}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class NT, class Atom$>$\newline
+class E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$}
+
+Property class associating a name and a radius to an atom. 
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a29a9469912e1722a7da9d7f7f8201c55}\label{classESBTL_1_1Name__and__radius__of__atom_a29a9469912e1722a7da9d7f7f8201c55}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!Key\+\_\+type@{Key\+\_\+type}}
+\index{Key\+\_\+type@{Key\+\_\+type}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Key\+\_\+type}{Key\_type}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+typedef std\+::string \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Name__and__radius__of__atom_a29a9469912e1722a7da9d7f7f8201c55}{Key\+\_\+type}}
+
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a25cd0647ee4c593a1736b2abce11762d}\label{classESBTL_1_1Name__and__radius__of__atom_a25cd0647ee4c593a1736b2abce11762d}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!Query\+\_\+type@{Query\+\_\+type}}
+\index{Query\+\_\+type@{Query\+\_\+type}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Query\+\_\+type}{Query\_type}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+typedef Atom \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Name__and__radius__of__atom_a25cd0647ee4c593a1736b2abce11762d}{Query\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a871dcf4baf9db1bbb3f1bf50788a74b2}\label{classESBTL_1_1Name__and__radius__of__atom_a871dcf4baf9db1bbb3f1bf50788a74b2}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\index{Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom()}{Name\_and\_radius\_of\_atom()}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+\hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Name__and__radius__of__atom}{Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name\+\_\+,  }\item[{const NT \&}]{radius\+\_\+,  }\item[{const unsigned \&}]{index\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a91c9389ada2c1018646bb7fdf4a092fa}\label{classESBTL_1_1Name__and__radius__of__atom_a91c9389ada2c1018646bb7fdf4a092fa}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!default\+\_\+loader@{default\+\_\+loader}}
+\index{default\+\_\+loader@{default\+\_\+loader}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{default\+\_\+loader()}{default\_loader()}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+template$<$class Dictionary , class Vector\+\_\+properties $>$ \\
+static unsigned \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::default\+\_\+loader (\begin{DoxyParamCaption}\item[{Dictionary \&}]{dict,  }\item[{Vector\+\_\+properties \&}]{vect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_aab55cd6cc605b2dbb917043ec7d46fab}\label{classESBTL_1_1Name__and__radius__of__atom_aab55cd6cc605b2dbb917043ec7d46fab}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!index\+\_\+of\+\_\+default@{index\+\_\+of\+\_\+default}}
+\index{index\+\_\+of\+\_\+default@{index\+\_\+of\+\_\+default}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{index\+\_\+of\+\_\+default()}{index\_of\_default()}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+static int\& \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::index\+\_\+of\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_adf9be1a445c1b149126a57b13aa3794d}\label{classESBTL_1_1Name__and__radius__of__atom_adf9be1a445c1b149126a57b13aa3794d}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!is\+\_\+water@{is\+\_\+water}}
+\index{is\+\_\+water@{is\+\_\+water}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{is\+\_\+water()}{is\_water()}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+bool \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::is\+\_\+water (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a94255fa43c0ac992c29af1cee49233c9}\label{classESBTL_1_1Name__and__radius__of__atom_a94255fa43c0ac992c29af1cee49233c9}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!make\+\_\+key@{make\+\_\+key}}
+\index{make\+\_\+key@{make\+\_\+key}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{make\+\_\+key()}{make\_key()}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+static std\+::string \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::make\+\_\+key (\begin{DoxyParamCaption}\item[{const Atom \&}]{atom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a243abe15f6d0a616a05b23850d692646}\label{classESBTL_1_1Name__and__radius__of__atom_a243abe15f6d0a616a05b23850d692646}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!index@{index}}
+\index{index@{index}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{index}{index}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+unsigned \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::index}
+
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a6bde09ef55b51b54d3d60a09f27a2845}\label{classESBTL_1_1Name__and__radius__of__atom_a6bde09ef55b51b54d3d60a09f27a2845}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!name@{name}}
+\index{name@{name}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+std\+::string \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::name}
+
+\mbox{\Hypertarget{classESBTL_1_1Name__and__radius__of__atom_a504373b559691e3ea0bfd507d9ed4ec8}\label{classESBTL_1_1Name__and__radius__of__atom_a504373b559691e3ea0bfd507d9ed4ec8}} 
+\index{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}!radius@{radius}}
+\index{radius@{radius}!E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily template$<$class NT , class Atom $>$ \\
+NT \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::radius}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{atom__classifier_8h}{atom\+\_\+classifier.\+h}\end{DoxyCompactItemize}

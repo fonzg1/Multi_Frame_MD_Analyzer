@@ -1,0 +1,193 @@
+\hypertarget{classESBTL_1_1Radius__of__atom}{}\section{E\+S\+B\+TL\+:\+:Radius\+\_\+of\+\_\+atom$<$ NT, Atom $>$ Class Template Reference}
+\label{classESBTL_1_1Radius__of__atom}\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$}}
+
+
+{\ttfamily \#include $<$atom\+\_\+classifier.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Atom \hyperlink{classESBTL_1_1Radius__of__atom_a8aa47a2a6f72f6ab4ebaea25b67dda84}{Query\+\_\+type}
+\item 
+typedef std\+::string \hyperlink{classESBTL_1_1Radius__of__atom_afadc8effc34746d3f915acc7ba4cfd0e}{Key\+\_\+type}
+\item 
+typedef NT \hyperlink{classESBTL_1_1Radius__of__atom_a8cb44bd5cb621ec4c5665650427ec84c}{Value\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1Radius__of__atom_a1864548e1916887508cab51ad2cfe616}{Radius\+\_\+of\+\_\+atom} (const NT \&radius, const unsigned \&index)
+\item 
+NT \hyperlink{classESBTL_1_1Radius__of__atom_ae6747f36b286d7295f98b319cad467a0}{value} () const
+\item 
+\hyperlink{classESBTL_1_1Radius__of__atom_a71bf53c4053b1869d9b39216b5fc4602}{Radius\+\_\+of\+\_\+atom} (std\+::stringstream \&ss, unsigned index)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Dictionary , class Vector\+\_\+properties $>$ }\\static unsigned \hyperlink{classESBTL_1_1Radius__of__atom_a9693cfa24cf0a5a05149c17245b20c7f}{default\+\_\+loader} (Dictionary \&\hyperlink{Tsai__jmb__99__radii_8h_a3175002a2df717ae9e433cd2210fea97}{dict}, Vector\+\_\+properties \&vect)
+\item 
+static std\+::string \hyperlink{classESBTL_1_1Radius__of__atom_a97a8af8d7d49ffd8ba51819edeed37ef}{make\+\_\+key} (const Atom \&atom)
+\item 
+{\footnotesize template$<$class Dictionary $>$ }\\static unsigned \hyperlink{classESBTL_1_1Radius__of__atom_a17d41d6fcf8a0ffb4a3568c51ee96b68}{add\+\_\+classification} (std\+::stringstream \&ss, Dictionary \&\hyperlink{Tsai__jmb__99__radii_8h_a3175002a2df717ae9e433cd2210fea97}{dict})
+\item 
+static void \hyperlink{classESBTL_1_1Radius__of__atom_a0b50c09fef4c70675661c4a35e4a23f1}{handle\+\_\+extra} (std\+::stringstream \&ss)
+\item 
+static int \& \hyperlink{classESBTL_1_1Radius__of__atom_a017cf5493434a9cc5030078140571b1a}{index\+\_\+of\+\_\+default} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class NT, class Atom$>$\newline
+class E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$}
+
+A property class associating a radius to an atom. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em NT} & is the number type used for the radius. \\
+\hline
+{\em Atom} & is the atom type. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_afadc8effc34746d3f915acc7ba4cfd0e}\label{classESBTL_1_1Radius__of__atom_afadc8effc34746d3f915acc7ba4cfd0e}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!Key\+\_\+type@{Key\+\_\+type}}
+\index{Key\+\_\+type@{Key\+\_\+type}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Key\+\_\+type}{Key\_type}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+typedef std\+::string \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Radius__of__atom_afadc8effc34746d3f915acc7ba4cfd0e}{Key\+\_\+type}}
+
+The type of the hash key \mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a8aa47a2a6f72f6ab4ebaea25b67dda84}\label{classESBTL_1_1Radius__of__atom_a8aa47a2a6f72f6ab4ebaea25b67dda84}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!Query\+\_\+type@{Query\+\_\+type}}
+\index{Query\+\_\+type@{Query\+\_\+type}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Query\+\_\+type}{Query\_type}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+typedef Atom \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Radius__of__atom_a8aa47a2a6f72f6ab4ebaea25b67dda84}{Query\+\_\+type}}
+
+The type on which the queries are made, \mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a8cb44bd5cb621ec4c5665650427ec84c}\label{classESBTL_1_1Radius__of__atom_a8cb44bd5cb621ec4c5665650427ec84c}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!Value\+\_\+type@{Value\+\_\+type}}
+\index{Value\+\_\+type@{Value\+\_\+type}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Value\+\_\+type}{Value\_type}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+typedef NT \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Radius__of__atom_a8cb44bd5cb621ec4c5665650427ec84c}{Value\+\_\+type}}
+
+The number type of the property stored, here the radius. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a1864548e1916887508cab51ad2cfe616}\label{classESBTL_1_1Radius__of__atom_a1864548e1916887508cab51ad2cfe616}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!Radius\+\_\+of\+\_\+atom@{Radius\+\_\+of\+\_\+atom}}
+\index{Radius\+\_\+of\+\_\+atom@{Radius\+\_\+of\+\_\+atom}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Radius\+\_\+of\+\_\+atom()}{Radius\_of\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+\hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Radius__of__atom}{Radius\+\_\+of\+\_\+atom} (\begin{DoxyParamCaption}\item[{const NT \&}]{radius,  }\item[{const unsigned \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em radius} & is the radius associated to this property class. \\
+\hline
+{\em index} & is the index of the property. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a71bf53c4053b1869d9b39216b5fc4602}\label{classESBTL_1_1Radius__of__atom_a71bf53c4053b1869d9b39216b5fc4602}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!Radius\+\_\+of\+\_\+atom@{Radius\+\_\+of\+\_\+atom}}
+\index{Radius\+\_\+of\+\_\+atom@{Radius\+\_\+of\+\_\+atom}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{Radius\+\_\+of\+\_\+atom()}{Radius\_of\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+\hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::\hyperlink{classESBTL_1_1Radius__of__atom}{Radius\+\_\+of\+\_\+atom} (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{ss,  }\item[{unsigned}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em ss} & is a string stream containing information about the property. ss must contains the radius associated to index (ex\+: 1.\+4). \\
+\hline
+{\em index} & is the index of the property. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a17d41d6fcf8a0ffb4a3568c51ee96b68}\label{classESBTL_1_1Radius__of__atom_a17d41d6fcf8a0ffb4a3568c51ee96b68}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!add\+\_\+classification@{add\+\_\+classification}}
+\index{add\+\_\+classification@{add\+\_\+classification}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{add\+\_\+classification()}{add\_classification()}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+template$<$class Dictionary $>$ \\
+static unsigned \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::add\+\_\+classification (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{ss,  }\item[{Dictionary \&}]{dict }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Function adding the classification of an atom type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Dictionary} & an associative container, mapping a Query\+\_\+type to the index of a property. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ss} & is a string stream containing the classification of an atom type. ss must contains in this order the residue name, the atom name and the index of the property (ex\+: A\+LA N 5) \\
+\hline
+{\em dict} & is the container mapping atoms to the index of a property. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a9693cfa24cf0a5a05149c17245b20c7f}\label{classESBTL_1_1Radius__of__atom_a9693cfa24cf0a5a05149c17245b20c7f}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!default\+\_\+loader@{default\+\_\+loader}}
+\index{default\+\_\+loader@{default\+\_\+loader}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{default\+\_\+loader()}{default\_loader()}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+template$<$class Dictionary , class Vector\+\_\+properties $>$ \\
+static unsigned \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::default\+\_\+loader (\begin{DoxyParamCaption}\item[{Dictionary \&}]{dict,  }\item[{Vector\+\_\+properties \&}]{vect }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Function filling default radius of atoms. Current implementation uses radii from Tsai J, Taylor R, Chothia C, Gerstein M. J Mol Biol. 1999 Jul 2;290(1)\+:253-\/66. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Dictionary} & an associative container, mapping a Query\+\_\+type to the index of a property. \\
+\hline
+{\em Vector\+\_\+properties} & is a vector storing the properties. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em dict} & is the container mapping atoms to the index of a property. \\
+\hline
+{\em vect} & is a vector storing properties. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a0b50c09fef4c70675661c4a35e4a23f1}\label{classESBTL_1_1Radius__of__atom_a0b50c09fef4c70675661c4a35e4a23f1}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!handle\+\_\+extra@{handle\+\_\+extra}}
+\index{handle\+\_\+extra@{handle\+\_\+extra}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{handle\+\_\+extra()}{handle\_extra()}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+static void \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::handle\+\_\+extra (\begin{DoxyParamCaption}\item[{std\+::stringstream \&}]{ss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Unused function in that class (but definition needed by the classifier). 
+\begin{DoxyParams}{Parameters}
+{\em ss} & a string stream. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a017cf5493434a9cc5030078140571b1a}\label{classESBTL_1_1Radius__of__atom_a017cf5493434a9cc5030078140571b1a}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!index\+\_\+of\+\_\+default@{index\+\_\+of\+\_\+default}}
+\index{index\+\_\+of\+\_\+default@{index\+\_\+of\+\_\+default}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{index\+\_\+of\+\_\+default()}{index\_of\_default()}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+static int\& \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::index\+\_\+of\+\_\+default (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Function indicating the index of the property assigned to an unknown atom type. By default this value is -\/1, which indicate to the classifier that unknown atoms are not expected. \mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_a97a8af8d7d49ffd8ba51819edeed37ef}\label{classESBTL_1_1Radius__of__atom_a97a8af8d7d49ffd8ba51819edeed37ef}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!make\+\_\+key@{make\+\_\+key}}
+\index{make\+\_\+key@{make\+\_\+key}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{make\+\_\+key()}{make\_key()}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+static std\+::string \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::make\+\_\+key (\begin{DoxyParamCaption}\item[{const Atom \&}]{atom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Function defining a unique identifier of an atom type. 
+\begin{DoxyParams}{Parameters}
+{\em atom} & is an atom. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1Radius__of__atom_ae6747f36b286d7295f98b319cad467a0}\label{classESBTL_1_1Radius__of__atom_ae6747f36b286d7295f98b319cad467a0}} 
+\index{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}!value@{value}}
+\index{value@{value}!E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom@{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}}
+\subsubsection{\texorpdfstring{value()}{value()}}
+{\footnotesize\ttfamily template$<$class NT, class Atom$>$ \\
+NT \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom}$<$ NT, Atom $>$\+::value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{atom__classifier_8h}{atom\+\_\+classifier.\+h}\end{DoxyCompactItemize}

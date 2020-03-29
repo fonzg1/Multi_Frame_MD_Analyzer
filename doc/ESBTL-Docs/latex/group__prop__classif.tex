@@ -1,0 +1,59 @@
+\hypertarget{group__prop__classif}{}\section{Property class}
+\label{group__prop__classif}\index{Property class@{Property class}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1Radius__of__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$}
+\item 
+class \hyperlink{classESBTL_1_1Name__and__radius__of__atom}{E\+S\+B\+T\+L\+::\+Name\+\_\+and\+\_\+radius\+\_\+of\+\_\+atom$<$ N\+T, Atom $>$}
+\item 
+class \hyperlink{classESBTL_1_1Name__of__pair}{E\+S\+B\+T\+L\+::\+Name\+\_\+of\+\_\+pair}
+\item 
+class \hyperlink{classESBTL_1_1Radius__of__coarse__atom}{E\+S\+B\+T\+L\+::\+Radius\+\_\+of\+\_\+coarse\+\_\+atom$<$ N\+T, Coarse\+\_\+atom $>$}
+\item 
+class \hyperlink{classESBTL_1_1Color__of__residues}{E\+S\+B\+T\+L\+::\+Color\+\_\+of\+\_\+residues$<$ Atom $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Concept of Property class to be given to \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}
+
+
+\begin{DoxyCode}
+\textcolor{keyword}{struct }Base\_property\_concept\{
+  \textcolor{keyword}{typedef} ...                   Query\_type; \textcolor{comment}{// the object type to which properties are associated}
+  \textcolor{keyword}{typedef} ...                   Key\_type;   \textcolor{comment}{// the hash key type}
+  
+  \textcolor{comment}{//Constructor using a string stream (from file for example)}
+  \textcolor{comment}{//Defines a new property from a string. index indicates its position in the property vector.}
+  Base\_property\_concept(std::stringstream& ss,\textcolor{keywordtype}{unsigned} index)\{ ... \}
+
+  \textcolor{comment}{//Create a key from a Query\_type object}
+  \textcolor{keyword}{static} Key\_type make\_key(\textcolor{keyword}{const} Query\_type& query)\{ ... \}
+
+  \textcolor{comment}{//Static methods indicating what are the default properties associated  }
+  \textcolor{comment}{//  -Dictionary an associative container, mapping a Query\_type to the index of a property.}
+  \textcolor{comment}{//  -Vector\_properties is a vector containing all the properties.}
+  \textcolor{comment}{//  -The integer returned is the size of the property vector.}
+  \textcolor{keyword}{template} <\textcolor{keyword}{class} Dictionary,\textcolor{keyword}{class} Vector\_properties>
+  \textcolor{keyword}{static} \textcolor{keywordtype}{unsigned} default\_loader(Dictionary& \hyperlink{default__atom__properties_8h_a139d37e7bfa3887f2ebe6f55677c7822}{dict},Vector\_properties& vect)\{ ... \}
+
+  \textcolor{comment}{//Static methods indicating how to add to read a classification from a string stream (from a file for
+       example) }
+  \textcolor{comment}{//  Dictionary is a container associating an Key\_type object to an unsigned integer (index of the
+       property).}
+  \textcolor{comment}{//  The unsigned integer return is the index of the property the object is associated to.}
+  \textcolor{keyword}{template} <\textcolor{keyword}{class} Dictionary>
+  \textcolor{keyword}{static} \textcolor{keywordtype}{unsigned} add\_classification(std::stringstream& ss,Dictionary& \hyperlink{default__atom__properties_8h_a139d37e7bfa3887f2ebe6f55677c7822}{dict})\{ ... \}
+
+  \textcolor{comment}{//Static methods to handle extra information read from a string stream (from a file for example).  }
+  \textcolor{keyword}{static} \textcolor{keywordtype}{void} handle\_extra(std::stringstream& ss)\{ ... \}
+
+  \textcolor{comment}{//This function returns the index returned by default when no entry is found in the dictionary.}
+  \textcolor{comment}{//If the integer returned is -1, then this indicates that no default properties are expected to be
+       provided}
+  \textcolor{comment}{//and will result in an error message.}
+  \textcolor{keyword}{static} \textcolor{keywordtype}{int}& \hyperlink{default__atom__properties_8h_aa25263697e855ec9c9d78be8fe2e8f51}{index\_of\_default}()\{ ... \}
+\};
+\end{DoxyCode}
+ 

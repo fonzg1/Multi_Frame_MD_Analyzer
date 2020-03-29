@@ -1,0 +1,40 @@
+\hypertarget{coarse__grain_8h}{}\section{coarse\+\_\+grain.\+h File Reference}
+\label{coarse__grain_8h}\index{coarse\+\_\+grain.\+h@{coarse\+\_\+grain.\+h}}
+{\ttfamily \#include $<$E\+S\+B\+T\+L/molecular\+\_\+system.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom$<$ Atom, Point $>$}
+\item 
+class \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$}
+\item 
+struct \hyperlink{structESBTL_1_1Coarse__atoms__iterators}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atoms\+\_\+iterators$<$ Model $>$}
+\item 
+struct \hyperlink{structESBTL_1_1System__items__with__coarse__grain}{E\+S\+B\+T\+L\+::\+System\+\_\+items\+\_\+with\+\_\+coarse\+\_\+grain}
+\item 
+struct \hyperlink{structESBTL_1_1System__items__with__coarse__grain_1_1Model__wrapper}{E\+S\+B\+T\+L\+::\+System\+\_\+items\+\_\+with\+\_\+coarse\+\_\+grain\+::\+Model\+\_\+wrapper$<$ System, Point\+\_\+3 $>$}
+\item 
+struct \hyperlink{structESBTL_1_1System__items__with__coarse__grain_1_1Chain__wrapper}{E\+S\+B\+T\+L\+::\+System\+\_\+items\+\_\+with\+\_\+coarse\+\_\+grain\+::\+Chain\+\_\+wrapper$<$ System, Point\+\_\+3 $>$}
+\item 
+struct \hyperlink{structESBTL_1_1System__items__with__coarse__grain_1_1Atom__wrapper}{E\+S\+B\+T\+L\+::\+System\+\_\+items\+\_\+with\+\_\+coarse\+\_\+grain\+::\+Atom\+\_\+wrapper$<$ System, Point\+\_\+3 $>$}
+\item 
+class \hyperlink{classESBTL_1_1System__items__with__coarse__grain_1_1Residue__wrapper}{E\+S\+B\+T\+L\+::\+System\+\_\+items\+\_\+with\+\_\+coarse\+\_\+grain\+::\+Residue\+\_\+wrapper$<$ System, Point\+\_\+3 $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceESBTL}{E\+S\+B\+TL}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Input\+\_\+iterator , class System $>$ }\\void \hyperlink{namespaceESBTL_a87e8430a12d9b6fe0b5f33d9719af7c2}{E\+S\+B\+T\+L\+::insert\+\_\+coarse\+\_\+atoms} (Input\+\_\+iterator first, Input\+\_\+iterator last, System \&system, int modelid=1, char chainid=\textquotesingle{}Z\textquotesingle{}, std\+::string resname=\char`\"{}S\+OL\char`\"{}, int starting\+\_\+res\+\_\+index=1)
+\item 
+{\footnotesize template$<$class Model $>$ }\\Coarse\+\_\+atoms\+\_\+iterators$<$ Model $>$\+::const\+\_\+iterator \hyperlink{group__grp__iters_gabf07aacb61d906d9cb002b2e585e4eb8}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+begin} (const Model \&model)
+\item 
+{\footnotesize template$<$class Model $>$ }\\Coarse\+\_\+atoms\+\_\+iterators$<$ Model $>$\+::const\+\_\+iterator \hyperlink{group__grp__iters_gaa526c599e8abd3960e6b16ec2c6ed522}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+end} (const Model \&model)
+\item 
+{\footnotesize template$<$class Model $>$ }\\Coarse\+\_\+atoms\+\_\+iterators$<$ Model $>$\+::iterator \hyperlink{group__grp__iters_ga44b38b942148d622332c4d9d2b483c84}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+begin} (Model \&model)
+\item 
+{\footnotesize template$<$class Model $>$ }\\Coarse\+\_\+atoms\+\_\+iterators$<$ Model $>$\+::iterator \hyperlink{group__grp__iters_ga1336e327e3310a72197278ab5b5017b0}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+end} (Model \&model)
+\end{DoxyCompactItemize}

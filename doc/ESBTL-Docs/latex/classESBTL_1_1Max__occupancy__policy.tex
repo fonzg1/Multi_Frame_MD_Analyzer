@@ -1,0 +1,28 @@
+\hypertarget{classESBTL_1_1Max__occupancy__policy}{}\section{E\+S\+B\+TL\+:\+:Max\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$ Class Template Reference}
+\label{classESBTL_1_1Max__occupancy__policy}\index{E\+S\+B\+T\+L\+::\+Max\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$@{E\+S\+B\+T\+L\+::\+Max\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}}
+
+
+{\ttfamily \#include $<$occupancy\+\_\+handlers.\+h$>$}
+
+Inheritance diagram for E\+S\+B\+TL\+:\+:Max\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classESBTL_1_1Max__occupancy__policy}
+\end{center}
+\end{figure}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Line\+\_\+format$>$\newline
+class E\+S\+B\+T\+L\+::\+Max\+\_\+occupancy\+\_\+policy$<$ Line\+\_\+format $>$}
+
+This object provides an occupancy policy. An atom with an occupancy != 1 and with no alternate location is kept if its occupancy value corresponds to the highest found while reading a molecular structure. Note that if a line have been discarded by the selector, then its occupancy value have not been taken into account for computing the maximum. In case of ambiguous maximum (0.\+5), the program will crash with an error message. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Line\+\_\+format} & is a helper class to read molecular data files such as \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{occupancy__handlers_8h}{occupancy\+\_\+handlers.\+h}\end{DoxyCompactItemize}

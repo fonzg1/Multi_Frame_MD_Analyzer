@@ -1,0 +1,63 @@
+\hypertarget{classESBTL_1_1Select__by__chainids}{}\section{E\+S\+B\+TL\+:\+:Select\+\_\+by\+\_\+chainids Class Reference}
+\label{classESBTL_1_1Select__by__chainids}\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}}
+
+
+{\ttfamily \#include $<$atom\+\_\+selectors.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1Select__by__chainids_aeb1e4f3a504e8feef137bda2586043d7}{Select\+\_\+by\+\_\+chainids} ()
+\item 
+\hyperlink{classESBTL_1_1Select__by__chainids_a742b7ffed9851414efd3b9439272cc96}{Select\+\_\+by\+\_\+chainids} (const std\+::string \&chs)
+\item 
+{\footnotesize template$<$class Atom $>$ }\\bool \hyperlink{classESBTL_1_1Select__by__chainids_ad59b92cc3d2e8a5b07f8f005aff10c47}{operator()} (const Atom \&atom) const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Function object to select an atom using its chain identifier. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Select__by__chainids_aeb1e4f3a504e8feef137bda2586043d7}\label{classESBTL_1_1Select__by__chainids_aeb1e4f3a504e8feef137bda2586043d7}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}!Select\+\_\+by\+\_\+chainids@{Select\+\_\+by\+\_\+chainids}}
+\index{Select\+\_\+by\+\_\+chainids@{Select\+\_\+by\+\_\+chainids}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}}
+\subsubsection{\texorpdfstring{Select\+\_\+by\+\_\+chainids()}{Select\_by\_chainids()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids\+::\+Select\+\_\+by\+\_\+chainids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{classESBTL_1_1Select__by__chainids_a742b7ffed9851414efd3b9439272cc96}\label{classESBTL_1_1Select__by__chainids_a742b7ffed9851414efd3b9439272cc96}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}!Select\+\_\+by\+\_\+chainids@{Select\+\_\+by\+\_\+chainids}}
+\index{Select\+\_\+by\+\_\+chainids@{Select\+\_\+by\+\_\+chainids}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}}
+\subsubsection{\texorpdfstring{Select\+\_\+by\+\_\+chainids()}{Select\_by\_chainids()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids\+::\+Select\+\_\+by\+\_\+chainids (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{chs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em chs} & is the chains identifiers of the atoms to be selected. If several chains must be specified, they must be concatenated (for example selecting atoms of chains A or B corresponds to {\itshape str=\char`\"{}\+A\+B\char`\"{}}) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Select__by__chainids_ad59b92cc3d2e8a5b07f8f005aff10c47}\label{classESBTL_1_1Select__by__chainids_ad59b92cc3d2e8a5b07f8f005aff10c47}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}!operator()@{operator()}}
+\index{operator()@{operator()}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Atom $>$ \\
+bool E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+chainids\+::operator() (\begin{DoxyParamCaption}\item[{const Atom \&}]{atom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if an atoms match a criteria. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Atom} & must represent an atom, a global function \hyperlink{namespaceESBTL_a77317a847ab3d5ed38cf42b4b7508539}{E\+S\+B\+T\+L\+::get\+\_\+chain\+\_\+identifier} taking an element of this type must exits. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em atom} & represents an atom. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{atom__selectors_8h}{atom\+\_\+selectors.\+h}\end{DoxyCompactItemize}

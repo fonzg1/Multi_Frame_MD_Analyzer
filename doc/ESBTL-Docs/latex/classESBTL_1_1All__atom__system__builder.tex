@@ -1,0 +1,100 @@
+\hypertarget{classESBTL_1_1All__atom__system__builder}{}\section{E\+S\+B\+TL\+:\+:All\+\_\+atom\+\_\+system\+\_\+builder$<$ System $>$ Class Template Reference}
+\label{classESBTL_1_1All__atom__system__builder}\index{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder$<$ System $>$@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder$<$ System $>$}}
+
+
+{\ttfamily \#include $<$builder.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ System $>$ \hyperlink{classESBTL_1_1All__atom__system__builder_a31fb2f5199f57623e8c3582405d3c0bb}{System\+\_\+container}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1All__atom__system__builder_a21d079ea5c05ee7063255846fce8ad8b}{All\+\_\+atom\+\_\+system\+\_\+builder} (\hyperlink{classESBTL_1_1All__atom__system__builder_a31fb2f5199f57623e8c3582405d3c0bb}{System\+\_\+container} \&systems, unsigned max\+\_\+systems\+\_\+)
+\item 
+{\footnotesize template$<$class Line\+\_\+format $>$ }\\void \hyperlink{classESBTL_1_1All__atom__system__builder_adfd441d4f75b5d1ade101977b32276d1}{interpret\+\_\+line} (const Line\+\_\+format \&line\+\_\+format, const std\+::string \&line, int system\+\_\+info)
+\item 
+void \hyperlink{classESBTL_1_1All__atom__system__builder_afc0da7bcb41d85c5092e97507a7acddc}{create\+\_\+systems} (char altloc)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class System$>$\newline
+class E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder$<$ System $>$}
+
+Class responsible for building a system. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em System} & is a system as \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classESBTL_1_1All__atom__system__builder_a31fb2f5199f57623e8c3582405d3c0bb}\label{classESBTL_1_1All__atom__system__builder_a31fb2f5199f57623e8c3582405d3c0bb}} 
+\index{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}!System\+\_\+container@{System\+\_\+container}}
+\index{System\+\_\+container@{System\+\_\+container}!E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}}
+\subsubsection{\texorpdfstring{System\+\_\+container}{System\_container}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+typedef std\+::vector$<$System$>$ \hyperlink{classESBTL_1_1All__atom__system__builder}{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}$<$ System $>$\+::\hyperlink{classESBTL_1_1All__atom__system__builder_a31fb2f5199f57623e8c3582405d3c0bb}{System\+\_\+container}}
+
+The container in which the system must be stored. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1All__atom__system__builder_a21d079ea5c05ee7063255846fce8ad8b}\label{classESBTL_1_1All__atom__system__builder_a21d079ea5c05ee7063255846fce8ad8b}} 
+\index{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}!All\+\_\+atom\+\_\+system\+\_\+builder@{All\+\_\+atom\+\_\+system\+\_\+builder}}
+\index{All\+\_\+atom\+\_\+system\+\_\+builder@{All\+\_\+atom\+\_\+system\+\_\+builder}!E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}}
+\subsubsection{\texorpdfstring{All\+\_\+atom\+\_\+system\+\_\+builder()}{All\_atom\_system\_builder()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+\hyperlink{classESBTL_1_1All__atom__system__builder}{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}$<$ System $>$\+::\hyperlink{classESBTL_1_1All__atom__system__builder}{All\+\_\+atom\+\_\+system\+\_\+builder} (\begin{DoxyParamCaption}\item[{\hyperlink{classESBTL_1_1All__atom__system__builder_a31fb2f5199f57623e8c3582405d3c0bb}{System\+\_\+container} \&}]{systems,  }\item[{unsigned}]{max\+\_\+systems\+\_\+ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em systems} & is a reference to the container in which created systems are inserted. \\
+\hline
+{\em max\+\_\+systems\+\_\+} & is an upper bound on the number of system to be created. Setting correctly this number is very important and the program will crash if not well set (in the current implementation it is used to set the size of the system container.) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1All__atom__system__builder_afc0da7bcb41d85c5092e97507a7acddc}\label{classESBTL_1_1All__atom__system__builder_afc0da7bcb41d85c5092e97507a7acddc}} 
+\index{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}!create\+\_\+systems@{create\+\_\+systems}}
+\index{create\+\_\+systems@{create\+\_\+systems}!E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}}
+\subsubsection{\texorpdfstring{create\+\_\+systems()}{create\_systems()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+void \hyperlink{classESBTL_1_1All__atom__system__builder}{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}$<$ System $>$\+::create\+\_\+systems (\begin{DoxyParamCaption}\item[{char}]{altloc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Finalize the creation of the systems incrementally built. 
+\begin{DoxyParams}{Parameters}
+{\em altloc} & indicate the alternate location identification used for systems. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1All__atom__system__builder_adfd441d4f75b5d1ade101977b32276d1}\label{classESBTL_1_1All__atom__system__builder_adfd441d4f75b5d1ade101977b32276d1}} 
+\index{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}!interpret\+\_\+line@{interpret\+\_\+line}}
+\index{interpret\+\_\+line@{interpret\+\_\+line}!E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder@{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}}
+\subsubsection{\texorpdfstring{interpret\+\_\+line()}{interpret\_line()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+template$<$class Line\+\_\+format $>$ \\
+void \hyperlink{classESBTL_1_1All__atom__system__builder}{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder}$<$ System $>$\+::interpret\+\_\+line (\begin{DoxyParamCaption}\item[{const Line\+\_\+format \&}]{line\+\_\+format,  }\item[{const std\+::string \&}]{line,  }\item[{int}]{system\+\_\+info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Extract information from a line in a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file and add them to a system. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Line\+\_\+format} & is a class providing functions to extract fields from a line of a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file (\hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format} for example.). \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em line\+\_\+format} & provides the functions to extract the fields. \\
+\hline
+{\em line} & is a line of a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file. \\
+\hline
+{\em system\+\_\+info} & is the number of the system described by this line. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{builder_8h}{builder.\+h}\end{DoxyCompactItemize}

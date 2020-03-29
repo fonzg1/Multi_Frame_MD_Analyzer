@@ -1,0 +1,106 @@
+\hypertarget{classESBTL_1_1System__updater__from__xdrfile}{}\section{E\+S\+B\+TL\+:\+:System\+\_\+updater\+\_\+from\+\_\+xdrfile$<$ System $>$ Class Template Reference}
+\label{classESBTL_1_1System__updater__from__xdrfile}\index{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile$<$ System $>$@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile$<$ System $>$}}
+
+
+{\ttfamily \#include $<$system\+\_\+updater\+\_\+from\+\_\+xdrfile.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class System\+\_\+iterator $>$ }\\\hyperlink{classESBTL_1_1System__updater__from__xdrfile_ab8ec6b14664c00a39bc8878c54514307}{System\+\_\+updater\+\_\+from\+\_\+xdrfile} (System\+\_\+iterator begin, System\+\_\+iterator end, unsigned model\+\_\+selected\+\_\+, const std\+::string \&xtc\+\_\+fname, unsigned max\+\_\+atoms, unsigned read\+\_\+from=1, unsigned read\+\_\+to=std\+::numeric\+\_\+limits$<$ unsigned $>$\+::max())
+\item 
+\hyperlink{classESBTL_1_1System__updater__from__xdrfile_a2023589e3370c4826ece05e8c197ae70}{$\sim$\+System\+\_\+updater\+\_\+from\+\_\+xdrfile} ()
+\item 
+boost\+::tuple$<$ bool, double, int $>$ \hyperlink{classESBTL_1_1System__updater__from__xdrfile_a295ff6221508724b6a7a6d2c95990195}{next\+\_\+frame} (bool is\+\_\+init=false)
+\item 
+bool \hyperlink{classESBTL_1_1System__updater__from__xdrfile_a9c7da450c1690fa709304039fe47f57b}{has\+\_\+more\+\_\+frames} ()
+\item 
+const unsigned \& \hyperlink{classESBTL_1_1System__updater__from__xdrfile_ab3c93e0cd396173a06668501f63f54a8}{current\+\_\+frame\+\_\+id} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class System$>$\newline
+class E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile$<$ System $>$}
+
+Helper class responsible for updating the coordinates of a system according to a trajectory read from an xtc file. The system must already have been constructed (from a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file for example).
+
+Note that using this class requires that the xdrfile library and header to be installed on your system (available as a package for your distribution or at \href{ftp://ftp.gromacs.org/pub/contrib/xdrfile-1.1.tar.gz}{\tt ftp\+://ftp.\+gromacs.\+org/pub/contrib/xdrfile-\/1.\+1.\+tar.\+gz}).
+
+Refer to \href{http://www.gromacs.org}{\tt http\+://www.\+gromacs.\+org} for more information. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em System} & is the type of the system used. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1System__updater__from__xdrfile_ab8ec6b14664c00a39bc8878c54514307}\label{classESBTL_1_1System__updater__from__xdrfile_ab8ec6b14664c00a39bc8878c54514307}} 
+\index{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}!System\+\_\+updater\+\_\+from\+\_\+xdrfile@{System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\index{System\+\_\+updater\+\_\+from\+\_\+xdrfile@{System\+\_\+updater\+\_\+from\+\_\+xdrfile}!E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\subsubsection{\texorpdfstring{System\+\_\+updater\+\_\+from\+\_\+xdrfile()}{System\_updater\_from\_xdrfile()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+template$<$class System\+\_\+iterator $>$ \\
+\hyperlink{classESBTL_1_1System__updater__from__xdrfile}{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}$<$ System $>$\+::\hyperlink{classESBTL_1_1System__updater__from__xdrfile}{System\+\_\+updater\+\_\+from\+\_\+xdrfile} (\begin{DoxyParamCaption}\item[{System\+\_\+iterator}]{begin,  }\item[{System\+\_\+iterator}]{end,  }\item[{unsigned}]{model\+\_\+selected\+\_\+,  }\item[{const std\+::string \&}]{xtc\+\_\+fname,  }\item[{unsigned}]{max\+\_\+atoms,  }\item[{unsigned}]{read\+\_\+from = {\ttfamily 1},  }\item[{unsigned}]{read\+\_\+to = {\ttfamily std\+:\+:numeric\+\_\+limits$<$unsigned$>$\+:\+:max()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. It requires an already build model (from a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file for example.) 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em System\+\_\+iterator} & is an iterator over systems used. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & is an iterator over the first system that need to be updated. \\
+\hline
+{\em end} & is a past iterator over the last system that need to be updated. \\
+\hline
+{\em model\+\_\+selected\+\_\+} & indicates the number of the model to be updated. \\
+\hline
+{\em xtc\+\_\+fname} & is the path to the xtc file used to update the system coordinates. \\
+\hline
+{\em max\+\_\+atoms} & is an upper bound on the number of atoms contains in a frame. \\
+\hline
+{\em read\+\_\+from} & is the index of the first frame to be loaded. \\
+\hline
+{\em read\+\_\+to} & is the index of the last frame to be loaded. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classESBTL_1_1System__updater__from__xdrfile_a2023589e3370c4826ece05e8c197ae70}\label{classESBTL_1_1System__updater__from__xdrfile_a2023589e3370c4826ece05e8c197ae70}} 
+\index{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}!````~System\+\_\+updater\+\_\+from\+\_\+xdrfile@{$\sim$\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\index{````~System\+\_\+updater\+\_\+from\+\_\+xdrfile@{$\sim$\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}!E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\subsubsection{\texorpdfstring{$\sim$\+System\+\_\+updater\+\_\+from\+\_\+xdrfile()}{~System\_updater\_from\_xdrfile()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+\hyperlink{classESBTL_1_1System__updater__from__xdrfile}{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}$<$ System $>$\+::$\sim$\hyperlink{classESBTL_1_1System__updater__from__xdrfile}{System\+\_\+updater\+\_\+from\+\_\+xdrfile} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1System__updater__from__xdrfile_ab3c93e0cd396173a06668501f63f54a8}\label{classESBTL_1_1System__updater__from__xdrfile_ab3c93e0cd396173a06668501f63f54a8}} 
+\index{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}!current\+\_\+frame\+\_\+id@{current\+\_\+frame\+\_\+id}}
+\index{current\+\_\+frame\+\_\+id@{current\+\_\+frame\+\_\+id}!E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\subsubsection{\texorpdfstring{current\+\_\+frame\+\_\+id()}{current\_frame\_id()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+const unsigned\& \hyperlink{classESBTL_1_1System__updater__from__xdrfile}{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}$<$ System $>$\+::current\+\_\+frame\+\_\+id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1System__updater__from__xdrfile_a9c7da450c1690fa709304039fe47f57b}\label{classESBTL_1_1System__updater__from__xdrfile_a9c7da450c1690fa709304039fe47f57b}} 
+\index{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}!has\+\_\+more\+\_\+frames@{has\+\_\+more\+\_\+frames}}
+\index{has\+\_\+more\+\_\+frames@{has\+\_\+more\+\_\+frames}!E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\subsubsection{\texorpdfstring{has\+\_\+more\+\_\+frames()}{has\_more\_frames()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+bool \hyperlink{classESBTL_1_1System__updater__from__xdrfile}{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}$<$ System $>$\+::has\+\_\+more\+\_\+frames (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicates whether a frame is available to update the system. \mbox{\Hypertarget{classESBTL_1_1System__updater__from__xdrfile_a295ff6221508724b6a7a6d2c95990195}\label{classESBTL_1_1System__updater__from__xdrfile_a295ff6221508724b6a7a6d2c95990195}} 
+\index{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}!next\+\_\+frame@{next\+\_\+frame}}
+\index{next\+\_\+frame@{next\+\_\+frame}!E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile@{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}}
+\subsubsection{\texorpdfstring{next\+\_\+frame()}{next\_frame()}}
+{\footnotesize\ttfamily template$<$class System $>$ \\
+boost\+::tuple$<$bool,double,int$>$ \hyperlink{classESBTL_1_1System__updater__from__xdrfile}{E\+S\+B\+T\+L\+::\+System\+\_\+updater\+\_\+from\+\_\+xdrfile}$<$ System $>$\+::next\+\_\+frame (\begin{DoxyParamCaption}\item[{bool}]{is\+\_\+init = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Loads the next frame into the system (update coordinates). \begin{DoxyReturn}{Returns}
+the tuple returned contains a boolean (indicating whether the next frame could be loaded), a double (indicating the time of the frame in the simulation) and an integer (indicating the simulation step). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{system__updater__from__xdrfile_8h}{system\+\_\+updater\+\_\+from\+\_\+xdrfile.\+h}\end{DoxyCompactItemize}

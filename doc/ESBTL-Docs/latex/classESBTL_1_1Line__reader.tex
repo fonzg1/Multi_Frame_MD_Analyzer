@@ -1,0 +1,80 @@
+\hypertarget{classESBTL_1_1Line__reader}{}\section{E\+S\+B\+TL\+:\+:Line\+\_\+reader$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$ Class Template Reference}
+\label{classESBTL_1_1Line__reader}\index{E\+S\+B\+T\+L\+::\+Line\+\_\+reader$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$}}
+
+
+{\ttfamily \#include $<$line\+\_\+reader.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1Line__reader_a1bf419275695ceff1bd89bae72013f9e}{Line\+\_\+reader} (Line\+\_\+selector \&line\+\_\+selector, Builder \&builder)
+\item 
+{\footnotesize template$<$Reading\+\_\+mode mode, class Occupancy\+\_\+handler $>$ }\\bool \hyperlink{classESBTL_1_1Line__reader_aaf4f352f79c0bc1fc2afb52afd4f751f}{read} (const std\+::string \&filename, Occupancy\+\_\+handler occupancy, char default\+\_\+altloc=\textquotesingle{} \textquotesingle{})
+\item 
+{\footnotesize template$<$class Occupancy\+\_\+handler $>$ }\\bool \hyperlink{classESBTL_1_1Line__reader_acbdbb6a44e3132a54dae150158462470}{read} (const std\+::string \&filename, Occupancy\+\_\+handler occupancy, char default\+\_\+altloc=\textquotesingle{} \textquotesingle{})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Line\+\_\+format, class Line\+\_\+selector, class Builder$>$\newline
+class E\+S\+B\+T\+L\+::\+Line\+\_\+reader$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$}
+
+Class responsible for reading the lines of a file and provide information to a builder to create a system. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Line\+\_\+format} & is a helper class that can extract fields from a molecular data file (like \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format} for example). \\
+\hline
+{\em Line\+\_\+selector} & is a line selector object that must follow the concept of \hyperlink{group__linesel}{Line selectors}. \\
+\hline
+{\em Builder} & is a class able to build a molecular system (like \hyperlink{classESBTL_1_1All__atom__system__builder}{E\+S\+B\+T\+L\+::\+All\+\_\+atom\+\_\+system\+\_\+builder} for example). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Line__reader_a1bf419275695ceff1bd89bae72013f9e}\label{classESBTL_1_1Line__reader_a1bf419275695ceff1bd89bae72013f9e}} 
+\index{E\+S\+B\+T\+L\+::\+Line\+\_\+reader@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}!Line\+\_\+reader@{Line\+\_\+reader}}
+\index{Line\+\_\+reader@{Line\+\_\+reader}!E\+S\+B\+T\+L\+::\+Line\+\_\+reader@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}}
+\subsubsection{\texorpdfstring{Line\+\_\+reader()}{Line\_reader()}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format, class Line\+\_\+selector, class Builder$>$ \\
+\hyperlink{classESBTL_1_1Line__reader}{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$\+::\hyperlink{classESBTL_1_1Line__reader}{Line\+\_\+reader} (\begin{DoxyParamCaption}\item[{Line\+\_\+selector \&}]{line\+\_\+selector,  }\item[{Builder \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Line__reader_aaf4f352f79c0bc1fc2afb52afd4f751f}\label{classESBTL_1_1Line__reader_aaf4f352f79c0bc1fc2afb52afd4f751f}} 
+\index{E\+S\+B\+T\+L\+::\+Line\+\_\+reader@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}!read@{read}}
+\index{read@{read}!E\+S\+B\+T\+L\+::\+Line\+\_\+reader@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format, class Line\+\_\+selector, class Builder$>$ \\
+template$<$Reading\+\_\+mode mode, class Occupancy\+\_\+handler $>$ \\
+bool \hyperlink{classESBTL_1_1Line__reader}{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$\+::read (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{Occupancy\+\_\+handler}]{occupancy,  }\item[{char}]{default\+\_\+altloc = {\ttfamily \textquotesingle{}~\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reads the line of a file and give instruction to the builder to construct molecular system(s). 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em mode} & indicate the encoding of the file to be read. To read a compressed file, you must include the file $<$\hyperlink{compressed__ifstream_8h}{E\+S\+B\+T\+L/compressed\+\_\+ifstream.\+h}$>$, and the boost\+\_\+iostreams headers and library must be installed on your system. \\
+\hline
+{\em Occupancy\+\_\+handler} & is an occupancy policy that must be a model of the concept \hyperlink{group__occpol}{Occupancy policies}. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & is the name of the file to be read. \\
+\hline
+{\em occupancy} & is the occupancy policy \\
+\hline
+{\em default\+\_\+altloc} & is the alternate location identification that must be selected. If the white space character is specified, the first alternate location identification read will be used as default.\\
+\hline
+\end{DoxyParams}
+A version of this function with reading mode A\+S\+C\+II is also provided. \mbox{\Hypertarget{classESBTL_1_1Line__reader_acbdbb6a44e3132a54dae150158462470}\label{classESBTL_1_1Line__reader_acbdbb6a44e3132a54dae150158462470}} 
+\index{E\+S\+B\+T\+L\+::\+Line\+\_\+reader@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}!read@{read}}
+\index{read@{read}!E\+S\+B\+T\+L\+::\+Line\+\_\+reader@{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}}
+\subsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format, class Line\+\_\+selector, class Builder$>$ \\
+template$<$class Occupancy\+\_\+handler $>$ \\
+bool \hyperlink{classESBTL_1_1Line__reader}{E\+S\+B\+T\+L\+::\+Line\+\_\+reader}$<$ Line\+\_\+format, Line\+\_\+selector, Builder $>$\+::read (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{Occupancy\+\_\+handler}]{occupancy,  }\item[{char}]{default\+\_\+altloc = {\ttfamily \textquotesingle{}~\textquotesingle{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{line__reader_8h}{line\+\_\+reader.\+h}\end{DoxyCompactItemize}

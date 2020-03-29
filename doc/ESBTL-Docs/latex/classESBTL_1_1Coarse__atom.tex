@@ -1,0 +1,117 @@
+\hypertarget{classESBTL_1_1Coarse__atom}{}\section{E\+S\+B\+TL\+:\+:Coarse\+\_\+atom$<$ Atom, Point $>$ Class Template Reference}
+\label{classESBTL_1_1Coarse__atom}\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom$<$ Atom, Point $>$@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom$<$ Atom, Point $>$}}
+
+
+{\ttfamily \#include $<$coarse\+\_\+grain.\+h$>$}
+
+Inheritance diagram for E\+S\+B\+TL\+:\+:Coarse\+\_\+atom$<$ Atom, Point $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classESBTL_1_1Coarse__atom}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Point \hyperlink{classESBTL_1_1Coarse__atom_acfe6c03e22cc26daef4776e7ca8a7db6}{Point\+\_\+3}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classESBTL_1_1Coarse__atom_a4cd2e08c968eac9e00493e4d43e24557}{add} (const Atom \&atom)
+\item 
+\hyperlink{classESBTL_1_1Coarse__atom_ae1eb9078c6062f775c1390272c6764a9}{Coarse\+\_\+atom} (const \hyperlink{classESBTL_1_1Coarse__atom_acfe6c03e22cc26daef4776e7ca8a7db6}{Point\+\_\+3} \&p, unsigned i, const Residue \&res)
+\item 
+\hyperlink{classESBTL_1_1Coarse__atom_a799d08aa0f138973750012a43f6428b9}{Coarse\+\_\+atom} (unsigned i, const Residue \&res)
+\item 
+\hyperlink{classESBTL_1_1Coarse__atom_a91362ec8871caea4dcc7b0822bd4be9c}{Coarse\+\_\+atom} ()
+\item 
+\hyperlink{classESBTL_1_1Coarse__atom_a127c90585bdd67131ff4159662bbd917}{Coarse\+\_\+atom} (float x, float y, float z)
+\item 
+const Residue \& \hyperlink{classESBTL_1_1Coarse__atom_ab07cf33f1040349d5af862f147dbc022}{residue} () const
+\item 
+unsigned \hyperlink{classESBTL_1_1Coarse__atom_adf0d8955c898d77d6040dec96be9fed1}{index} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Atom, class Point$>$\newline
+class E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom$<$ Atom, Point $>$}
+
+A coarse-\/grain atom type 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Atom} & is the base atom class that the coarse atom represent. \\
+\hline
+{\em Point} & is a point type with coordinates const access methods x(), y() and z(). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_acfe6c03e22cc26daef4776e7ca8a7db6}\label{classESBTL_1_1Coarse__atom_acfe6c03e22cc26daef4776e7ca8a7db6}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!Point\+\_\+3@{Point\+\_\+3}}
+\index{Point\+\_\+3@{Point\+\_\+3}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{Point\+\_\+3}{Point\_3}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+typedef Point \hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::\hyperlink{classESBTL_1_1Coarse__atom_acfe6c03e22cc26daef4776e7ca8a7db6}{Point\+\_\+3}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_ae1eb9078c6062f775c1390272c6764a9}\label{classESBTL_1_1Coarse__atom_ae1eb9078c6062f775c1390272c6764a9}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!Coarse\+\_\+atom@{Coarse\+\_\+atom}}
+\index{Coarse\+\_\+atom@{Coarse\+\_\+atom}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{Coarse\+\_\+atom()}{Coarse\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+\hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::\hyperlink{classESBTL_1_1Coarse__atom}{Coarse\+\_\+atom} (\begin{DoxyParamCaption}\item[{const \hyperlink{classESBTL_1_1Coarse__atom_acfe6c03e22cc26daef4776e7ca8a7db6}{Point\+\_\+3} \&}]{p,  }\item[{unsigned}]{i,  }\item[{const Residue \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_a799d08aa0f138973750012a43f6428b9}\label{classESBTL_1_1Coarse__atom_a799d08aa0f138973750012a43f6428b9}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!Coarse\+\_\+atom@{Coarse\+\_\+atom}}
+\index{Coarse\+\_\+atom@{Coarse\+\_\+atom}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{Coarse\+\_\+atom()}{Coarse\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+\hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::\hyperlink{classESBTL_1_1Coarse__atom}{Coarse\+\_\+atom} (\begin{DoxyParamCaption}\item[{unsigned}]{i,  }\item[{const Residue \&}]{res }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_a91362ec8871caea4dcc7b0822bd4be9c}\label{classESBTL_1_1Coarse__atom_a91362ec8871caea4dcc7b0822bd4be9c}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!Coarse\+\_\+atom@{Coarse\+\_\+atom}}
+\index{Coarse\+\_\+atom@{Coarse\+\_\+atom}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{Coarse\+\_\+atom()}{Coarse\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+\hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::\hyperlink{classESBTL_1_1Coarse__atom}{Coarse\+\_\+atom} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_a127c90585bdd67131ff4159662bbd917}\label{classESBTL_1_1Coarse__atom_a127c90585bdd67131ff4159662bbd917}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!Coarse\+\_\+atom@{Coarse\+\_\+atom}}
+\index{Coarse\+\_\+atom@{Coarse\+\_\+atom}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{Coarse\+\_\+atom()}{Coarse\_atom()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+\hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::\hyperlink{classESBTL_1_1Coarse__atom}{Coarse\+\_\+atom} (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_a4cd2e08c968eac9e00493e4d43e24557}\label{classESBTL_1_1Coarse__atom_a4cd2e08c968eac9e00493e4d43e24557}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!add@{add}}
+\index{add@{add}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+void \hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::add (\begin{DoxyParamCaption}\item[{const Atom \&}]{atom }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add atom to the set of atom represented. \mbox{\Hypertarget{classESBTL_1_1Coarse__atom_adf0d8955c898d77d6040dec96be9fed1}\label{classESBTL_1_1Coarse__atom_adf0d8955c898d77d6040dec96be9fed1}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!index@{index}}
+\index{index@{index}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+unsigned \hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::index (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1Coarse__atom_ab07cf33f1040349d5af862f147dbc022}\label{classESBTL_1_1Coarse__atom_ab07cf33f1040349d5af862f147dbc022}} 
+\index{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}!residue@{residue}}
+\index{residue@{residue}!E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom@{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}}
+\subsubsection{\texorpdfstring{residue()}{residue()}}
+{\footnotesize\ttfamily template$<$class Atom , class Point $>$ \\
+const Residue\& \hyperlink{classESBTL_1_1Coarse__atom}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atom}$<$ Atom, Point $>$\+::residue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{coarse__grain_8h}{coarse\+\_\+grain.\+h}\end{DoxyCompactItemize}

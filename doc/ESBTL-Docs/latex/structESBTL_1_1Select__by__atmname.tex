@@ -1,0 +1,77 @@
+\hypertarget{structESBTL_1_1Select__by__atmname}{}\section{E\+S\+B\+TL\+:\+:Select\+\_\+by\+\_\+atmname Struct Reference}
+\label{structESBTL_1_1Select__by__atmname}\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}}
+
+
+{\ttfamily \#include $<$atom\+\_\+selectors.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structESBTL_1_1Select__by__atmname_afac859029af0490d35996300c473730f}{Select\+\_\+by\+\_\+atmname} ()
+\item 
+\hyperlink{structESBTL_1_1Select__by__atmname_a00cfd9113fc749d2981b34f26da3278d}{Select\+\_\+by\+\_\+atmname} (const std\+::string \&str)
+\item 
+{\footnotesize template$<$class Atom $>$ }\\bool \hyperlink{structESBTL_1_1Select__by__atmname_a2a8ba27b1e026b866279352a9bacaea6}{operator()} (const Atom \&atom) const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{structESBTL_1_1Select__by__atmname_ac038c0e310fe3213c6ced27fadc5cf8a}{name}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Function object to select an atom using its atom name. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Select__by__atmname_afac859029af0490d35996300c473730f}\label{structESBTL_1_1Select__by__atmname_afac859029af0490d35996300c473730f}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}!Select\+\_\+by\+\_\+atmname@{Select\+\_\+by\+\_\+atmname}}
+\index{Select\+\_\+by\+\_\+atmname@{Select\+\_\+by\+\_\+atmname}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}}
+\subsubsection{\texorpdfstring{Select\+\_\+by\+\_\+atmname()}{Select\_by\_atmname()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname\+::\+Select\+\_\+by\+\_\+atmname (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor \mbox{\Hypertarget{structESBTL_1_1Select__by__atmname_a00cfd9113fc749d2981b34f26da3278d}\label{structESBTL_1_1Select__by__atmname_a00cfd9113fc749d2981b34f26da3278d}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}!Select\+\_\+by\+\_\+atmname@{Select\+\_\+by\+\_\+atmname}}
+\index{Select\+\_\+by\+\_\+atmname@{Select\+\_\+by\+\_\+atmname}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}}
+\subsubsection{\texorpdfstring{Select\+\_\+by\+\_\+atmname()}{Select\_by\_atmname()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname\+::\+Select\+\_\+by\+\_\+atmname (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em str} & is the name of the atoms to be selected. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Select__by__atmname_a2a8ba27b1e026b866279352a9bacaea6}\label{structESBTL_1_1Select__by__atmname_a2a8ba27b1e026b866279352a9bacaea6}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}!operator()@{operator()}}
+\index{operator()@{operator()}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily template$<$class Atom $>$ \\
+bool E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname\+::operator() (\begin{DoxyParamCaption}\item[{const Atom \&}]{atom }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if an atoms match a criteria. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Atom} & must represent an atom, a global function \hyperlink{namespaceESBTL_a2a0153bcc07ae7f992d0087ea0574b2a}{E\+S\+B\+T\+L\+::get\+\_\+atom\+\_\+name} taking an element of this type must exits. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em atom} & represents an atom. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Select__by__atmname_ac038c0e310fe3213c6ced27fadc5cf8a}\label{structESBTL_1_1Select__by__atmname_ac038c0e310fe3213c6ced27fadc5cf8a}} 
+\index{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}!name@{name}}
+\index{name@{name}!E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname@{E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname}}
+\subsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string E\+S\+B\+T\+L\+::\+Select\+\_\+by\+\_\+atmname\+::name}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{atom__selectors_8h}{atom\+\_\+selectors.\+h}\end{DoxyCompactItemize}

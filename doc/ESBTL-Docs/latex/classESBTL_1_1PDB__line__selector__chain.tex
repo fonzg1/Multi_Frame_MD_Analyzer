@@ -1,0 +1,91 @@
+\hypertarget{classESBTL_1_1PDB__line__selector__chain}{}\section{E\+S\+B\+TL\+:\+:P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain Class Reference}
+\label{classESBTL_1_1PDB__line__selector__chain}\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+
+
+{\ttfamily \#include $<$line\+\_\+selectors.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const unsigned \& \hyperlink{classESBTL_1_1PDB__line__selector__chain_ad55fd6ce49a865fcb1ae7efb0c2362e4}{nb\+\_\+atm\+\_\+htm\+\_\+seen} () const
+\item 
+{\footnotesize template$<$class Str\+\_\+iterator $>$ }\\\hyperlink{classESBTL_1_1PDB__line__selector__chain_a3ab3696d31d1850c53baa12e82f121fd}{P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain} (const Str\+\_\+iterator \&begin, const Str\+\_\+iterator \&end, bool keep\+\_\+water=true, bool keep\+\_\+remaining\+\_\+chains=false, double Water\+\_\+\+Bfactorlim=200, bool keep\+\_\+hydrogen=false)
+\item 
+{\footnotesize template$<$class Line\+\_\+format , class Occupancy\+\_\+handler $>$ }\\int \hyperlink{classESBTL_1_1PDB__line__selector__chain_acb2d67076cfdcbc254b42af78f15fc9c}{keep} (const Line\+\_\+format \&line\+\_\+format, const std\+::string \&line, Occupancy\+\_\+handler \&occupancy)
+\item 
+unsigned \hyperlink{classESBTL_1_1PDB__line__selector__chain_a1e8aee358ba3e5df80e2aeecb83ca89f}{max\+\_\+nb\+\_\+systems} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classESBTL_1_1PDB__line__selector__chain_af8fdc12b87a64be02a6207d919183719}{discarded}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a line selector defining one system per group of chains provided. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1PDB__line__selector__chain_a3ab3696d31d1850c53baa12e82f121fd}\label{classESBTL_1_1PDB__line__selector__chain_a3ab3696d31d1850c53baa12e82f121fd}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}!P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+\index{P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}!E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+\subsubsection{\texorpdfstring{P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain()}{PDB\_line\_selector\_chain()}}
+{\footnotesize\ttfamily template$<$class Str\+\_\+iterator $>$ \\
+E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain (\begin{DoxyParamCaption}\item[{const Str\+\_\+iterator \&}]{begin,  }\item[{const Str\+\_\+iterator \&}]{end,  }\item[{bool}]{keep\+\_\+water = {\ttfamily true},  }\item[{bool}]{keep\+\_\+remaining\+\_\+chains = {\ttfamily false},  }\item[{double}]{Water\+\_\+\+Bfactorlim = {\ttfamily 200},  }\item[{bool}]{keep\+\_\+hydrogen = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor from a range of string. A string {\itshape AB} indicates that the system is composed of chains {\itshape A} and {\itshape B} 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Str\+\_\+iterator} & is an iterator over std\+::string objects. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em begin} & is the first iterator of the range of strings. \\
+\hline
+{\em end} & is the past-\/end iterator of the range of strings. \\
+\hline
+{\em keep\+\_\+water} & indicate whether water molecules should be kept. \\
+\hline
+{\em keep\+\_\+remaining\+\_\+chains} & indicates whether the last system should contains unselected chains. \\
+\hline
+{\em Water\+\_\+\+Bfactorlim} & water molecules with a temperature factor higher that this value are discarded. \\
+\hline
+{\em keep\+\_\+hydrogen} & indicates whether hydrogens atoms must be selected. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1PDB__line__selector__chain_acb2d67076cfdcbc254b42af78f15fc9c}\label{classESBTL_1_1PDB__line__selector__chain_acb2d67076cfdcbc254b42af78f15fc9c}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}!keep@{keep}}
+\index{keep@{keep}!E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+\subsubsection{\texorpdfstring{keep()}{keep()}}
+{\footnotesize\ttfamily template$<$class Line\+\_\+format , class Occupancy\+\_\+handler $>$ \\
+int E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain\+::keep (\begin{DoxyParamCaption}\item[{const Line\+\_\+format \&}]{line\+\_\+format,  }\item[{const std\+::string \&}]{line,  }\item[{Occupancy\+\_\+handler \&}]{occupancy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB__line__selector__chain_a1e8aee358ba3e5df80e2aeecb83ca89f}\label{classESBTL_1_1PDB__line__selector__chain_a1e8aee358ba3e5df80e2aeecb83ca89f}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}!max\+\_\+nb\+\_\+systems@{max\+\_\+nb\+\_\+systems}}
+\index{max\+\_\+nb\+\_\+systems@{max\+\_\+nb\+\_\+systems}!E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+\subsubsection{\texorpdfstring{max\+\_\+nb\+\_\+systems()}{max\_nb\_systems()}}
+{\footnotesize\ttfamily unsigned E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain\+::max\+\_\+nb\+\_\+systems (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB__line__selector__chain_ad55fd6ce49a865fcb1ae7efb0c2362e4}\label{classESBTL_1_1PDB__line__selector__chain_ad55fd6ce49a865fcb1ae7efb0c2362e4}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}!nb\+\_\+atm\+\_\+htm\+\_\+seen@{nb\+\_\+atm\+\_\+htm\+\_\+seen}}
+\index{nb\+\_\+atm\+\_\+htm\+\_\+seen@{nb\+\_\+atm\+\_\+htm\+\_\+seen}!E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+\subsubsection{\texorpdfstring{nb\+\_\+atm\+\_\+htm\+\_\+seen()}{nb\_atm\_htm\_seen()}}
+{\footnotesize\ttfamily const unsigned\& E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain\+::nb\+\_\+atm\+\_\+htm\+\_\+seen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classESBTL_1_1PDB__line__selector__chain_af8fdc12b87a64be02a6207d919183719}\label{classESBTL_1_1PDB__line__selector__chain_af8fdc12b87a64be02a6207d919183719}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}!discarded@{discarded}}
+\index{discarded@{discarded}!E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain@{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}}
+\subsubsection{\texorpdfstring{discarded}{discarded}}
+{\footnotesize\ttfamily int E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain\+::discarded}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{line__selectors_8h}{line\+\_\+selectors.\+h}\end{DoxyCompactItemize}

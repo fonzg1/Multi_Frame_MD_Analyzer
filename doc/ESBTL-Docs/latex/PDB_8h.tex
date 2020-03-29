@@ -1,0 +1,106 @@
+\hypertarget{PDB_8h}{}\section{P\+D\+B.\+h File Reference}
+\label{PDB_8h}\index{P\+D\+B.\+h@{P\+D\+B.\+h}}
+{\ttfamily \#include $<$boost/lexical\+\_\+cast.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/algorithm/string.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/format.\+hpp$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$E\+S\+B\+T\+L/constants.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structESBTL_1_1PDB_1_1Mandatory__fields__default}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Mandatory\+\_\+fields\+\_\+default}
+\item 
+class \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceESBTL}{E\+S\+B\+TL}
+\item 
+ \hyperlink{namespaceESBTL_1_1PDB}{E\+S\+B\+T\+L\+::\+P\+DB}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{PDB_8h_a346efb5c435888484d2ccd195bf4be76}{R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD}(F\+N\+A\+ME,  T\+Y\+PE,  F\+R\+OM,  TO,  D\+EF)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Record\+\_\+type} \{ \newline
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7ae76b3a122dad316406fc1c7816408bb8}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+A\+T\+OM} =0, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7affc53bc49d345341456508ac2f2edb66}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+H\+E\+T\+A\+TM}, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7ab65bd08133b5b3bc45edcc279ea17691}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+M\+O\+D\+EL}, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a7fbdf6a0178722ba790e43b51fd7c266}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+E\+N\+D\+M\+DL}, 
+\newline
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a84d674135bf0ea3ec08e920402ffbadb}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+T\+ER}, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a9e600568c8b2d3043ae18011d3668406}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+E\+ND}, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a1f1b71040413e3030225c3897c4c1ad1}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+A\+N\+I\+S\+OU}, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a4a7f736670b0999d092c8c18e495043b}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+C\+O\+N\+E\+CT}, 
+\newline
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7aa099f5b633abcf7d96d922bfa8ad59ce}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+M\+A\+S\+T\+ER}, 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7ad9d8deb1f01f1b8b668a36e7fcf3b485}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+U\+N\+K\+N\+O\+WN}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class P\+D\+B\+\_\+\+Atom $>$ }\\std\+::string \hyperlink{namespaceESBTL_1_1PDB_aab225f56efa798130ecc440ca21c3c91}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::get\+\_\+atom\+\_\+pdb\+\_\+format} (const P\+D\+B\+\_\+\+Atom \&atom)
+\item 
+{\footnotesize template$<$class P\+D\+B\+\_\+\+Atom $>$ }\\std\+::string \hyperlink{namespaceESBTL_1_1PDB_adbb3162c10a2e602abbf4b143eeab66f}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::get\+\_\+atom\+\_\+pdb\+\_\+reduced\+\_\+format} (const P\+D\+B\+\_\+\+Atom \&atom)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\bool \hyperlink{namespaceESBTL_a5155cd79d2facb28e72549e36a68fae8}{E\+S\+B\+T\+L\+::get\+\_\+is\+\_\+hetatm} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\int \hyperlink{namespaceESBTL_a71b4faf4b354e45d2fc5e70df41db9c4}{E\+S\+B\+T\+L\+::get\+\_\+atom\+\_\+serial\+\_\+number} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\std\+::string \hyperlink{namespaceESBTL_a81f5f19c2754cfe55656283155101205}{E\+S\+B\+T\+L\+::get\+\_\+atom\+\_\+name} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\char \hyperlink{namespaceESBTL_a370818164a9e6054f0aa228536196897}{E\+S\+B\+T\+L\+::get\+\_\+alternate\+\_\+location} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\double \hyperlink{namespaceESBTL_aea3b01d579054dd4c75f078490edf83a}{E\+S\+B\+T\+L\+::get\+\_\+occupancy} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\double \hyperlink{namespaceESBTL_ac26fec32ea44a63b9c1ad903e89a7170}{E\+S\+B\+T\+L\+::get\+\_\+temperature\+\_\+factor} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\std\+::string \hyperlink{namespaceESBTL_a50774331db3eb6b6ce62ee0220dc594e}{E\+S\+B\+T\+L\+::get\+\_\+element} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\int \hyperlink{namespaceESBTL_acd2d14233ae6e445cc9eb8218eae82c7}{E\+S\+B\+T\+L\+::get\+\_\+charge} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\char \hyperlink{namespaceESBTL_a94368fc997ab29fda045681aec4e6371}{E\+S\+B\+T\+L\+::get\+\_\+chain\+\_\+identifier} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\std\+::string \hyperlink{namespaceESBTL_af35913d484a7d9a9a96d0c74298f1a34}{E\+S\+B\+T\+L\+::get\+\_\+residue\+\_\+name} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\int \hyperlink{namespaceESBTL_a2ead965afb4bf4e8c180fe902eae01af}{E\+S\+B\+T\+L\+::get\+\_\+residue\+\_\+sequence\+\_\+number} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\char \hyperlink{namespaceESBTL_a1b3c21e82308cc135bf050dd75f684e3}{E\+S\+B\+T\+L\+::get\+\_\+insertion\+\_\+code} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\char \hyperlink{namespaceESBTL_ae67a63cb82acc8d499bf3faab539cd88}{E\+S\+B\+T\+L\+::get\+\_\+x} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\char \hyperlink{namespaceESBTL_a2d4c1122988f59eb6f5c962ddf187eee}{E\+S\+B\+T\+L\+::get\+\_\+y} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\item 
+{\footnotesize template$<$class Mandatory\+\_\+fields $>$ }\\char \hyperlink{namespaceESBTL_acb607aba6670dd7f3b42c04337d8e581}{E\+S\+B\+T\+L\+::get\+\_\+z} (const std\+::pair$<$ P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$, std\+::string $>$ \&p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{PDB_8h_a346efb5c435888484d2ccd195bf4be76}\label{PDB_8h_a346efb5c435888484d2ccd195bf4be76}} 
+\index{P\+D\+B.\+h@{P\+D\+B.\+h}!R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD@{R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD}}
+\index{R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD@{R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD}!P\+D\+B.\+h@{P\+D\+B.\+h}}
+\subsubsection{\texorpdfstring{R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD}{RECOVER\_FIELD}}
+{\footnotesize\ttfamily \#define R\+E\+C\+O\+V\+E\+R\+\_\+\+F\+I\+E\+LD(\begin{DoxyParamCaption}\item[{}]{F\+N\+A\+ME,  }\item[{}]{T\+Y\+PE,  }\item[{}]{F\+R\+OM,  }\item[{}]{TO,  }\item[{}]{D\+EF }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+TYPE get\_##FNAME(\textcolor{keyword}{const} std::string& line)\textcolor{keyword}{ const }\{ \(\backslash\)
+    if (line.length() < TO)\{\(\backslash\)
+      if (! Mandatory\_fields::FNAME) \textcolor{keywordflow}{return} TYPE(DEF);\(\backslash\)
+      else\{\(\backslash\)
+          std::cerr << \textcolor{stringliteral}{"Fatal error: Cannot extract field \(\backslash\)'"} << #FNAME << \textcolor{stringliteral}{"\(\backslash\)' in \(\backslash\)n"};\(\backslash\)
+          std::cerr << \textcolor{stringliteral}{"<|"} << line << \textcolor{stringliteral}{"|>\(\backslash\)n"};\(\backslash\)
+          exit (EXIT\_FAILURE);\(\backslash\)
+      \}\(\backslash\)
+    \}\(\backslash\)
+    return PDB::extract\_field<TYPE>(line,FROM,TO,DEF,#FNAME,Mandatory\_fields::FNAME); \(\backslash\)
+  \}
+\end{DoxyCode}

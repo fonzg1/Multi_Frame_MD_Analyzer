@@ -1,0 +1,75 @@
+\hypertarget{classESBTL_1_1Weighted__atom__iterator}{}\section{E\+S\+B\+TL\+:\+:Weighted\+\_\+atom\+\_\+iterator$<$ Model, Weighted\+\_\+atom, Weight\+\_\+functor $>$ Class Template Reference}
+\label{classESBTL_1_1Weighted__atom__iterator}\index{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator$<$ Model, Weighted\+\_\+atom, Weight\+\_\+functor $>$@{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator$<$ Model, Weighted\+\_\+atom, Weight\+\_\+functor $>$}}
+
+
+{\ttfamily \#include $<$weighted\+\_\+atom\+\_\+iterator.\+h$>$}
+
+Inheritance diagram for E\+S\+B\+TL\+:\+:Weighted\+\_\+atom\+\_\+iterator$<$ Model, Weighted\+\_\+atom, Weight\+\_\+functor $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.240310cm]{classESBTL_1_1Weighted__atom__iterator}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class Functor\+\_\+parameters $>$ }\\\hyperlink{classESBTL_1_1Weighted__atom__iterator_a41781a4ac59637e0d6577fe7b929fb99}{Weighted\+\_\+atom\+\_\+iterator} (typename Model\+::\+Atoms\+\_\+const\+\_\+iterator it, Functor\+\_\+parameters params)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1Weighted__atom__iterator_ac09f73e325921cc50ebcd96bed0f8096}{boost\+::iterator\+\_\+core\+\_\+access}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Model, class Weighted\+\_\+atom, class Weight\+\_\+functor$>$\newline
+class E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator$<$ Model, Weighted\+\_\+atom, Weight\+\_\+functor $>$}
+
+Class providing an iterator over atoms of a model that returns a weighted point when dereferencing. This is particularly useful when using \hyperlink{namespaceESBTL_1_1CGAL}{C\+G\+AL} and its algorithms working on weighted points. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Model} & is the type of model used. \\
+\hline
+{\em Weighted\+\_\+atom} & is the weighted point type returned. \\
+\hline
+{\em Weight\+\_\+functor} & is a function object which operator() associate a radius to an atom (as \hyperlink{structESBTL_1_1Weight__of__atoms}{Weight\+\_\+of\+\_\+atoms} for example.)\\
+\hline
+\end{DoxyTemplParams}
+An alternative to this class is to use the class boost\+::transform\+\_\+iterator, provided your function object does not need only information available at compile time. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Weighted__atom__iterator_a41781a4ac59637e0d6577fe7b929fb99}\label{classESBTL_1_1Weighted__atom__iterator_a41781a4ac59637e0d6577fe7b929fb99}} 
+\index{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator}!Weighted\+\_\+atom\+\_\+iterator@{Weighted\+\_\+atom\+\_\+iterator}}
+\index{Weighted\+\_\+atom\+\_\+iterator@{Weighted\+\_\+atom\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator}}
+\subsubsection{\texorpdfstring{Weighted\+\_\+atom\+\_\+iterator()}{Weighted\_atom\_iterator()}}
+{\footnotesize\ttfamily template$<$class Model , class Weighted\+\_\+atom , class Weight\+\_\+functor $>$ \\
+template$<$class Functor\+\_\+parameters $>$ \\
+\hyperlink{classESBTL_1_1Weighted__atom__iterator}{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator}$<$ Model, Weighted\+\_\+atom, Weight\+\_\+functor $>$\+::\hyperlink{classESBTL_1_1Weighted__atom__iterator}{Weighted\+\_\+atom\+\_\+iterator} (\begin{DoxyParamCaption}\item[{typename Model\+::\+Atoms\+\_\+const\+\_\+iterator}]{it,  }\item[{Functor\+\_\+parameters}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Functor\+\_\+parameters} & is a parameter type for the function object constructor. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em it} & is the corresponding atom iterator. \\
+\hline
+{\em params} & is a parameter given to the function object constructor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1Weighted__atom__iterator_ac09f73e325921cc50ebcd96bed0f8096}\label{classESBTL_1_1Weighted__atom__iterator_ac09f73e325921cc50ebcd96bed0f8096}} 
+\index{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator}!boost\+::iterator\+\_\+core\+\_\+access@{boost\+::iterator\+\_\+core\+\_\+access}}
+\index{boost\+::iterator\+\_\+core\+\_\+access@{boost\+::iterator\+\_\+core\+\_\+access}!E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator@{E\+S\+B\+T\+L\+::\+Weighted\+\_\+atom\+\_\+iterator}}
+\subsubsection{\texorpdfstring{boost\+::iterator\+\_\+core\+\_\+access}{boost::iterator\_core\_access}}
+{\footnotesize\ttfamily template$<$class Model , class Weighted\+\_\+atom , class Weight\+\_\+functor $>$ \\
+friend class boost\+::iterator\+\_\+core\+\_\+access\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{weighted__atom__iterator_8h}{weighted\+\_\+atom\+\_\+iterator.\+h}\end{DoxyCompactItemize}

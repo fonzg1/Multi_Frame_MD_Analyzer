@@ -1,0 +1,216 @@
+\hypertarget{classESBTL_1_1PDB_1_1Line__format}{}\section{E\+S\+B\+TL\+:\+:P\+DB\+:\+:Line\+\_\+format$<$ Mandatory\+\_\+fields $>$ Class Template Reference}
+\label{classESBTL_1_1PDB_1_1Line__format}\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$}}
+
+
+{\ttfamily \#include $<$P\+D\+B.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classESBTL_1_1PDB_1_1Line__format_aaec07c0a69d03b66c4e9e1662f1cadc9}{Line\+\_\+format} (const std\+::string \&line)
+\item 
+bool \hyperlink{classESBTL_1_1PDB_1_1Line__format_a5985e9f450070463af32eb5438e6f002}{is\+\_\+hetatm} () const
+\item 
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format_a3c79f8cc61a87820457d557ae2e6c62c}{get\+\_\+record\+\_\+name} (const std\+::string \&line) const
+\item 
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format_a04b1c91a27d0fe31b392ab88f4b1764a}{get\+\_\+atom\+\_\+serial\+\_\+number} (const std\+::string \&line) const
+\item 
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format_a15c2f8308e18fc058dd7f3a8697ee34a}{get\+\_\+atom\+\_\+name} (const std\+::string \&line) const
+\item 
+char \hyperlink{classESBTL_1_1PDB_1_1Line__format_a6e389e51c1fc77585024b0cf9f2f4b66}{get\+\_\+alternate\+\_\+location} (const std\+::string \&line) const
+\item 
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format_ab0d5125e0fbace190c3f7fabb2eb43e5}{get\+\_\+residue\+\_\+name} (const std\+::string \&line) const
+\item 
+char \hyperlink{classESBTL_1_1PDB_1_1Line__format_a2db4604a71b9299ec3696d46d1a159bc}{get\+\_\+chain\+\_\+identifier} (const std\+::string \&line) const
+\item 
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format_a942dc2b1288d12b5a9b5e49ce4eb0371}{get\+\_\+residue\+\_\+sequence\+\_\+number} (const std\+::string \&line) const
+\item 
+char \hyperlink{classESBTL_1_1PDB_1_1Line__format_a13303838446368779d4b391ba130dcba}{get\+\_\+insertion\+\_\+code} (const std\+::string \&line) const
+\item 
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format_afe06d4e9bcb00c28d4c4a7ba975d6f0b}{get\+\_\+x} (const std\+::string \&line) const
+\item 
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format_a48f80ae039ee691802faa980fecb4476}{get\+\_\+y} (const std\+::string \&line) const
+\item 
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format_a7d7e983d438a17bcd8a799baf6c06ab9}{get\+\_\+z} (const std\+::string \&line) const
+\item 
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format_a7c2498989dd637f008a1719adb9b44b9}{get\+\_\+occupancy} (const std\+::string \&line) const
+\item 
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format_afb1db7866fc6f7cc603ed5a9836100ad}{get\+\_\+temperature\+\_\+factor} (const std\+::string \&line) const
+\item 
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format_ad38fda5e9c5d68d7da40356119f8537e}{get\+\_\+element} (const std\+::string \&line) const
+\item 
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format_ada983c443ea270cc31d9337121ca4e58}{get\+\_\+charge\+\_\+str} (const std\+::string \&line) const
+\item 
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format_a314acf4e8c390b306beb7fd917e0da31}{get\+\_\+charge} (const std\+::string \&line) const
+\item 
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format_aa489ba8d76c6f289103da0466ce84e23}{get\+\_\+model\+\_\+number} (const std\+::string \&line) const
+\item 
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7}{P\+D\+B\+::\+Record\+\_\+type} \hyperlink{classESBTL_1_1PDB_1_1Line__format_ae266a9259dbd80a17d82e0dd42852fa3}{record\+\_\+type} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Mandatory\+\_\+fields = Mandatory\+\_\+fields\+\_\+default$>$\newline
+class E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format$<$ Mandatory\+\_\+fields $>$}
+
+Helper class handle to extract fields from line of a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Mandatory\+\_\+fields} & is a class indicating which fields are mandatory (see \hyperlink{structESBTL_1_1PDB_1_1Mandatory__fields__default}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Mandatory\+\_\+fields\+\_\+default} for requirements). \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_aaec07c0a69d03b66c4e9e1662f1cadc9}\label{classESBTL_1_1PDB_1_1Line__format_aaec07c0a69d03b66c4e9e1662f1cadc9}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!Line\+\_\+format@{Line\+\_\+format}}
+\index{Line\+\_\+format@{Line\+\_\+format}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{Line\+\_\+format()}{Line\_format()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+\hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::\hyperlink{classESBTL_1_1PDB_1_1Line__format}{Line\+\_\+format} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor. 
+\begin{DoxyParams}{Parameters}
+{\em line} & is a line of a \hyperlink{namespaceESBTL_1_1PDB}{P\+DB} file. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a6e389e51c1fc77585024b0cf9f2f4b66}\label{classESBTL_1_1PDB_1_1Line__format_a6e389e51c1fc77585024b0cf9f2f4b66}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+alternate\+\_\+location@{get\+\_\+alternate\+\_\+location}}
+\index{get\+\_\+alternate\+\_\+location@{get\+\_\+alternate\+\_\+location}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+alternate\+\_\+location()}{get\_alternate\_location()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+char \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+alternate\+\_\+location (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a15c2f8308e18fc058dd7f3a8697ee34a}\label{classESBTL_1_1PDB_1_1Line__format_a15c2f8308e18fc058dd7f3a8697ee34a}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+atom\+\_\+name@{get\+\_\+atom\+\_\+name}}
+\index{get\+\_\+atom\+\_\+name@{get\+\_\+atom\+\_\+name}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+atom\+\_\+name()}{get\_atom\_name()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+atom\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a04b1c91a27d0fe31b392ab88f4b1764a}\label{classESBTL_1_1PDB_1_1Line__format_a04b1c91a27d0fe31b392ab88f4b1764a}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+atom\+\_\+serial\+\_\+number@{get\+\_\+atom\+\_\+serial\+\_\+number}}
+\index{get\+\_\+atom\+\_\+serial\+\_\+number@{get\+\_\+atom\+\_\+serial\+\_\+number}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+atom\+\_\+serial\+\_\+number()}{get\_atom\_serial\_number()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+atom\+\_\+serial\+\_\+number (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a2db4604a71b9299ec3696d46d1a159bc}\label{classESBTL_1_1PDB_1_1Line__format_a2db4604a71b9299ec3696d46d1a159bc}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+chain\+\_\+identifier@{get\+\_\+chain\+\_\+identifier}}
+\index{get\+\_\+chain\+\_\+identifier@{get\+\_\+chain\+\_\+identifier}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+chain\+\_\+identifier()}{get\_chain\_identifier()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+char \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+chain\+\_\+identifier (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a314acf4e8c390b306beb7fd917e0da31}\label{classESBTL_1_1PDB_1_1Line__format_a314acf4e8c390b306beb7fd917e0da31}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+charge@{get\+\_\+charge}}
+\index{get\+\_\+charge@{get\+\_\+charge}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+charge()}{get\_charge()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+charge (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+extract the field charge as an integer. \mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_ada983c443ea270cc31d9337121ca4e58}\label{classESBTL_1_1PDB_1_1Line__format_ada983c443ea270cc31d9337121ca4e58}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+charge\+\_\+str@{get\+\_\+charge\+\_\+str}}
+\index{get\+\_\+charge\+\_\+str@{get\+\_\+charge\+\_\+str}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+charge\+\_\+str()}{get\_charge\_str()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+charge\+\_\+str (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+extract the field charge as a string. \mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_ad38fda5e9c5d68d7da40356119f8537e}\label{classESBTL_1_1PDB_1_1Line__format_ad38fda5e9c5d68d7da40356119f8537e}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+element@{get\+\_\+element}}
+\index{get\+\_\+element@{get\+\_\+element}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+element()}{get\_element()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+element (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a13303838446368779d4b391ba130dcba}\label{classESBTL_1_1PDB_1_1Line__format_a13303838446368779d4b391ba130dcba}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+insertion\+\_\+code@{get\+\_\+insertion\+\_\+code}}
+\index{get\+\_\+insertion\+\_\+code@{get\+\_\+insertion\+\_\+code}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+insertion\+\_\+code()}{get\_insertion\_code()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+char \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+insertion\+\_\+code (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_aa489ba8d76c6f289103da0466ce84e23}\label{classESBTL_1_1PDB_1_1Line__format_aa489ba8d76c6f289103da0466ce84e23}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+model\+\_\+number@{get\+\_\+model\+\_\+number}}
+\index{get\+\_\+model\+\_\+number@{get\+\_\+model\+\_\+number}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+model\+\_\+number()}{get\_model\_number()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+model\+\_\+number (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a7c2498989dd637f008a1719adb9b44b9}\label{classESBTL_1_1PDB_1_1Line__format_a7c2498989dd637f008a1719adb9b44b9}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+occupancy@{get\+\_\+occupancy}}
+\index{get\+\_\+occupancy@{get\+\_\+occupancy}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+occupancy()}{get\_occupancy()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+occupancy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a3c79f8cc61a87820457d557ae2e6c62c}\label{classESBTL_1_1PDB_1_1Line__format_a3c79f8cc61a87820457d557ae2e6c62c}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+record\+\_\+name@{get\+\_\+record\+\_\+name}}
+\index{get\+\_\+record\+\_\+name@{get\+\_\+record\+\_\+name}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+record\+\_\+name()}{get\_record\_name()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+record\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_ab0d5125e0fbace190c3f7fabb2eb43e5}\label{classESBTL_1_1PDB_1_1Line__format_ab0d5125e0fbace190c3f7fabb2eb43e5}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+residue\+\_\+name@{get\+\_\+residue\+\_\+name}}
+\index{get\+\_\+residue\+\_\+name@{get\+\_\+residue\+\_\+name}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+residue\+\_\+name()}{get\_residue\_name()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+std\+::string \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+residue\+\_\+name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a942dc2b1288d12b5a9b5e49ce4eb0371}\label{classESBTL_1_1PDB_1_1Line__format_a942dc2b1288d12b5a9b5e49ce4eb0371}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+residue\+\_\+sequence\+\_\+number@{get\+\_\+residue\+\_\+sequence\+\_\+number}}
+\index{get\+\_\+residue\+\_\+sequence\+\_\+number@{get\+\_\+residue\+\_\+sequence\+\_\+number}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+residue\+\_\+sequence\+\_\+number()}{get\_residue\_sequence\_number()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+int \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+residue\+\_\+sequence\+\_\+number (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_afb1db7866fc6f7cc603ed5a9836100ad}\label{classESBTL_1_1PDB_1_1Line__format_afb1db7866fc6f7cc603ed5a9836100ad}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+temperature\+\_\+factor@{get\+\_\+temperature\+\_\+factor}}
+\index{get\+\_\+temperature\+\_\+factor@{get\+\_\+temperature\+\_\+factor}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+temperature\+\_\+factor()}{get\_temperature\_factor()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+temperature\+\_\+factor (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_afe06d4e9bcb00c28d4c4a7ba975d6f0b}\label{classESBTL_1_1PDB_1_1Line__format_afe06d4e9bcb00c28d4c4a7ba975d6f0b}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+x@{get\+\_\+x}}
+\index{get\+\_\+x@{get\+\_\+x}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+x()}{get\_x()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+x (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a48f80ae039ee691802faa980fecb4476}\label{classESBTL_1_1PDB_1_1Line__format_a48f80ae039ee691802faa980fecb4476}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+y@{get\+\_\+y}}
+\index{get\+\_\+y@{get\+\_\+y}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+y()}{get\_y()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+y (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a7d7e983d438a17bcd8a799baf6c06ab9}\label{classESBTL_1_1PDB_1_1Line__format_a7d7e983d438a17bcd8a799baf6c06ab9}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!get\+\_\+z@{get\+\_\+z}}
+\index{get\+\_\+z@{get\+\_\+z}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{get\+\_\+z()}{get\_z()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+double \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::get\+\_\+z (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{line }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_a5985e9f450070463af32eb5438e6f002}\label{classESBTL_1_1PDB_1_1Line__format_a5985e9f450070463af32eb5438e6f002}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!is\+\_\+hetatm@{is\+\_\+hetatm}}
+\index{is\+\_\+hetatm@{is\+\_\+hetatm}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{is\+\_\+hetatm()}{is\_hetatm()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+bool \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::is\+\_\+hetatm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Indicates whether the line read is a coordinate line of an hetero-\/atom. \mbox{\Hypertarget{classESBTL_1_1PDB_1_1Line__format_ae266a9259dbd80a17d82e0dd42852fa3}\label{classESBTL_1_1PDB_1_1Line__format_ae266a9259dbd80a17d82e0dd42852fa3}} 
+\index{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}!record\+\_\+type@{record\+\_\+type}}
+\index{record\+\_\+type@{record\+\_\+type}!E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format@{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}}
+\subsubsection{\texorpdfstring{record\+\_\+type()}{record\_type()}}
+{\footnotesize\ttfamily template$<$class Mandatory\+\_\+fields  = Mandatory\+\_\+fields\+\_\+default$>$ \\
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7}{P\+D\+B\+::\+Record\+\_\+type} \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}$<$ Mandatory\+\_\+fields $>$\+::record\+\_\+type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{PDB_8h}{P\+D\+B.\+h}\end{DoxyCompactItemize}

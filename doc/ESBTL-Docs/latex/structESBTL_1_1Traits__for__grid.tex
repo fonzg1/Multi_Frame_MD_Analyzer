@@ -1,0 +1,150 @@
+\hypertarget{structESBTL_1_1Traits__for__grid}{}\section{E\+S\+B\+TL\+:\+:Traits\+\_\+for\+\_\+grid$<$ Point\+\_\+, Iterator\+\_\+ $>$ Struct Template Reference}
+\label{structESBTL_1_1Traits__for__grid}\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid$<$ Point\+\_\+, Iterator\+\_\+ $>$@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid$<$ Point\+\_\+, Iterator\+\_\+ $>$}}
+
+
+{\ttfamily \#include $<$grid\+\_\+of\+\_\+cubes.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef double \hyperlink{structESBTL_1_1Traits__for__grid_a2d1eddf80f02f912cd39b58c9356dd83}{NT}
+\item 
+typedef Iterator\+\_\+ \hyperlink{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}{Iterator}
+\item 
+typedef Point\+\_\+ \hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{structESBTL_1_1Traits__for__grid_a6456ed3dd1cba28aa5081f4fd2270880}{init\+\_\+grid} (const \hyperlink{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}{Iterator} \&begin, const \hyperlink{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}{Iterator} \&end, int \&xlim, int \&ylim, int \&zlim, double \&rmax, \hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point} \&lower\+\_\+corner)
+\item 
+{\footnotesize template$<$class Any\+\_\+iterator $>$ }\\static boost\+::tuple$<$ int, int, int $>$ \hyperlink{structESBTL_1_1Traits__for__grid_ace6769e2b498f72a9bd02df769299df2}{locate\+\_\+cube} (Any\+\_\+iterator it, const int \&xlim, const int \&ylim, const int \&zlim, const double \&cubel, const \hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point} \&lower\+\_\+corner)
+\item 
+{\footnotesize template$<$class Any\+\_\+iterator $>$ }\\static bool \hyperlink{structESBTL_1_1Traits__for__grid_ab937229626216c683d664c6441020185}{is\+\_\+outside\+\_\+grid} (Any\+\_\+iterator it, const int \&xlim, const int \&ylim, const int \&zlim, const double \&cubel, const \hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point} \&lower\+\_\+corner)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Point\+\_\+, class Iterator\+\_\+$>$\newline
+struct E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid$<$ Point\+\_\+, Iterator\+\_\+ $>$}
+
+Traits for using with \hyperlink{structESBTL_1_1Grid__of__cubes}{Grid\+\_\+of\+\_\+cubes}. Objects are atoms/points, maximum radius is fixed to 3. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Point\+\_\+} & is the underlying point type used. \\
+\hline
+{\em Iterator\+\_\+} & is an iterator over objects to be stored in the grid. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}\label{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}} 
+\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}!Iterator@{Iterator}}
+\index{Iterator@{Iterator}!E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}}
+\subsubsection{\texorpdfstring{Iterator}{Iterator}}
+{\footnotesize\ttfamily template$<$class Point\+\_\+ , class Iterator\+\_\+ $>$ \\
+typedef Iterator\+\_\+ \hyperlink{structESBTL_1_1Traits__for__grid}{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}$<$ Point\+\_\+, Iterator\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}{Iterator}}
+
+\mbox{\Hypertarget{structESBTL_1_1Traits__for__grid_a2d1eddf80f02f912cd39b58c9356dd83}\label{structESBTL_1_1Traits__for__grid_a2d1eddf80f02f912cd39b58c9356dd83}} 
+\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}!NT@{NT}}
+\index{NT@{NT}!E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}}
+\subsubsection{\texorpdfstring{NT}{NT}}
+{\footnotesize\ttfamily template$<$class Point\+\_\+ , class Iterator\+\_\+ $>$ \\
+typedef double \hyperlink{structESBTL_1_1Traits__for__grid}{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}$<$ Point\+\_\+, Iterator\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Traits__for__grid_a2d1eddf80f02f912cd39b58c9356dd83}{NT}}
+
+\mbox{\Hypertarget{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}\label{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}} 
+\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}!Point@{Point}}
+\index{Point@{Point}!E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}}
+\subsubsection{\texorpdfstring{Point}{Point}}
+{\footnotesize\ttfamily template$<$class Point\+\_\+ , class Iterator\+\_\+ $>$ \\
+typedef Point\+\_\+ \hyperlink{structESBTL_1_1Traits__for__grid}{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}$<$ Point\+\_\+, Iterator\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Traits__for__grid_a6456ed3dd1cba28aa5081f4fd2270880}\label{structESBTL_1_1Traits__for__grid_a6456ed3dd1cba28aa5081f4fd2270880}} 
+\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}!init\+\_\+grid@{init\+\_\+grid}}
+\index{init\+\_\+grid@{init\+\_\+grid}!E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}}
+\subsubsection{\texorpdfstring{init\+\_\+grid()}{init\_grid()}}
+{\footnotesize\ttfamily template$<$class Point\+\_\+ , class Iterator\+\_\+ $>$ \\
+static void \hyperlink{structESBTL_1_1Traits__for__grid}{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}$<$ Point\+\_\+, Iterator\+\_\+ $>$\+::init\+\_\+grid (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}{Iterator} \&}]{begin,  }\item[{const \hyperlink{structESBTL_1_1Traits__for__grid_af8465e0f6ef165f72a3ca602e5b17445}{Iterator} \&}]{end,  }\item[{int \&}]{xlim,  }\item[{int \&}]{ylim,  }\item[{int \&}]{zlim,  }\item[{double \&}]{rmax,  }\item[{\hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point} \&}]{lower\+\_\+corner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+static function indicating how the grid must be initialized (the bounding box) 
+\begin{DoxyParams}{Parameters}
+{\em begin} & first iterator over the range of objects to be inserted into the grid. \\
+\hline
+{\em end} & past-\/end iterator over the range of objects to be inserted into the grid. \\
+\hline
+{\em xlim} & is the number of cubes in the x-\/direction. This value will be defined by that function. \\
+\hline
+{\em ylim} & is the number of cubes in the y-\/direction. This value will be defined by that function. \\
+\hline
+{\em zlim} & is the number of cubes in the z-\/direction. This value will be defined by that function. \\
+\hline
+{\em rmax} & is an upper bound on the radius of the atoms. This value will be defined by that function. \\
+\hline
+{\em lower\+\_\+corner} & is a point indicating the lower corner of the grid. This value will be defined by that function. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structESBTL_1_1Traits__for__grid_ab937229626216c683d664c6441020185}\label{structESBTL_1_1Traits__for__grid_ab937229626216c683d664c6441020185}} 
+\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}!is\+\_\+outside\+\_\+grid@{is\+\_\+outside\+\_\+grid}}
+\index{is\+\_\+outside\+\_\+grid@{is\+\_\+outside\+\_\+grid}!E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}}
+\subsubsection{\texorpdfstring{is\+\_\+outside\+\_\+grid()}{is\_outside\_grid()}}
+{\footnotesize\ttfamily template$<$class Point\+\_\+ , class Iterator\+\_\+ $>$ \\
+template$<$class Any\+\_\+iterator $>$ \\
+static bool \hyperlink{structESBTL_1_1Traits__for__grid}{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}$<$ Point\+\_\+, Iterator\+\_\+ $>$\+::is\+\_\+outside\+\_\+grid (\begin{DoxyParamCaption}\item[{Any\+\_\+iterator}]{it,  }\item[{const int \&}]{xlim,  }\item[{const int \&}]{ylim,  }\item[{const int \&}]{zlim,  }\item[{const double \&}]{cubel,  }\item[{const \hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point} \&}]{lower\+\_\+corner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+static function indicating if an object can be in conflict with a grid object. 
+\begin{DoxyParams}{Parameters}
+{\em it} & is an iterator over an object. \\
+\hline
+{\em xlim} & is the number of cubes in the x-\/direction. \\
+\hline
+{\em ylim} & is the number of cubes in the y-\/direction. \\
+\hline
+{\em zlim} & is the number of cubes in the z-\/direction. \\
+\hline
+{\em cubel} & is the edge length of a cube in the grid. \\
+\hline
+{\em lower\+\_\+corner} & is a point indicating the lower corner of the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a tuple giving the cube position of the object in the grid. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{structESBTL_1_1Traits__for__grid_ace6769e2b498f72a9bd02df769299df2}\label{structESBTL_1_1Traits__for__grid_ace6769e2b498f72a9bd02df769299df2}} 
+\index{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}!locate\+\_\+cube@{locate\+\_\+cube}}
+\index{locate\+\_\+cube@{locate\+\_\+cube}!E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid@{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}}
+\subsubsection{\texorpdfstring{locate\+\_\+cube()}{locate\_cube()}}
+{\footnotesize\ttfamily template$<$class Point\+\_\+ , class Iterator\+\_\+ $>$ \\
+template$<$class Any\+\_\+iterator $>$ \\
+static boost\+::tuple$<$int,int,int$>$ \hyperlink{structESBTL_1_1Traits__for__grid}{E\+S\+B\+T\+L\+::\+Traits\+\_\+for\+\_\+grid}$<$ Point\+\_\+, Iterator\+\_\+ $>$\+::locate\+\_\+cube (\begin{DoxyParamCaption}\item[{Any\+\_\+iterator}]{it,  }\item[{const int \&}]{xlim,  }\item[{const int \&}]{ylim,  }\item[{const int \&}]{zlim,  }\item[{const double \&}]{cubel,  }\item[{const \hyperlink{structESBTL_1_1Traits__for__grid_a9e1fa4c89963d77117ce5eaead5ce7a1}{Point} \&}]{lower\+\_\+corner }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+static function computing the position of an object inside the grid. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Any\+\_\+iterator} & is an iterator type over object to be stored in the grid. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em it} & is an iterator over an object. \\
+\hline
+{\em xlim} & is the number of cubes in the x-\/direction. \\
+\hline
+{\em ylim} & is the number of cubes in the y-\/direction. \\
+\hline
+{\em zlim} & is the number of cubes in the z-\/direction. \\
+\hline
+{\em cubel} & is the edge length of a cube in the grid. \\
+\hline
+{\em lower\+\_\+corner} & is a point indicating the lower corner of the grid. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a tuple giving the cube position of the object in the grid. 
+\end{DoxyReturn}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{grid__of__cubes_8h}{grid\+\_\+of\+\_\+cubes.\+h}\end{DoxyCompactItemize}

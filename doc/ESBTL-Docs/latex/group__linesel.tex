@@ -1,0 +1,33 @@
+\hypertarget{group__linesel}{}\section{Line selectors}
+\label{group__linesel}\index{Line selectors@{Line selectors}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classESBTL_1_1PDB__line__selector}{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector}
+\item 
+class \hyperlink{classESBTL_1_1PDB__line__selector__two__systems}{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+two\+\_\+systems}
+\item 
+class \hyperlink{classESBTL_1_1PDB__line__selector__chain}{E\+S\+B\+T\+L\+::\+P\+D\+B\+\_\+line\+\_\+selector\+\_\+chain}
+\item 
+class \hyperlink{classESBTL_1_1Generic__line__selector}{E\+S\+B\+T\+L\+::\+Generic\+\_\+line\+\_\+selector$<$ T1, T2, T3, T4, T5, T6, T7, T8, T9, T10 $>$}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This module gathers all objects provided to select lines of a molecular data file to create systems. Such an object must be a class of the following type\+: 
+\begin{DoxyCode}
+\textcolor{keyword}{struct }Line\_selector\_concept\{
+  \textcolor{comment}{//returns the index (1...n) of the system in which that line matches: }
+  \textcolor{comment}{// RMK stands for remark (including MODEL), while DISCARD indicate that the line should be discarded.}
+  \textcolor{keyword}{template} <\textcolor{keyword}{class} Line\_format,\textcolor{keyword}{class} Occupancy\_handler>
+  \textcolor{keywordtype}{int} keep(\textcolor{keyword}{const} Line\_format& line\_format,\textcolor{keyword}{const} std::string& line,Occupancy\_handler& occupancy)
+  \{ ... \}
+
+  \textcolor{keywordtype}{unsigned} max\_nb\_systems()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} 1;\}
+\};
+\end{DoxyCode}
+ In function {\bfseries keep} the template parameters are\+:
+\begin{DoxyItemize}
+\item {\ttfamily Line\+\_\+format} is a helper class to read a molecular data file (such as \hyperlink{classESBTL_1_1PDB_1_1Line__format}{E\+S\+B\+T\+L\+::\+P\+D\+B\+::\+Line\+\_\+format}).
+\item {\ttfamily Occupancy\+\_\+handler} is a class following the concept of \hyperlink{group__occpol}{Occupancy policies}. To benefit from the occupancy policy, you should use the function Occupancy\+\_\+handler\+::add\+\_\+or\+\_\+postpone(line\+\_\+format,line,index\+\_\+of\+\_\+system) to return the index of the system the line must inserted in. 
+\end{DoxyItemize}

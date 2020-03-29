@@ -1,0 +1,544 @@
+\hypertarget{group__grp__iters}{}\section{Iterators}
+\label{group__grp__iters}\index{Iterators@{Iterators}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structESBTL_1_1Coarse__atoms__iterators}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+atoms\+\_\+iterators$<$ Model $>$}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$ \hyperlink{classESBTL_1_1Coarse__residue}{Self}, true $>$ \hyperlink{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\+Atoms\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$ \hyperlink{classESBTL_1_1Coarse__residue}{Self}, false $>$ \hyperlink{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\+Atoms\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ Coarse\+\_\+atom\+\_\+ $>$\+::const\+\_\+iterator \hyperlink{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\+Coarse\+\_\+atom\+\_\+const\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ Coarse\+\_\+atom\+\_\+ $>$\+::iterator \hyperlink{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\+Coarse\+\_\+atom\+\_\+iterator}
+\item 
+typedef internal\+::\+Model\+\_\+iterator\+\_\+from\+\_\+system$<$ \hyperlink{classESBTL_1_1Molecular__system}{Self}, false $>$ \hyperlink{group__grp__iters_ga752760df14baf1b92dac469d712202bc}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$\+::\+Models\+\_\+iterator}
+\item 
+typedef internal\+::\+Model\+\_\+iterator\+\_\+from\+\_\+system$<$ \hyperlink{classESBTL_1_1Molecular__system}{Self}, true $>$ \hyperlink{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$\+::\+Models\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Chains\+\_\+iterator\+\_\+from\+\_\+model$<$ \hyperlink{classESBTL_1_1Molecular__model}{Self}, true $>$ \hyperlink{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::\+Chains\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Chains\+\_\+iterator\+\_\+from\+\_\+model$<$ \hyperlink{classESBTL_1_1Molecular__model}{Self}, false $>$ \hyperlink{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::\+Chains\+\_\+iterator}
+\item 
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+model$<$ \hyperlink{classESBTL_1_1Molecular__model}{Self}, true $>$ \hyperlink{group__grp__iters_gab9417777a325c8ca02089328a4468703}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::\+Residues\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+model$<$ \hyperlink{classESBTL_1_1Molecular__model}{Self}, false $>$ \hyperlink{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::\+Residues\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+model$<$ \hyperlink{classESBTL_1_1Molecular__model}{Self}, true $>$ \hyperlink{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::\+Atoms\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+model$<$ \hyperlink{classESBTL_1_1Molecular__model}{Self}, false $>$ \hyperlink{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::\+Atoms\+\_\+iterator}
+\item 
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+chain$<$ \hyperlink{classESBTL_1_1Molecular__chain}{Self}, true $>$ \hyperlink{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::\+Residues\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+chain$<$ \hyperlink{classESBTL_1_1Molecular__chain}{Self}, false $>$ \hyperlink{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::\+Residues\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+chain$<$ \hyperlink{classESBTL_1_1Molecular__chain}{Self}, true $>$ \hyperlink{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::\+Atoms\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+chain$<$ \hyperlink{classESBTL_1_1Molecular__chain}{Self}, false $>$ \hyperlink{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::\+Atoms\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$ \hyperlink{classESBTL_1_1Molecular__residue}{Self}, true $>$ \hyperlink{group__grp__iters_gab312d7a420670665b99a379b51825c9c}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$\+::\+Atoms\+\_\+const\+\_\+iterator}
+\item 
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$ \hyperlink{classESBTL_1_1Molecular__residue}{Self}, false $>$ \hyperlink{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$\+::\+Atoms\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_ga35aadf6bfc69effe4dd4a55b09e8a1ca}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_ga71c3a50b585303176a530b52265b1b9c}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga9f73288663701102c207280c7af5a523}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_gafa5493ec6a094421db2bfbaf17af3a90}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}{Coarse\+\_\+atom\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_gac0e520e0a924be52cfdfae8921a21d21}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}{Coarse\+\_\+atom\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga50026c05f269eddb69d9d775df51e442}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}{Coarse\+\_\+atom\+\_\+iterator} \hyperlink{group__grp__iters_gab001b6ad15d74ee2879ccc4669e52962}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}{Coarse\+\_\+atom\+\_\+iterator} \hyperlink{group__grp__iters_ga2594d683372e0e198f725d8bd1577adf}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+end} ()
+\item 
+{\footnotesize template$<$class Model $>$ }\\\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$ Model $>$\+::const\+\_\+iterator \hyperlink{group__grp__iters_gabf07aacb61d906d9cb002b2e585e4eb8}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+begin} (const Model \&model)
+\item 
+{\footnotesize template$<$class Model $>$ }\\\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$ Model $>$\+::const\+\_\+iterator \hyperlink{group__grp__iters_gaa526c599e8abd3960e6b16ec2c6ed522}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+end} (const Model \&model)
+\item 
+{\footnotesize template$<$class Model $>$ }\\\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$ Model $>$\+::iterator \hyperlink{group__grp__iters_ga44b38b942148d622332c4d9d2b483c84}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+begin} (Model \&model)
+\item 
+{\footnotesize template$<$class Model $>$ }\\\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$ Model $>$\+::iterator \hyperlink{group__grp__iters_ga1336e327e3310a72197278ab5b5017b0}{E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+end} (Model \&model)
+\item 
+\hyperlink{group__grp__iters_ga752760df14baf1b92dac469d712202bc}{Models\+\_\+iterator} \hyperlink{group__grp__iters_gaed42cb1b0c025e5a74b231384dfe1632}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$\+::models\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_ga752760df14baf1b92dac469d712202bc}{Models\+\_\+iterator} \hyperlink{group__grp__iters_ga16244782639e3a6183da4a722162d534}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$\+::models\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}{Models\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_gae69a995db286b769fe7a8ae57658eb17}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$\+::models\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}{Models\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_gab880e831a7b87fafec9ddf2e569b4cba}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system$<$ Items, Point $>$\+::models\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}{Chains\+\_\+iterator} \hyperlink{group__grp__iters_gaab272442c99d33d2f421a632fcee1569}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::chains\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}{Chains\+\_\+iterator} \hyperlink{group__grp__iters_gac29bcba007d1b8b5d15de7e87ffe3e75}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::chains\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}{Chains\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga50ff1b2b5446b4978ff4269732f6ae06}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::chains\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}{Chains\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga9ac120ccf9bf4752172e0013a5bca729}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::chains\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}{Residues\+\_\+iterator} \hyperlink{group__grp__iters_ga8b8a40a8fd62a11dc2dd8c23dec80324}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::residues\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}{Residues\+\_\+iterator} \hyperlink{group__grp__iters_ga25b33f03211c67afab9abf005d2ceaa1}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::residues\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_gab9417777a325c8ca02089328a4468703}{Residues\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga0a02b98e1bdc627ffcf0ab01f1c82092}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::residues\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_gab9417777a325c8ca02089328a4468703}{Residues\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga20e41a3080eaa3bd0904651871c2a511}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::residues\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_gac48ce4662bcb0dd1430309447f96422b}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::atoms\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_ga973ddac842fe62aa21ad96eda78dc155}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::atoms\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga18c69b2f15720e367ae3d766f3bbe704}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::atoms\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga3c2c120f4056069a1767456fe31de5b5}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model$<$ System\+\_\+ $>$\+::atoms\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}{Residues\+\_\+iterator} \hyperlink{group__grp__iters_ga5785a87f04fb8ffefaaf46c6f341b05d}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::residues\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}{Residues\+\_\+iterator} \hyperlink{group__grp__iters_gaee7c0abec465c6523f3095f2e2f6a8b8}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::residues\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}{Residues\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga7638b8fd914f2fb1895cfd02c79b1e5d}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::residues\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}{Residues\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga074337267e031ed306dfa7048e3bb692}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::residues\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_gafd79068d582c1a588cf3843fcac1d55d}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::atoms\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_gaaacb84783e8dd81f5013c85165b3707b}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::atoms\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_gac6ba7621f15096a4633db8b112fd05fe}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::atoms\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga925ea88c3cb1be749a9256b9ea77bc79}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain$<$ System $>$\+::atoms\+\_\+end} () const
+\item 
+\hyperlink{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_ga1a03ace7902e971ae8a0d82eddf237c6}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$\+::atoms\+\_\+begin} ()
+\item 
+\hyperlink{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}{Atoms\+\_\+iterator} \hyperlink{group__grp__iters_ga628b784affe52d58322c5f405b454def}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$\+::atoms\+\_\+end} ()
+\item 
+\hyperlink{group__grp__iters_gab312d7a420670665b99a379b51825c9c}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga1d1092e0acc1e4a6ee07b03a78af8e1c}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$\+::atoms\+\_\+begin} () const
+\item 
+\hyperlink{group__grp__iters_gab312d7a420670665b99a379b51825c9c}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{group__grp__iters_ga27d17ddd3a3c208e95464afb2e466459}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue$<$ System $>$\+::atoms\+\_\+end} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Iterators and functions offering iteration possibilities are gathered on this page. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}\label{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}}
+\index{Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+const\+\_\+iterator}{Atoms\_const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$\hyperlink{classESBTL_1_1Coarse__residue}{Self},true$>$ \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\hyperlink{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}{Atoms\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}\label{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}}
+\index{Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+const\+\_\+iterator}{Atoms\_const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+model$<$\hyperlink{classESBTL_1_1Molecular__model}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}{Atoms\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}\label{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}}
+\index{Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+const\+\_\+iterator}{Atoms\_const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+chain$<$\hyperlink{classESBTL_1_1Molecular__chain}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::\hyperlink{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}{Atoms\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_gab312d7a420670665b99a379b51825c9c}\label{group__grp__iters_gab312d7a420670665b99a379b51825c9c}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}}
+\index{Atoms\+\_\+const\+\_\+iterator@{Atoms\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+const\+\_\+iterator}{Atoms\_const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$\hyperlink{classESBTL_1_1Molecular__residue}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue}$<$ System $>$\+::\hyperlink{group__grp__iters_gab312d7a420670665b99a379b51825c9c}{Atoms\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}\label{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+iterator@{Atoms\+\_\+iterator}}
+\index{Atoms\+\_\+iterator@{Atoms\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+iterator}{Atoms\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$\hyperlink{classESBTL_1_1Coarse__residue}{Self},false$>$ \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}{Atoms\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}\label{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+iterator@{Atoms\+\_\+iterator}}
+\index{Atoms\+\_\+iterator@{Atoms\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+iterator}{Atoms\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+model$<$\hyperlink{classESBTL_1_1Molecular__model}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}{Atoms\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}\label{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+iterator@{Atoms\+\_\+iterator}}
+\index{Atoms\+\_\+iterator@{Atoms\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+iterator}{Atoms\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+chain$<$\hyperlink{classESBTL_1_1Molecular__chain}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::\hyperlink{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}{Atoms\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}\label{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}} 
+\index{Iterators@{Iterators}!Atoms\+\_\+iterator@{Atoms\+\_\+iterator}}
+\index{Atoms\+\_\+iterator@{Atoms\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Atoms\+\_\+iterator}{Atoms\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+typedef internal\+::\+Atoms\+\_\+iterator\+\_\+from\+\_\+residue$<$\hyperlink{classESBTL_1_1Molecular__residue}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue}$<$ System $>$\+::\hyperlink{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}{Atoms\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}\label{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}} 
+\index{Iterators@{Iterators}!Chains\+\_\+const\+\_\+iterator@{Chains\+\_\+const\+\_\+iterator}}
+\index{Chains\+\_\+const\+\_\+iterator@{Chains\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Chains\+\_\+const\+\_\+iterator}{Chains\_const\_iterator}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+typedef internal\+::\+Chains\+\_\+iterator\+\_\+from\+\_\+model$<$\hyperlink{classESBTL_1_1Molecular__model}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}{Chains\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}\label{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}} 
+\index{Iterators@{Iterators}!Chains\+\_\+iterator@{Chains\+\_\+iterator}}
+\index{Chains\+\_\+iterator@{Chains\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Chains\+\_\+iterator}{Chains\_iterator}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+typedef internal\+::\+Chains\+\_\+iterator\+\_\+from\+\_\+model$<$\hyperlink{classESBTL_1_1Molecular__model}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}{Chains\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}\label{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}} 
+\index{Iterators@{Iterators}!Coarse\+\_\+atom\+\_\+const\+\_\+iterator@{Coarse\+\_\+atom\+\_\+const\+\_\+iterator}}
+\index{Coarse\+\_\+atom\+\_\+const\+\_\+iterator@{Coarse\+\_\+atom\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Coarse\+\_\+atom\+\_\+const\+\_\+iterator}{Coarse\_atom\_const\_iterator}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+typedef std\+::vector$<$Coarse\+\_\+atom\+\_\+$>$\+::const\+\_\+iterator \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}{Coarse\+\_\+atom\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}\label{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}} 
+\index{Iterators@{Iterators}!Coarse\+\_\+atom\+\_\+iterator@{Coarse\+\_\+atom\+\_\+iterator}}
+\index{Coarse\+\_\+atom\+\_\+iterator@{Coarse\+\_\+atom\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Coarse\+\_\+atom\+\_\+iterator}{Coarse\_atom\_iterator}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+typedef std\+::vector$<$Coarse\+\_\+atom\+\_\+$>$\+::iterator \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::\hyperlink{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}{Coarse\+\_\+atom\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}\label{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}} 
+\index{Iterators@{Iterators}!Models\+\_\+const\+\_\+iterator@{Models\+\_\+const\+\_\+iterator}}
+\index{Models\+\_\+const\+\_\+iterator@{Models\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Models\+\_\+const\+\_\+iterator}{Models\_const\_iterator}}
+{\footnotesize\ttfamily template$<$class Items, class Point$>$ \\
+typedef internal\+::\+Model\+\_\+iterator\+\_\+from\+\_\+system$<$\hyperlink{classESBTL_1_1Molecular__system}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}$<$ Items, Point $>$\+::\hyperlink{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}{Models\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga752760df14baf1b92dac469d712202bc}\label{group__grp__iters_ga752760df14baf1b92dac469d712202bc}} 
+\index{Iterators@{Iterators}!Models\+\_\+iterator@{Models\+\_\+iterator}}
+\index{Models\+\_\+iterator@{Models\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Models\+\_\+iterator}{Models\_iterator}}
+{\footnotesize\ttfamily template$<$class Items, class Point$>$ \\
+typedef internal\+::\+Model\+\_\+iterator\+\_\+from\+\_\+system$<$\hyperlink{classESBTL_1_1Molecular__system}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}$<$ Items, Point $>$\+::\hyperlink{group__grp__iters_ga752760df14baf1b92dac469d712202bc}{Models\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_gab9417777a325c8ca02089328a4468703}\label{group__grp__iters_gab9417777a325c8ca02089328a4468703}} 
+\index{Iterators@{Iterators}!Residues\+\_\+const\+\_\+iterator@{Residues\+\_\+const\+\_\+iterator}}
+\index{Residues\+\_\+const\+\_\+iterator@{Residues\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Residues\+\_\+const\+\_\+iterator}{Residues\_const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+model$<$\hyperlink{classESBTL_1_1Molecular__model}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::\hyperlink{group__grp__iters_gab9417777a325c8ca02089328a4468703}{Residues\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}\label{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}} 
+\index{Iterators@{Iterators}!Residues\+\_\+const\+\_\+iterator@{Residues\+\_\+const\+\_\+iterator}}
+\index{Residues\+\_\+const\+\_\+iterator@{Residues\+\_\+const\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Residues\+\_\+const\+\_\+iterator}{Residues\_const\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+chain$<$\hyperlink{classESBTL_1_1Molecular__chain}{Self},true$>$ \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::\hyperlink{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}{Residues\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}\label{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}} 
+\index{Iterators@{Iterators}!Residues\+\_\+iterator@{Residues\+\_\+iterator}}
+\index{Residues\+\_\+iterator@{Residues\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Residues\+\_\+iterator}{Residues\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+model$<$\hyperlink{classESBTL_1_1Molecular__model}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::\hyperlink{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}{Residues\+\_\+iterator}}
+
+\mbox{\Hypertarget{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}\label{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}} 
+\index{Iterators@{Iterators}!Residues\+\_\+iterator@{Residues\+\_\+iterator}}
+\index{Residues\+\_\+iterator@{Residues\+\_\+iterator}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{Residues\+\_\+iterator}{Residues\_iterator}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+typedef internal\+::\+Residues\+\_\+iterator\+\_\+from\+\_\+chain$<$\hyperlink{classESBTL_1_1Molecular__chain}{Self},false$>$ \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::\hyperlink{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}{Residues\+\_\+iterator}}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__grp__iters_ga35aadf6bfc69effe4dd4a55b09e8a1ca}\label{group__grp__iters_ga35aadf6bfc69effe4dd4a55b09e8a1ca}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga9f73288663701102c207280c7af5a523}\label{group__grp__iters_ga9f73288663701102c207280c7af5a523}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gac48ce4662bcb0dd1430309447f96422b}\label{group__grp__iters_gac48ce4662bcb0dd1430309447f96422b}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga18c69b2f15720e367ae3d766f3bbe704}\label{group__grp__iters_ga18c69b2f15720e367ae3d766f3bbe704}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gafd79068d582c1a588cf3843fcac1d55d}\label{group__grp__iters_gafd79068d582c1a588cf3843fcac1d55d}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gac6ba7621f15096a4633db8b112fd05fe}\label{group__grp__iters_gac6ba7621f15096a4633db8b112fd05fe}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga1a03ace7902e971ae8a0d82eddf237c6}\label{group__grp__iters_ga1a03ace7902e971ae8a0d82eddf237c6}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue}$<$ System $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga1d1092e0acc1e4a6ee07b03a78af8e1c}\label{group__grp__iters_ga1d1092e0acc1e4a6ee07b03a78af8e1c}} 
+\index{Iterators@{Iterators}!atoms\+\_\+begin@{atoms\+\_\+begin}}
+\index{atoms\+\_\+begin@{atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+begin()}{atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gab312d7a420670665b99a379b51825c9c}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue}$<$ System $>$\+::atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga71c3a50b585303176a530b52265b1b9c}\label{group__grp__iters_ga71c3a50b585303176a530b52265b1b9c}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/8]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga8081408a6d91ed2a777111e2b2651ad4}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gafa5493ec6a094421db2bfbaf17af3a90}\label{group__grp__iters_gafa5493ec6a094421db2bfbaf17af3a90}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/8]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_gabb95e73700fd84dbde6e089927e03a6d}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga973ddac842fe62aa21ad96eda78dc155}\label{group__grp__iters_ga973ddac842fe62aa21ad96eda78dc155}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [3/8]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga458a89ea78f235b807ca0d2dfd9a0427}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga3c2c120f4056069a1767456fe31de5b5}\label{group__grp__iters_ga3c2c120f4056069a1767456fe31de5b5}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [4/8]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga41096063f109fca33976a17af4b3a1e4}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gaaacb84783e8dd81f5013c85165b3707b}\label{group__grp__iters_gaaacb84783e8dd81f5013c85165b3707b}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [5/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gab2ee52ce4f9b656648669214cc44a4ea}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga925ea88c3cb1be749a9256b9ea77bc79}\label{group__grp__iters_ga925ea88c3cb1be749a9256b9ea77bc79}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [6/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gad872d386b268126c9bb2a2127a6a7254}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga628b784affe52d58322c5f405b454def}\label{group__grp__iters_ga628b784affe52d58322c5f405b454def}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [7/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_ga4f220ea2d647f555b579a7ab2831baa7}{Atoms\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue}$<$ System $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga27d17ddd3a3c208e95464afb2e466459}\label{group__grp__iters_ga27d17ddd3a3c208e95464afb2e466459}} 
+\index{Iterators@{Iterators}!atoms\+\_\+end@{atoms\+\_\+end}}
+\index{atoms\+\_\+end@{atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{atoms\+\_\+end()}{atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [8/8]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gab312d7a420670665b99a379b51825c9c}{Atoms\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__residue}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+residue}$<$ System $>$\+::atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gaab272442c99d33d2f421a632fcee1569}\label{group__grp__iters_gaab272442c99d33d2f421a632fcee1569}} 
+\index{Iterators@{Iterators}!chains\+\_\+begin@{chains\+\_\+begin}}
+\index{chains\+\_\+begin@{chains\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{chains\+\_\+begin()}{chains\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}{Chains\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::chains\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga50ff1b2b5446b4978ff4269732f6ae06}\label{group__grp__iters_ga50ff1b2b5446b4978ff4269732f6ae06}} 
+\index{Iterators@{Iterators}!chains\+\_\+begin@{chains\+\_\+begin}}
+\index{chains\+\_\+begin@{chains\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{chains\+\_\+begin()}{chains\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}{Chains\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::chains\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gac29bcba007d1b8b5d15de7e87ffe3e75}\label{group__grp__iters_gac29bcba007d1b8b5d15de7e87ffe3e75}} 
+\index{Iterators@{Iterators}!chains\+\_\+end@{chains\+\_\+end}}
+\index{chains\+\_\+end@{chains\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{chains\+\_\+end()}{chains\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga763cc293a5df9ae7dd6e31c198dce24b}{Chains\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::chains\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga9ac120ccf9bf4752172e0013a5bca729}\label{group__grp__iters_ga9ac120ccf9bf4752172e0013a5bca729}} 
+\index{Iterators@{Iterators}!chains\+\_\+end@{chains\+\_\+end}}
+\index{chains\+\_\+end@{chains\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{chains\+\_\+end()}{chains\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga32c6b305275f21f3b184688be9d38ffd}{Chains\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::chains\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gac0e520e0a924be52cfdfae8921a21d21}\label{group__grp__iters_gac0e520e0a924be52cfdfae8921a21d21}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}}
+\index{coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+begin()}{coarse\_atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}{Coarse\+\_\+atom\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gab001b6ad15d74ee2879ccc4669e52962}\label{group__grp__iters_gab001b6ad15d74ee2879ccc4669e52962}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}}
+\index{coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+begin()}{coarse\_atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}{Coarse\+\_\+atom\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gabf07aacb61d906d9cb002b2e585e4eb8}\label{group__grp__iters_gabf07aacb61d906d9cb002b2e585e4eb8}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}}
+\index{coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+begin()}{coarse\_atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Model $>$ \\
+\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$Model$>$\+::const\+\_\+iterator E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+begin (\begin{DoxyParamCaption}\item[{const Model \&}]{model }\end{DoxyParamCaption})}
+
+Return the first iterator over coarse grain atoms of a model (const version). \mbox{\Hypertarget{group__grp__iters_ga44b38b942148d622332c4d9d2b483c84}\label{group__grp__iters_ga44b38b942148d622332c4d9d2b483c84}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}}
+\index{coarse\+\_\+atoms\+\_\+begin@{coarse\+\_\+atoms\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+begin()}{coarse\_atoms\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Model $>$ \\
+\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$Model$>$\+::iterator E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+begin (\begin{DoxyParamCaption}\item[{Model \&}]{model }\end{DoxyParamCaption})}
+
+Return the first iterator over coarse grain atoms of a model. \mbox{\Hypertarget{group__grp__iters_ga50026c05f269eddb69d9d775df51e442}\label{group__grp__iters_ga50026c05f269eddb69d9d775df51e442}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}}
+\index{coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+end()}{coarse\_atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga5a4a865846cdde342538df7fc03c80ce}{Coarse\+\_\+atom\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga2594d683372e0e198f725d8bd1577adf}\label{group__grp__iters_ga2594d683372e0e198f725d8bd1577adf}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}}
+\index{coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+end()}{coarse\_atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class Residue , class Chain , class Coarse\+\_\+atom\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_ga09a38741d50d3b7296dae83eb0911e49}{Coarse\+\_\+atom\+\_\+iterator} \hyperlink{classESBTL_1_1Coarse__residue}{E\+S\+B\+T\+L\+::\+Coarse\+\_\+residue}$<$ Residue, Chain, Coarse\+\_\+atom\+\_\+ $>$\+::coarse\+\_\+atoms\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gaa526c599e8abd3960e6b16ec2c6ed522}\label{group__grp__iters_gaa526c599e8abd3960e6b16ec2c6ed522}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}}
+\index{coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+end()}{coarse\_atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class Model $>$ \\
+\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$Model$>$\+::const\+\_\+iterator E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+end (\begin{DoxyParamCaption}\item[{const Model \&}]{model }\end{DoxyParamCaption})}
+
+Return the past-\/end iterator over coarse grain atoms of a model (const version). \mbox{\Hypertarget{group__grp__iters_ga1336e327e3310a72197278ab5b5017b0}\label{group__grp__iters_ga1336e327e3310a72197278ab5b5017b0}} 
+\index{Iterators@{Iterators}!coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}}
+\index{coarse\+\_\+atoms\+\_\+end@{coarse\+\_\+atoms\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{coarse\+\_\+atoms\+\_\+end()}{coarse\_atoms\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class Model $>$ \\
+\hyperlink{structESBTL_1_1Coarse__atoms__iterators}{Coarse\+\_\+atoms\+\_\+iterators}$<$Model$>$\+::iterator E\+S\+B\+T\+L\+::coarse\+\_\+atoms\+\_\+end (\begin{DoxyParamCaption}\item[{Model \&}]{model }\end{DoxyParamCaption})}
+
+Return the past-\/end iterator over coarse grain atoms of a model. \mbox{\Hypertarget{group__grp__iters_gaed42cb1b0c025e5a74b231384dfe1632}\label{group__grp__iters_gaed42cb1b0c025e5a74b231384dfe1632}} 
+\index{Iterators@{Iterators}!models\+\_\+begin@{models\+\_\+begin}}
+\index{models\+\_\+begin@{models\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{models\+\_\+begin()}{models\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Items, class Point$>$ \\
+\hyperlink{group__grp__iters_ga752760df14baf1b92dac469d712202bc}{Models\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}$<$ Items, Point $>$\+::models\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gae69a995db286b769fe7a8ae57658eb17}\label{group__grp__iters_gae69a995db286b769fe7a8ae57658eb17}} 
+\index{Iterators@{Iterators}!models\+\_\+begin@{models\+\_\+begin}}
+\index{models\+\_\+begin@{models\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{models\+\_\+begin()}{models\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Items, class Point$>$ \\
+\hyperlink{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}{Models\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}$<$ Items, Point $>$\+::models\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga16244782639e3a6183da4a722162d534}\label{group__grp__iters_ga16244782639e3a6183da4a722162d534}} 
+\index{Iterators@{Iterators}!models\+\_\+end@{models\+\_\+end}}
+\index{models\+\_\+end@{models\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{models\+\_\+end()}{models\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Items, class Point$>$ \\
+\hyperlink{group__grp__iters_ga752760df14baf1b92dac469d712202bc}{Models\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}$<$ Items, Point $>$\+::models\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gab880e831a7b87fafec9ddf2e569b4cba}\label{group__grp__iters_gab880e831a7b87fafec9ddf2e569b4cba}} 
+\index{Iterators@{Iterators}!models\+\_\+end@{models\+\_\+end}}
+\index{models\+\_\+end@{models\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{models\+\_\+end()}{models\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Items, class Point$>$ \\
+\hyperlink{group__grp__iters_ga6383c53b86af7a7a7376bce06e4febb8}{Models\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__system}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+system}$<$ Items, Point $>$\+::models\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga8b8a40a8fd62a11dc2dd8c23dec80324}\label{group__grp__iters_ga8b8a40a8fd62a11dc2dd8c23dec80324}} 
+\index{Iterators@{Iterators}!residues\+\_\+begin@{residues\+\_\+begin}}
+\index{residues\+\_\+begin@{residues\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+begin()}{residues\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}{Residues\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::residues\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga0a02b98e1bdc627ffcf0ab01f1c82092}\label{group__grp__iters_ga0a02b98e1bdc627ffcf0ab01f1c82092}} 
+\index{Iterators@{Iterators}!residues\+\_\+begin@{residues\+\_\+begin}}
+\index{residues\+\_\+begin@{residues\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+begin()}{residues\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_gab9417777a325c8ca02089328a4468703}{Residues\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::residues\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga5785a87f04fb8ffefaaf46c6f341b05d}\label{group__grp__iters_ga5785a87f04fb8ffefaaf46c6f341b05d}} 
+\index{Iterators@{Iterators}!residues\+\_\+begin@{residues\+\_\+begin}}
+\index{residues\+\_\+begin@{residues\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+begin()}{residues\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}{Residues\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::residues\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga7638b8fd914f2fb1895cfd02c79b1e5d}\label{group__grp__iters_ga7638b8fd914f2fb1895cfd02c79b1e5d}} 
+\index{Iterators@{Iterators}!residues\+\_\+begin@{residues\+\_\+begin}}
+\index{residues\+\_\+begin@{residues\+\_\+begin}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+begin()}{residues\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}{Residues\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::residues\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga25b33f03211c67afab9abf005d2ceaa1}\label{group__grp__iters_ga25b33f03211c67afab9abf005d2ceaa1}} 
+\index{Iterators@{Iterators}!residues\+\_\+end@{residues\+\_\+end}}
+\index{residues\+\_\+end@{residues\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+end()}{residues\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_gae3b7c7057b27581b14109723b28a3abd}{Residues\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::residues\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga20e41a3080eaa3bd0904651871c2a511}\label{group__grp__iters_ga20e41a3080eaa3bd0904651871c2a511}} 
+\index{Iterators@{Iterators}!residues\+\_\+end@{residues\+\_\+end}}
+\index{residues\+\_\+end@{residues\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+end()}{residues\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$class System\+\_\+ $>$ \\
+\hyperlink{group__grp__iters_gab9417777a325c8ca02089328a4468703}{Residues\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__model}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+model}$<$ System\+\_\+ $>$\+::residues\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_gaee7c0abec465c6523f3095f2e2f6a8b8}\label{group__grp__iters_gaee7c0abec465c6523f3095f2e2f6a8b8}} 
+\index{Iterators@{Iterators}!residues\+\_\+end@{residues\+\_\+end}}
+\index{residues\+\_\+end@{residues\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+end()}{residues\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_gaccad04117ad7c730e41bdb9aeab8f116}{Residues\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::residues\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{group__grp__iters_ga074337267e031ed306dfa7048e3bb692}\label{group__grp__iters_ga074337267e031ed306dfa7048e3bb692}} 
+\index{Iterators@{Iterators}!residues\+\_\+end@{residues\+\_\+end}}
+\index{residues\+\_\+end@{residues\+\_\+end}!Iterators@{Iterators}}
+\subsubsection{\texorpdfstring{residues\+\_\+end()}{residues\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$class System$>$ \\
+\hyperlink{group__grp__iters_ga4cadd9ac293bcd967a86f97bfc626a7f}{Residues\+\_\+const\+\_\+iterator} \hyperlink{classESBTL_1_1Molecular__chain}{E\+S\+B\+T\+L\+::\+Molecular\+\_\+chain}$<$ System $>$\+::residues\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+

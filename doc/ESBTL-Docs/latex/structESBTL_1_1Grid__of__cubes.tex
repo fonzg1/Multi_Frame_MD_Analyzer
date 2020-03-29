@@ -1,0 +1,336 @@
+\hypertarget{structESBTL_1_1Grid__of__cubes}{}\section{E\+S\+B\+TL\+:\+:Grid\+\_\+of\+\_\+cubes$<$ Traits $>$ Struct Template Reference}
+\label{structESBTL_1_1Grid__of__cubes}\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes$<$ Traits $>$@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes$<$ Traits $>$}}
+
+
+{\ttfamily \#include $<$grid\+\_\+of\+\_\+cubes.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit}
+\item 
+class \hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator}
+\item 
+class \hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator}
+\item 
+class \hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef tuple$<$ int, int, int $>$ \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates}
+\item 
+typedef Traits\+::\+Iterator \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator}
+\item 
+typedef \hyperlink{structESBTL_1_1Grid__of__cubes}{Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit_a9a5e21b8376bdeb122987e83f89b3c06}{Cube\+\_\+unit\+::\+In\+\_\+cube\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a1586dac85e561a73b591da3cf07a47b1}{In\+\_\+cube\+\_\+iterator}
+\item 
+typedef std\+::map$<$ \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates}, \hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit} $\ast$ $>$ \hyperlink{structESBTL_1_1Grid__of__cubes_aaa528fd99e0133f58e9f5bb09925a036}{Cube\+\_\+container}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structESBTL_1_1Grid__of__cubes_a64ac9192d8b9e8982a5eaa05a5755ce0}{init} (const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&it\+\_\+beg, const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&it\+\_\+end)
+\item 
+void \hyperlink{structESBTL_1_1Grid__of__cubes_a6842218abf9fc02e646270c2f55a4067}{fill} (\hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} it\+\_\+beg, \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} it\+\_\+end)
+\item 
+\hyperlink{structESBTL_1_1Grid__of__cubes_af3d6b516670d62b61925dd0b4afcc99b}{Grid\+\_\+of\+\_\+cubes} ()
+\item 
+\hyperlink{structESBTL_1_1Grid__of__cubes_a33317f78109f4a25b351de01e0c2603f}{Grid\+\_\+of\+\_\+cubes} (const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&it\+\_\+beg, const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&it\+\_\+end)
+\item 
+\hyperlink{structESBTL_1_1Grid__of__cubes_a1926aefcbc2d5bca7239cc88383b0445}{$\sim$\+Grid\+\_\+of\+\_\+cubes} ()
+\item 
+unsigned \hyperlink{structESBTL_1_1Grid__of__cubes_ac11f4d98c90bb979290a7c3976d5bf7e}{nb\+\_\+element} () const
+\item 
+\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit} $\ast$ \hyperlink{structESBTL_1_1Grid__of__cubes_a9a2e0688f74121896de5feeebc13903b}{get\+\_\+cube} (const \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&t)
+\item 
+{\footnotesize template$<$class Any\+\_\+iterator $>$ }\\\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \hyperlink{structESBTL_1_1Grid__of__cubes_a07bed0821e5e9ff4bc5154ae9729acb1}{locate\+\_\+cube} (Any\+\_\+iterator v) const
+\item 
+{\footnotesize template$<$class Any\+\_\+iterator $>$ }\\\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit} $\ast$ \hyperlink{structESBTL_1_1Grid__of__cubes_a0af6b76850ef42d6b6ac984a778ad488}{get\+\_\+cube} (Any\+\_\+iterator v)
+\item 
+void \hyperlink{structESBTL_1_1Grid__of__cubes_a118fc01496c0106e4c3e8fb34c0e6b96}{insert\+\_\+in\+\_\+cube} (\hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} V)
+\item 
+{\footnotesize template$<$class Any\+\_\+iterator $>$ }\\bool \hyperlink{structESBTL_1_1Grid__of__cubes_a4879cc0da2c1c552494ca1a938639ef3}{is\+\_\+outside\+\_\+grid} (Any\+\_\+iterator v) const
+\item 
+bool \hyperlink{structESBTL_1_1Grid__of__cubes_a82f6018d7f00397ff9cc8a4fadec3d9e}{valid\+\_\+tuple} (const \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&T) const
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a24b1d4f577217fe038edf83e4f71d386}{begin} ()
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a9219cdd27261e9c9e95296c46df5067d}{end} ()
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a80598e81cc5bfeccaf8650978cf11f19}{nend} ()
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a2dc3c394266da4c2416d96ec7a27678c}{last\+\_\+object} ()
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_aadc2357c0255f0dc412d754755f8b3a9}{first\+\_\+object} ()
+\item 
+void \hyperlink{structESBTL_1_1Grid__of__cubes_a43799f2fa1eacebe1fc213450c2d8e1c}{erase} (const \hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator} \&it)
+\item 
+\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \hyperlink{structESBTL_1_1Grid__of__cubes_aee9c04e5770082fe01a7badda0833bca}{get\+\_\+first\+\_\+neighbor} (\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&T)
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a375871e53ca8ffc12618b5ab4a949f86}{first\+\_\+neighbor} (const \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&C)
+\item 
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes_a4ea3f48bef443c08ef8551cc2ebf2016}{first\+\_\+neighbor} (\hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator} \&it)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structESBTL_1_1Grid__of__cubes_aaa528fd99e0133f58e9f5bb09925a036}{Cube\+\_\+container} \hyperlink{structESBTL_1_1Grid__of__cubes_a343988f314552ec081a79cfab7c24e99}{cube\+\_\+container}
+\item 
+int \hyperlink{structESBTL_1_1Grid__of__cubes_a59c02aacb00c6c50eccdcc9a11b87392}{xlim}
+\item 
+int \hyperlink{structESBTL_1_1Grid__of__cubes_aa44d9c45b1a6337ded4108e14373aaf8}{ylim}
+\item 
+int \hyperlink{structESBTL_1_1Grid__of__cubes_afd4aa09e23df27cc617a6939f8a1fcd6}{zlim}
+\item 
+Traits\+::\+NT \hyperlink{structESBTL_1_1Grid__of__cubes_adad004eba8b0e99f103411e417854f6e}{cube\+\_\+edge\+\_\+length}
+\item 
+Traits\+::\+Point \hyperlink{structESBTL_1_1Grid__of__cubes_a23dd03b291ef48d901b683c3b1aaa0a3}{lower\+\_\+corner}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Traits$>$\newline
+struct E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes$<$ Traits $>$}
+
+This class offers an intersection detection between atoms using a grid. The bounding box of all the atoms is subdivided using a regular grid of cubes (which edge length is twice the largest radius + epsilon). Testing intersection between two atoms then reduces to test intersection between atoms in the same cube or in a direct neighboring cube. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Traits} & is a class providing static function indicating how to handle stored objects (see \hyperlink{structESBTL_1_1Traits__for__grid}{Traits\+\_\+for\+\_\+grid} for an example.) \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_aaa528fd99e0133f58e9f5bb09925a036}\label{structESBTL_1_1Grid__of__cubes_aaa528fd99e0133f58e9f5bb09925a036}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!Cube\+\_\+container@{Cube\+\_\+container}}
+\index{Cube\+\_\+container@{Cube\+\_\+container}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{Cube\+\_\+container}{Cube\_container}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+typedef std\+::map$<$\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates},\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit}$\ast$$>$ \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes_aaa528fd99e0133f58e9f5bb09925a036}{Cube\+\_\+container}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}\label{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!Cube\+\_\+coordinates@{Cube\+\_\+coordinates}}
+\index{Cube\+\_\+coordinates@{Cube\+\_\+coordinates}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{Cube\+\_\+coordinates}{Cube\_coordinates}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+typedef tuple$<$int,int,int$>$ \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a1586dac85e561a73b591da3cf07a47b1}\label{structESBTL_1_1Grid__of__cubes_a1586dac85e561a73b591da3cf07a47b1}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!In\+\_\+cube\+\_\+iterator@{In\+\_\+cube\+\_\+iterator}}
+\index{In\+\_\+cube\+\_\+iterator@{In\+\_\+cube\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{In\+\_\+cube\+\_\+iterator}{In\_cube\_iterator}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+typedef \hyperlink{structESBTL_1_1Grid__of__cubes}{Grid\+\_\+of\+\_\+cubes}$<$Traits$>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit_a9a5e21b8376bdeb122987e83f89b3c06}{Cube\+\_\+unit\+::\+In\+\_\+cube\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes_a1586dac85e561a73b591da3cf07a47b1}{In\+\_\+cube\+\_\+iterator}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}\label{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!Object\+\_\+iterator@{Object\+\_\+iterator}}
+\index{Object\+\_\+iterator@{Object\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{Object\+\_\+iterator}{Object\_iterator}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+typedef Traits\+::\+Iterator \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_af3d6b516670d62b61925dd0b4afcc99b}\label{structESBTL_1_1Grid__of__cubes_af3d6b516670d62b61925dd0b4afcc99b}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!Grid\+\_\+of\+\_\+cubes@{Grid\+\_\+of\+\_\+cubes}}
+\index{Grid\+\_\+of\+\_\+cubes@{Grid\+\_\+of\+\_\+cubes}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{Grid\+\_\+of\+\_\+cubes()}{Grid\_of\_cubes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes}{Grid\+\_\+of\+\_\+cubes} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a33317f78109f4a25b351de01e0c2603f}\label{structESBTL_1_1Grid__of__cubes_a33317f78109f4a25b351de01e0c2603f}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!Grid\+\_\+of\+\_\+cubes@{Grid\+\_\+of\+\_\+cubes}}
+\index{Grid\+\_\+of\+\_\+cubes@{Grid\+\_\+of\+\_\+cubes}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{Grid\+\_\+of\+\_\+cubes()}{Grid\_of\_cubes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::\hyperlink{structESBTL_1_1Grid__of__cubes}{Grid\+\_\+of\+\_\+cubes} (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&}]{it\+\_\+beg,  }\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&}]{it\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a1926aefcbc2d5bca7239cc88383b0445}\label{structESBTL_1_1Grid__of__cubes_a1926aefcbc2d5bca7239cc88383b0445}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!````~Grid\+\_\+of\+\_\+cubes@{$\sim$\+Grid\+\_\+of\+\_\+cubes}}
+\index{````~Grid\+\_\+of\+\_\+cubes@{$\sim$\+Grid\+\_\+of\+\_\+cubes}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{$\sim$\+Grid\+\_\+of\+\_\+cubes()}{~Grid\_of\_cubes()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::$\sim$\hyperlink{structESBTL_1_1Grid__of__cubes}{Grid\+\_\+of\+\_\+cubes} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a24b1d4f577217fe038edf83e4f71d386}\label{structESBTL_1_1Grid__of__cubes_a24b1d4f577217fe038edf83e4f71d386}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!begin@{begin}}
+\index{begin@{begin}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{begin()}{begin()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a9219cdd27261e9c9e95296c46df5067d}\label{structESBTL_1_1Grid__of__cubes_a9219cdd27261e9c9e95296c46df5067d}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!end@{end}}
+\index{end@{end}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{end()}{end()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a43799f2fa1eacebe1fc213450c2d8e1c}\label{structESBTL_1_1Grid__of__cubes_a43799f2fa1eacebe1fc213450c2d8e1c}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!erase@{erase}}
+\index{erase@{erase}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+void \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::erase (\begin{DoxyParamCaption}\item[{const \hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a6842218abf9fc02e646270c2f55a4067}\label{structESBTL_1_1Grid__of__cubes_a6842218abf9fc02e646270c2f55a4067}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!fill@{fill}}
+\index{fill@{fill}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{fill()}{fill()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+void \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::fill (\begin{DoxyParamCaption}\item[{\hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator}}]{it\+\_\+beg,  }\item[{\hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator}}]{it\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a375871e53ca8ffc12618b5ab4a949f86}\label{structESBTL_1_1Grid__of__cubes_a375871e53ca8ffc12618b5ab4a949f86}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!first\+\_\+neighbor@{first\+\_\+neighbor}}
+\index{first\+\_\+neighbor@{first\+\_\+neighbor}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{first\+\_\+neighbor()}{first\_neighbor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::first\+\_\+neighbor (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&}]{C }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a4ea3f48bef443c08ef8551cc2ebf2016}\label{structESBTL_1_1Grid__of__cubes_a4ea3f48bef443c08ef8551cc2ebf2016}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!first\+\_\+neighbor@{first\+\_\+neighbor}}
+\index{first\+\_\+neighbor@{first\+\_\+neighbor}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{first\+\_\+neighbor()}{first\_neighbor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::first\+\_\+neighbor (\begin{DoxyParamCaption}\item[{\hyperlink{classESBTL_1_1Grid__of__cubes_1_1iterator}{iterator} \&}]{it }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_aadc2357c0255f0dc412d754755f8b3a9}\label{structESBTL_1_1Grid__of__cubes_aadc2357c0255f0dc412d754755f8b3a9}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!first\+\_\+object@{first\+\_\+object}}
+\index{first\+\_\+object@{first\+\_\+object}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{first\+\_\+object()}{first\_object()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::first\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a9a2e0688f74121896de5feeebc13903b}\label{structESBTL_1_1Grid__of__cubes_a9a2e0688f74121896de5feeebc13903b}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!get\+\_\+cube@{get\+\_\+cube}}
+\index{get\+\_\+cube@{get\+\_\+cube}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{get\+\_\+cube()}{get\_cube()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit}$\ast$ \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::get\+\_\+cube (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a0af6b76850ef42d6b6ac984a778ad488}\label{structESBTL_1_1Grid__of__cubes_a0af6b76850ef42d6b6ac984a778ad488}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!get\+\_\+cube@{get\+\_\+cube}}
+\index{get\+\_\+cube@{get\+\_\+cube}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{get\+\_\+cube()}{get\_cube()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+template$<$class Any\+\_\+iterator $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes_1_1Cube__unit}{Cube\+\_\+unit}$\ast$ \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::get\+\_\+cube (\begin{DoxyParamCaption}\item[{Any\+\_\+iterator}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_aee9c04e5770082fe01a7badda0833bca}\label{structESBTL_1_1Grid__of__cubes_aee9c04e5770082fe01a7badda0833bca}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!get\+\_\+first\+\_\+neighbor@{get\+\_\+first\+\_\+neighbor}}
+\index{get\+\_\+first\+\_\+neighbor@{get\+\_\+first\+\_\+neighbor}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{get\+\_\+first\+\_\+neighbor()}{get\_first\_neighbor()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::get\+\_\+first\+\_\+neighbor (\begin{DoxyParamCaption}\item[{\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&}]{T }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a64ac9192d8b9e8982a5eaa05a5755ce0}\label{structESBTL_1_1Grid__of__cubes_a64ac9192d8b9e8982a5eaa05a5755ce0}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!init@{init}}
+\index{init@{init}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+void \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::init (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&}]{it\+\_\+beg,  }\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator} \&}]{it\+\_\+end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a118fc01496c0106e4c3e8fb34c0e6b96}\label{structESBTL_1_1Grid__of__cubes_a118fc01496c0106e4c3e8fb34c0e6b96}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!insert\+\_\+in\+\_\+cube@{insert\+\_\+in\+\_\+cube}}
+\index{insert\+\_\+in\+\_\+cube@{insert\+\_\+in\+\_\+cube}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{insert\+\_\+in\+\_\+cube()}{insert\_in\_cube()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+void \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::insert\+\_\+in\+\_\+cube (\begin{DoxyParamCaption}\item[{\hyperlink{structESBTL_1_1Grid__of__cubes_ae77665f05d6c7ae05c3d2d764df99193}{Object\+\_\+iterator}}]{V }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a4879cc0da2c1c552494ca1a938639ef3}\label{structESBTL_1_1Grid__of__cubes_a4879cc0da2c1c552494ca1a938639ef3}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!is\+\_\+outside\+\_\+grid@{is\+\_\+outside\+\_\+grid}}
+\index{is\+\_\+outside\+\_\+grid@{is\+\_\+outside\+\_\+grid}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{is\+\_\+outside\+\_\+grid()}{is\_outside\_grid()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+template$<$class Any\+\_\+iterator $>$ \\
+bool \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::is\+\_\+outside\+\_\+grid (\begin{DoxyParamCaption}\item[{Any\+\_\+iterator}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a2dc3c394266da4c2416d96ec7a27678c}\label{structESBTL_1_1Grid__of__cubes_a2dc3c394266da4c2416d96ec7a27678c}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!last\+\_\+object@{last\+\_\+object}}
+\index{last\+\_\+object@{last\+\_\+object}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{last\+\_\+object()}{last\_object()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1object__iterator}{object\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::last\+\_\+object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a07bed0821e5e9ff4bc5154ae9729acb1}\label{structESBTL_1_1Grid__of__cubes_a07bed0821e5e9ff4bc5154ae9729acb1}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!locate\+\_\+cube@{locate\+\_\+cube}}
+\index{locate\+\_\+cube@{locate\+\_\+cube}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{locate\+\_\+cube()}{locate\_cube()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+template$<$class Any\+\_\+iterator $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::locate\+\_\+cube (\begin{DoxyParamCaption}\item[{Any\+\_\+iterator}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_ac11f4d98c90bb979290a7c3976d5bf7e}\label{structESBTL_1_1Grid__of__cubes_ac11f4d98c90bb979290a7c3976d5bf7e}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!nb\+\_\+element@{nb\+\_\+element}}
+\index{nb\+\_\+element@{nb\+\_\+element}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{nb\+\_\+element()}{nb\_element()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+unsigned \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::nb\+\_\+element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a80598e81cc5bfeccaf8650978cf11f19}\label{structESBTL_1_1Grid__of__cubes_a80598e81cc5bfeccaf8650978cf11f19}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!nend@{nend}}
+\index{nend@{nend}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{nend()}{nend()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{classESBTL_1_1Grid__of__cubes_1_1neighbor__iterator}{neighbor\+\_\+iterator} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::nend (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a82f6018d7f00397ff9cc8a4fadec3d9e}\label{structESBTL_1_1Grid__of__cubes_a82f6018d7f00397ff9cc8a4fadec3d9e}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!valid\+\_\+tuple@{valid\+\_\+tuple}}
+\index{valid\+\_\+tuple@{valid\+\_\+tuple}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{valid\+\_\+tuple()}{valid\_tuple()}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+bool \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::valid\+\_\+tuple (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Grid__of__cubes_ad55c84346bab961e08d95e494551d07d}{Cube\+\_\+coordinates} \&}]{T }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a343988f314552ec081a79cfab7c24e99}\label{structESBTL_1_1Grid__of__cubes_a343988f314552ec081a79cfab7c24e99}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!cube\+\_\+container@{cube\+\_\+container}}
+\index{cube\+\_\+container@{cube\+\_\+container}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{cube\+\_\+container}{cube\_container}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+\hyperlink{structESBTL_1_1Grid__of__cubes_aaa528fd99e0133f58e9f5bb09925a036}{Cube\+\_\+container} \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::cube\+\_\+container}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_adad004eba8b0e99f103411e417854f6e}\label{structESBTL_1_1Grid__of__cubes_adad004eba8b0e99f103411e417854f6e}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!cube\+\_\+edge\+\_\+length@{cube\+\_\+edge\+\_\+length}}
+\index{cube\+\_\+edge\+\_\+length@{cube\+\_\+edge\+\_\+length}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{cube\+\_\+edge\+\_\+length}{cube\_edge\_length}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+Traits\+::\+NT \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::cube\+\_\+edge\+\_\+length}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a23dd03b291ef48d901b683c3b1aaa0a3}\label{structESBTL_1_1Grid__of__cubes_a23dd03b291ef48d901b683c3b1aaa0a3}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!lower\+\_\+corner@{lower\+\_\+corner}}
+\index{lower\+\_\+corner@{lower\+\_\+corner}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{lower\+\_\+corner}{lower\_corner}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+Traits\+::\+Point \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::lower\+\_\+corner}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_a59c02aacb00c6c50eccdcc9a11b87392}\label{structESBTL_1_1Grid__of__cubes_a59c02aacb00c6c50eccdcc9a11b87392}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!xlim@{xlim}}
+\index{xlim@{xlim}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{xlim}{xlim}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+int \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::xlim}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_aa44d9c45b1a6337ded4108e14373aaf8}\label{structESBTL_1_1Grid__of__cubes_aa44d9c45b1a6337ded4108e14373aaf8}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!ylim@{ylim}}
+\index{ylim@{ylim}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{ylim}{ylim}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+int \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::ylim}
+
+\mbox{\Hypertarget{structESBTL_1_1Grid__of__cubes_afd4aa09e23df27cc617a6939f8a1fcd6}\label{structESBTL_1_1Grid__of__cubes_afd4aa09e23df27cc617a6939f8a1fcd6}} 
+\index{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}!zlim@{zlim}}
+\index{zlim@{zlim}!E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes@{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}}
+\subsubsection{\texorpdfstring{zlim}{zlim}}
+{\footnotesize\ttfamily template$<$class Traits $>$ \\
+int \hyperlink{structESBTL_1_1Grid__of__cubes}{E\+S\+B\+T\+L\+::\+Grid\+\_\+of\+\_\+cubes}$<$ Traits $>$\+::zlim}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{grid__of__cubes_8h}{grid\+\_\+of\+\_\+cubes.\+h}\end{DoxyCompactItemize}

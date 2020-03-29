@@ -1,0 +1,209 @@
+\hypertarget{structESBTL_1_1Generic__classifier}{}\section{E\+S\+B\+TL\+:\+:Generic\+\_\+classifier$<$ Properties\+\_\+ $>$ Struct Template Reference}
+\label{structESBTL_1_1Generic__classifier}\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier$<$ Properties\+\_\+ $>$@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier$<$ Properties\+\_\+ $>$}}
+
+
+{\ttfamily \#include $<$atom\+\_\+classifier.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef Properties\+\_\+ \hyperlink{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}{Properties}
+\item 
+typedef Properties\+\_\+\+::\+Key\+\_\+type \hyperlink{structESBTL_1_1Generic__classifier_aa973891ce9d50ffc967a777a6fa67218}{Key\+\_\+type}
+\item 
+typedef Properties\+\_\+\+::\+Query\+\_\+type \hyperlink{structESBTL_1_1Generic__classifier_af7772b010c028daaec09d6a3f556894d}{Query\+\_\+type}
+\item 
+typedef std\+::vector$<$ Properties\+\_\+ $>$\+::iterator \hyperlink{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}{Properties\+\_\+iterator}
+\item 
+typedef std\+::vector$<$ Properties\+\_\+ $>$\+::const\+\_\+iterator \hyperlink{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}{Properties\+\_\+const\+\_\+iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_a5d56e509b7af3a5fe94e4e737de4eea8}{Generic\+\_\+classifier} ()
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_a9e7fad423ff513e510626ac3a7a9c666}{Generic\+\_\+classifier} (std\+::string filename, int)
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_adc911aefb50341cdb6e31cea019cdc5c}{Generic\+\_\+classifier} (const std\+::string \&filename)
+\item 
+const \hyperlink{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}{Properties} \& \hyperlink{structESBTL_1_1Generic__classifier_a2801becec2140ba68038dc7adbd513b2}{get\+\_\+properties} (unsigned i) const
+\item 
+const \hyperlink{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}{Properties} \& \hyperlink{structESBTL_1_1Generic__classifier_a8cf60fa688b352634428b688fe776ef8}{get\+\_\+properties} (const \hyperlink{structESBTL_1_1Generic__classifier_af7772b010c028daaec09d6a3f556894d}{Query\+\_\+type} \&query) const
+\item 
+unsigned \hyperlink{structESBTL_1_1Generic__classifier_a1ce2e54d7c1a2c2b8a088457e2c631fb}{number\+\_\+of\+\_\+properties} () const
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}{Properties\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier_a1ed70ae31493dc92cfec60b4642443f7}{properties\+\_\+begin} ()
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}{Properties\+\_\+const\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier_a2a81b08a15d82ae5b4cd572e51d6ef64}{properties\+\_\+begin} () const
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}{Properties\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier_aa0a9cd5820b85da21d898b6bd2bdb2ae}{properties\+\_\+end} ()
+\item 
+\hyperlink{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}{Properties\+\_\+const\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier_a384420a9e0c6c96e2091fbfd825c4c6a}{properties\+\_\+end} () const
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$class Properties\+\_\+$>$\newline
+struct E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier$<$ Properties\+\_\+ $>$}
+
+An object that help to associate properties to objects. This can be used for example to to associate a radius or a color to an (pseudo-\/)atom type. 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Properties\+\_\+} & must follow the concept of \hyperlink{group__prop__classif}{Property class}. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_aa973891ce9d50ffc967a777a6fa67218}\label{structESBTL_1_1Generic__classifier_aa973891ce9d50ffc967a777a6fa67218}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Key\+\_\+type@{Key\+\_\+type}}
+\index{Key\+\_\+type@{Key\+\_\+type}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Key\+\_\+type}{Key\_type}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+typedef Properties\+\_\+\+::\+Key\+\_\+type \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier_aa973891ce9d50ffc967a777a6fa67218}{Key\+\_\+type}}
+
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}\label{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Properties@{Properties}}
+\index{Properties@{Properties}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Properties}{Properties}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+typedef Properties\+\_\+ \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}{Properties}}
+
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}\label{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Properties\+\_\+const\+\_\+iterator@{Properties\+\_\+const\+\_\+iterator}}
+\index{Properties\+\_\+const\+\_\+iterator@{Properties\+\_\+const\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Properties\+\_\+const\+\_\+iterator}{Properties\_const\_iterator}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+typedef std\+::vector$<$Properties\+\_\+$>$\+::const\+\_\+iterator \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}{Properties\+\_\+const\+\_\+iterator}}
+
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}\label{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Properties\+\_\+iterator@{Properties\+\_\+iterator}}
+\index{Properties\+\_\+iterator@{Properties\+\_\+iterator}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Properties\+\_\+iterator}{Properties\_iterator}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+typedef std\+::vector$<$Properties\+\_\+$>$\+::iterator \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}{Properties\+\_\+iterator}}
+
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_af7772b010c028daaec09d6a3f556894d}\label{structESBTL_1_1Generic__classifier_af7772b010c028daaec09d6a3f556894d}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Query\+\_\+type@{Query\+\_\+type}}
+\index{Query\+\_\+type@{Query\+\_\+type}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Query\+\_\+type}{Query\_type}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+typedef Properties\+\_\+\+::\+Query\+\_\+type \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier_af7772b010c028daaec09d6a3f556894d}{Query\+\_\+type}}
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a5d56e509b7af3a5fe94e4e737de4eea8}\label{structESBTL_1_1Generic__classifier_a5d56e509b7af3a5fe94e4e737de4eea8}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Generic\+\_\+classifier@{Generic\+\_\+classifier}}
+\index{Generic\+\_\+classifier@{Generic\+\_\+classifier}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Generic\+\_\+classifier()}{Generic\_classifier()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier}{Generic\+\_\+classifier} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Default constructor. The method Properties\+\_\+\+::default\+\_\+loader is called to fill in the dictionary and the property vector. \mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a9e7fad423ff513e510626ac3a7a9c666}\label{structESBTL_1_1Generic__classifier_a9e7fad423ff513e510626ac3a7a9c666}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Generic\+\_\+classifier@{Generic\+\_\+classifier}}
+\index{Generic\+\_\+classifier@{Generic\+\_\+classifier}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Generic\+\_\+classifier()}{Generic\_classifier()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier}{Generic\+\_\+classifier} (\begin{DoxyParamCaption}\item[{std\+::string}]{filename,  }\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor that uses a file to complete the default properties. Not yet implemented \mbox{\Hypertarget{structESBTL_1_1Generic__classifier_adc911aefb50341cdb6e31cea019cdc5c}\label{structESBTL_1_1Generic__classifier_adc911aefb50341cdb6e31cea019cdc5c}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!Generic\+\_\+classifier@{Generic\+\_\+classifier}}
+\index{Generic\+\_\+classifier@{Generic\+\_\+classifier}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{Generic\+\_\+classifier()}{Generic\_classifier()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::\hyperlink{structESBTL_1_1Generic__classifier}{Generic\+\_\+classifier} (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor using a file, default is not loaded. The file must follow the following format\+: 
+\begin{DoxyCode}
+EXTRA
+...
+END
+CLASSIFICATION
+... i
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a9e600568c8b2d3043ae18011d3668406}{END}
+PROPERTIES
+ 0  ...
+... ...
+ n  ...
+END
+DEFAULT
+i
+\hyperlink{namespaceESBTL_1_1PDB_a6f11e88f706f51afbe97230641a469b7a9e600568c8b2d3043ae18011d3668406}{END}
+\end{DoxyCode}
+
+
+There are four different sections providing different kind of information\+:
+\begin{DoxyItemize}
+\item E\+X\+T\+RA\+: For each line of the file, the function Properties\+\_\+\+::handle\+\_\+extra is called.
+\item C\+L\+A\+S\+S\+I\+F\+I\+C\+A\+T\+I\+ON\+: This section contains information to associate an object to an index. For each line of the file, the function Properties\+\_\+\+::add\+\_\+classification is called.
+\item P\+R\+O\+P\+E\+R\+T\+I\+ES\+: This section contains the properties. It must start by the index of the property followed by the information required to define the property. For each line of the file, a property is constructed using the constructor with a string stream and an unsigned integer. The property index is first extracted and the rest of the line is put into a string stream.
+\item D\+E\+F\+A\+U\+LT\+: This section defines the index of the default property (if needed).
+\end{DoxyItemize}
+
+Note that none of these sections are mandatory. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a2801becec2140ba68038dc7adbd513b2}\label{structESBTL_1_1Generic__classifier_a2801becec2140ba68038dc7adbd513b2}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!get\+\_\+properties@{get\+\_\+properties}}
+\index{get\+\_\+properties@{get\+\_\+properties}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{get\+\_\+properties()}{get\_properties()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+const \hyperlink{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}{Properties}\& \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::get\+\_\+properties (\begin{DoxyParamCaption}\item[{unsigned}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a property given its index 
+\begin{DoxyParams}{Parameters}
+{\em i} & is the index of the desired property (starting from 0). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a8cf60fa688b352634428b688fe776ef8}\label{structESBTL_1_1Generic__classifier_a8cf60fa688b352634428b688fe776ef8}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!get\+\_\+properties@{get\+\_\+properties}}
+\index{get\+\_\+properties@{get\+\_\+properties}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{get\+\_\+properties()}{get\_properties()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+const \hyperlink{structESBTL_1_1Generic__classifier_aef70ade88efad6f1819bfd389b925ac9}{Properties}\& \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::get\+\_\+properties (\begin{DoxyParamCaption}\item[{const \hyperlink{structESBTL_1_1Generic__classifier_af7772b010c028daaec09d6a3f556894d}{Query\+\_\+type} \&}]{query }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a property associated to a Query\+\_\+type object. 
+\begin{DoxyParams}{Parameters}
+{\em query} & is the object a property is looking for in the dictionary. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a1ce2e54d7c1a2c2b8a088457e2c631fb}\label{structESBTL_1_1Generic__classifier_a1ce2e54d7c1a2c2b8a088457e2c631fb}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!number\+\_\+of\+\_\+properties@{number\+\_\+of\+\_\+properties}}
+\index{number\+\_\+of\+\_\+properties@{number\+\_\+of\+\_\+properties}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{number\+\_\+of\+\_\+properties()}{number\_of\_properties()}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+unsigned \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::number\+\_\+of\+\_\+properties (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+returns the number of properties. \mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a1ed70ae31493dc92cfec60b4642443f7}\label{structESBTL_1_1Generic__classifier_a1ed70ae31493dc92cfec60b4642443f7}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!properties\+\_\+begin@{properties\+\_\+begin}}
+\index{properties\+\_\+begin@{properties\+\_\+begin}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{properties\+\_\+begin()}{properties\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}{Properties\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::properties\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the first iterator on properties. \mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a2a81b08a15d82ae5b4cd572e51d6ef64}\label{structESBTL_1_1Generic__classifier_a2a81b08a15d82ae5b4cd572e51d6ef64}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!properties\+\_\+begin@{properties\+\_\+begin}}
+\index{properties\+\_\+begin@{properties\+\_\+begin}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{properties\+\_\+begin()}{properties\_begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}{Properties\+\_\+const\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::properties\+\_\+begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the first iterator on properties, const version. \mbox{\Hypertarget{structESBTL_1_1Generic__classifier_aa0a9cd5820b85da21d898b6bd2bdb2ae}\label{structESBTL_1_1Generic__classifier_aa0a9cd5820b85da21d898b6bd2bdb2ae}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!properties\+\_\+end@{properties\+\_\+end}}
+\index{properties\+\_\+end@{properties\+\_\+end}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{properties\+\_\+end()}{properties\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier_a5f82ff1a1ee75714d393ded0c3824fe6}{Properties\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::properties\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the past-\/end iterator on properties. \mbox{\Hypertarget{structESBTL_1_1Generic__classifier_a384420a9e0c6c96e2091fbfd825c4c6a}\label{structESBTL_1_1Generic__classifier_a384420a9e0c6c96e2091fbfd825c4c6a}} 
+\index{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}!properties\+\_\+end@{properties\+\_\+end}}
+\index{properties\+\_\+end@{properties\+\_\+end}!E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier@{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}}
+\subsubsection{\texorpdfstring{properties\+\_\+end()}{properties\_end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Properties\+\_\+ $>$ \\
+\hyperlink{structESBTL_1_1Generic__classifier_aa2bfed4b529df9cbc252bacf20a15174}{Properties\+\_\+const\+\_\+iterator} \hyperlink{structESBTL_1_1Generic__classifier}{E\+S\+B\+T\+L\+::\+Generic\+\_\+classifier}$<$ Properties\+\_\+ $>$\+::properties\+\_\+end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the past-\/end iterator on properties, const version. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{atom__classifier_8h}{atom\+\_\+classifier.\+h}\end{DoxyCompactItemize}

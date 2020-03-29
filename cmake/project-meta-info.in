@@ -1,0 +1,8 @@
+# project-meta-info.in
+
+include_guard()
+
+# The version number of project.
+set( project_version 0.1.0 )
+# The description of this project.
+set( project_description "This is a Molecular Dynamics Simulation Analyzer."                     "It parses PDB files." )

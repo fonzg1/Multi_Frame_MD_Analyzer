@@ -1,10 +1,7 @@
 
-get_filename_component(SIMPLE_APPS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/src/simple" ABSOLUTE)
+add_executable(PDB_Reader ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 
+target_link_libraries(PDB_Reader
+  PRIVATE
+  )
 
-# generate links and executables for each source
-foreach()
-  add_executable()
-  target_sources()
-  target_link_libraries()
-endforeach()

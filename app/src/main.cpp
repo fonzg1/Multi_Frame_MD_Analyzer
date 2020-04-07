@@ -24,7 +24,7 @@
 //licensors of this Library grant you additional permission to convey
 //the resulting work. Corresponding Source for a non-source form of
 //such a combination shall include the source code for the parts of CGAL
-//used as well as that of the covered work. 
+//used as well as that of the covered work.
 //
 //
 //
@@ -38,19 +38,19 @@
 typedef ESBTL::Accept_none_occupancy_policy<ESBTL::PDB::Line_format<> > Accept_none_occupancy_policy;
 
 int main(int argc, char** argv){
-  
+
   if (argc != 2 ){
-    std::cerr << "Please provide a filename"  << std::endl;  
+    std::cerr << "Please provide a filename"  << std::endl;
     return EXIT_FAILURE;
   }
-  
+
   //creates two systems of heavy atoms, one containing non-water molecules, the second containing water molecules
   ESBTL::PDB_line_selector_two_systems sel;
-  
+
   std::vector<ESBTL::Default_system> systems;
   //declare the building that will contruct the systems from the pdb file.
   ESBTL::All_atom_system_builder<ESBTL::Default_system> builder(systems,sel.max_nb_systems());
-  
+
   //read the pdb file
   if (ESBTL::read_a_pdb_file(argv[1],sel,builder,Accept_none_occupancy_policy())){
     if ( systems.empty() || systems[0].has_no_model() ){
@@ -58,7 +58,7 @@ int main(int argc, char** argv){
       return EXIT_FAILURE;
     }
     //Iterate over all models in the first system
-    for (ESBTL::Default_system::Models_iterator 
+    for (ESBTL::Default_system::Models_iterator
           it_model=systems[0].models_begin();
           it_model!=systems[0].models_end();
           ++it_model)
@@ -67,7 +67,7 @@ int main(int argc, char** argv){
       unsigned nb_atom=0,nb_hetatm=0;
       //iterate over all atoms of a model
       for (ESBTL::Default_system::Model::Atoms_const_iterator it_atm=model.atoms_begin();it_atm!=model.atoms_end();++it_atm){
-        if (it_atm->nb_hetatm()) ++nb_hetatm;
+        if (it_atm->is_hetatm()) ++nb_hetatm;
         else ++nb_atom;
       }
       std::cout << "Model " << model.model_number() << " contains "
@@ -77,7 +77,7 @@ int main(int argc, char** argv){
   }
   else
     return EXIT_FAILURE;
-  
+
   return EXIT_SUCCESS;
 }
 
